@@ -1,8 +1,15 @@
 import React from "react";
-
+import Image from "next/image";
 export default function Testimonials() {
   return (
-    <section className="px-4 py-20 bg-my_black page-w text-white rounded">
+    <section className="px-4 py-20  page-w text-white rounded relative  bg-my_black">
+      <Image
+        src={"/svg/asset.svg"}
+        alt="svg shape"
+        width={500}
+        height={500}
+        className="absolute right-0 bottom-0 h-full w-auto opacity-5 z-0"
+      />
       <div className="w-[700px] max-w-full m-auto text-center space-y-3">
         <div className="bg-green-100 text-green-500 rounded-full py-1 px-6 text-sm font-bold w-fit m-auto">
           <p>TESTIMONIALS</p>

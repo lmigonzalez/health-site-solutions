@@ -82,12 +82,13 @@ export default function TechStack() {
                   key={index}
                   className="basis-1/2 md:basis-1/5 lg:basis-[13%] gap-5"
                 >
-                  <div className="bg-gray-100 py-5 px-1 text-center flex justify-center items-center  rounded-lg gap-2 border">
+                  <div className="bg-my_black text-white py-5 px-1 text-center flex justify-center items-center rounded gap-2 border border-my_black">
                     {item.icon}
                     <h5 className="font-semibold">{item.name}</h5>
                   </div>
                 </CarouselItem>
               );
+              F;
             })}
           </CarouselContent>
         </Carousel>

@@ -1,13 +1,21 @@
 import React from "react";
+import Image from "next/image";
 import { FaLightbulb } from "react-icons/fa";
 import { IoLogoWechat, IoDiamond } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
 
 export default function WhyUs() {
   return (
-    <section className="bg-my_black text-white">
-      <div className="flex items-start justify-between gap-16 px-4 py-20 page-w">
-        <div className="md:w-1/2 text-start space-y-3">
+    <section className="bg-my_black text-white relative">
+      <Image
+        src={"/svg/asset.svg"}
+        alt="svg shape"
+        width={500}
+        height={500}
+        className="absolute left-0 bottom-0 h-full w-auto opacity-5 z-0"
+      />
+      <div className="flex items-start justify-between gap-16 px-4 py-20 page-w ">
+        <div className="md:w-1/2 text-start space-y-3 relative z-10">
           <div className="bg-green-100 text-green-500 rounded-full py-1 px-6 text-sm font-bold w-fit">
             <p>Why Choose Us</p>
           </div>
