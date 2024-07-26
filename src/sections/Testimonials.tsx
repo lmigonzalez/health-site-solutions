@@ -8,7 +8,7 @@ export default function Testimonials() {
           <p>TESTIMONIALS</p>
         </div>
         <h2 className="text-3xl font-bold">What Our Clients Say</h2>
-        <h3 className="text-xl font-semibold">
+        <h3 className="text-lg font-semibold">
           Hear from Professionals Who Have Transformed Their Online Presence
           with Our Web Solutions
         </h3>

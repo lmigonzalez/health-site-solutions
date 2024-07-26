@@ -2,6 +2,7 @@ import React from "react";
 import { FaLightbulb } from "react-icons/fa";
 import { IoLogoWechat, IoDiamond } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
+
 export default function WhyUs() {
   return (
     <section className="bg-my_black text-white">
@@ -11,7 +12,7 @@ export default function WhyUs() {
             <p>Why Choose Us</p>
           </div>
           <h2 className="text-3xl font-bold">Why Choose Us</h2>
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-lg font-semibold">
             Exceptional Service and Expertise in Healthcare Web Development
           </h3>
           <p className="text-justify">
@@ -29,7 +30,7 @@ export default function WhyUs() {
         </div>
         <div className="grid md:grid-cols-2 gap-10 md:w-1/2">
           <div className="">
-            <div className="bg-yellow-100 w-fit p-2 rounded border border-yellow-500 text-yellow-500">
+            <div className="bg-yellow-500 w-fit p-2 rounded border border-white text-white">
               <FaLightbulb size={25} />
             </div>
             <h4 className="font-bold text-lg">Proven Experience</h4>
@@ -40,7 +41,7 @@ export default function WhyUs() {
           </div>
 
           <div className="">
-            <div className="bg-sky-100 w-fit p-2 rounded border border-sky-500 text-sky-500">
+            <div className="bg-sky-500 w-fit p-2 rounded border border-white text-white">
               <IoLogoWechat size={25} />
             </div>
             <h4 className="font-bold text-lg">Exceptional Communication</h4>
@@ -51,7 +52,7 @@ export default function WhyUs() {
           </div>
 
           <div className="">
-            <div className="bg-emerald-100 w-fit p-2 rounded border border-emerald-500 text-emerald-500">
+            <div className="bg-emerald-500 w-fit p-2 rounded border border-white text-white">
               <BiSupport size={25} />
             </div>
             <h4 className="font-bold text-lg">Ongoing Support</h4>
@@ -62,7 +63,7 @@ export default function WhyUs() {
           </div>
 
           <div className="">
-            <div className="bg-purple-100 w-fit p-2 rounded border border-purple-500 text-purple-500">
+            <div className="bg-purple-500 w-fit p-2 rounded border border-white text-white">
               <IoDiamond size={25} />
             </div>
             <h4 className="font-bold text-lg">Quality Guarantee</h4>

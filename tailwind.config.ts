@@ -20,6 +20,7 @@ const config = {
     extend: {
       colors: {
         my_black: "#191725",
+        my_transparent: "rgba(255, 255, 255, 0.5)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

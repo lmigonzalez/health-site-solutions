@@ -12,12 +12,15 @@ export default function CallToAction() {
           <h2 className="text-3xl font-bold">
             Ready to Transform Your Online Presence?
           </h2>
-          <h3 className="text-xl font-semibold">
+          <h3 className="text-lg font-semibold">
             Schedule a Call with Our Team to Discuss Your Project and Discover
             How We Can Help
           </h3>
           <div className="pt-2 ">
-            <Link href={""} className="main-btn flex items-center gap-2 w-fit m-auto">
+            <Link
+              href={""}
+              className="main-btn flex items-center gap-2 w-fit m-auto"
+            >
               Schedule a Call Today
               <svg
                 xmlns="http://www.w3.org/2000/svg"
