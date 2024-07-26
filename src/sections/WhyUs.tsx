@@ -16,8 +16,8 @@ export default function WhyUs() {
       />
       <div className="flex items-start justify-between gap-16 px-4 py-20 page-w ">
         <div className="md:w-1/2 text-start space-y-3 relative z-10">
-          <div className="bg-green-100 text-green-500 rounded-full py-1 px-6 text-sm font-bold w-fit">
-            <p>Why Choose Us</p>
+          <div className="bg-green-100 bg-opacity-50 text-green-500 rounded-full py-1 px-6 text-sm font-bold w-fit">
+            <p>Why Us</p>
           </div>
           <h2 className="text-3xl font-bold">Why Choose Us</h2>
           <h3 className="text-lg font-semibold">
