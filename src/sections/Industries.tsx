@@ -1,24 +1,10 @@
 "use client";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 import AutoScroll from "embla-carousel-auto-scroll";
 import { EmblaOptionsType } from "embla-carousel";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaShopify,
-  FaNodeJs,
-} from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import {
-  SiTypescript,
-  SiTailwindcss,
-  SiNextdotjs,
-  SiExpress,
-  SiMongodb,
-  SiMysql,
-} from "react-icons/si";
 
 import {
   Carousel,
@@ -65,7 +51,10 @@ export default function Industries() {
         </div>
         <h2 className="text-3xl font-bold">Industries We Serve</h2>
         <h3 className="text-lg font-semibold">
-          Delivering Specialized Web Solutions Across Various Healthcare Sectors
+          Delivering Specialized Web Solutions Across Various Healthcare{" "}
+          <Link className="text-sky-500" href={"/industries"}>
+            Industries
+          </Link>
         </h3>
       </div>
       <div className="page-w relative">
@@ -84,7 +73,13 @@ export default function Industries() {
                   key={index}
                   className="basis-1/2 md:basis-1/5 lg:basis-[15%] gap-5"
                 >
-                  <div className="bg-my_black text-white py-5 px-1 text-center flex justify-center items-center rounded gap-2 border border-my_black">
+                  <div className="bg-white border-x border-green-500 py-2 px-1 text-center flex flex-col items-center rounded gap-1">
+                    <Image
+                      src={`/industries/${index + 1}.png`}
+                      alt="logo"
+                      width={30}
+                      height={30}
+                    />
                     <h5 className="font-semibold">{item}</h5>
                   </div>
                 </CarouselItem>

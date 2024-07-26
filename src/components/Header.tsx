@@ -5,10 +5,10 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 export default function Header() {
   const menuItems = [
-    "about",
     "services",
-    "work",
     "industries",
+    "work",
+    "about",
     "blog",
     "contact",
   ];

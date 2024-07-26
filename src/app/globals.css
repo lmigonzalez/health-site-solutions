@@ -15,4 +15,11 @@
   .main-btn {
     @apply px-4 py-2 bg-sky-500 hover:bg-sky-900 transition-all rounded text-white font-semibold;
   }
+  .custom-angled-border {
+    transform: skew(-0.3rad) translateY(-39%);
+  }
+
+  .custom-angled-text {
+    transform: skew(0.3rad);
+  }
 }
