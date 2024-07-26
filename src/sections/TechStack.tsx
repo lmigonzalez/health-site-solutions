@@ -89,7 +89,7 @@ export default function TechStack() {
                   </div>
                 </CarouselItem>
               );
-              F;
+              
             })}
           </CarouselContent>
         </Carousel>
