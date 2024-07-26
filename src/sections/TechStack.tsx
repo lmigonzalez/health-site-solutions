@@ -46,7 +46,8 @@ export default function TechStack() {
   const autoScrollPlugin = AutoScroll({
     speed: 1,
     playOnInit: true,
-    draggable: false,
+
+    // draggable: false,
   });
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: false })
