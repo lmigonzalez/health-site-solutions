@@ -79,9 +79,9 @@ export default function ServicesOverview() {
       <div className="grid sm:grid-cols-3 gap-5 page-w">
         {webServices.map((item, index) => {
           return (
-            <div className="border-x-2  border-green-500 p-3 rounded shadow bg-white">
+            <div key={index} className="border-x-2  border-green-500 p-3 rounded shadow bg-white">
               {" "}
-              <div key={index} className="space-y-1">
+              <div className="space-y-1">
                 <h3 className="font-semibold text-base">{item.title}</h3>
                 <p className="text-sm">{item.description}</p>
               </div>
