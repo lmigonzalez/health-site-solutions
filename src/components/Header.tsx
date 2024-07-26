@@ -15,7 +15,7 @@ export default function Header() {
   const pathname = usePathname();
   return (
     <header className="w-full p-6 bg-white shadow">
-      <nav className="page-w flex justify-between items-center">
+      <nav className="w-full flex justify-between items-center">
         <div className="">
           <Link href={""}>
             <Image
@@ -26,7 +26,7 @@ export default function Header() {
             />
           </Link>
         </div>
-        <menu className="flex items-center gap-1">
+        <menu className="flex items-center gap-3 text-lg">
           <li>
             <Link
               href={`/`}

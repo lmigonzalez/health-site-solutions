@@ -5,10 +5,10 @@ export default function Hero() {
   return (
     <section className="bg-my_blue w-full min-h-[600px] px-6 bg-[url('/health-site-solutions-hero.webp')] bg-bottom bg-cover bg-no-repeat flex justify-end relative">
       <div className="flex justify-center flex-col w-1/2 text-end gap-6">
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-5xl font-bold">
           Innovative Web Solutions for Healthcare
         </h1>
-        <h3 className="text-lg font-semibold">
+        <h3 className="text-xl font-semibold">
           Empowering Healthcare Professionals with Custom Website Design and
           Development Services
         </h3>
