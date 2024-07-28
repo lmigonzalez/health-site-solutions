@@ -116,14 +116,8 @@ export default function Header() {
           </li>
         </menu>
         <div className="flex items-center justify-center gap-5">
-          <Link
-            href={"/contact"}
-            className="rounded border border-sky-500 px-4 py-2 font-semibold text-sky-500 transition-all hover:border-sky-900 hover:bg-sky-900 hover:text-white"
-          >
-            Contact
-          </Link>
-          <Link href={"/"} className="main-btn">
-            Book a Call
+          <Link href={"/contact"} className="main-btn">
+            Contact Us
           </Link>
         </div>
       </nav>
