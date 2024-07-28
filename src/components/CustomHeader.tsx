@@ -7,7 +7,7 @@ interface Props {
 
 export default function CustomHeader({ title, description }: Props) {
   return (
-    <div className="md:px-6">
+    <div className="">
       <div
         style={{
           backgroundImage: "url(/svg/bg-2.svg)",

@@ -7,13 +7,13 @@
 
 @layer components {
   .main {
-    @apply px-2 md:px-4 py-20;
+    @apply px-2 py-20 md:px-4;
   }
   .page-w {
-    @apply w-[1380px] max-w-full m-auto;
+    @apply m-auto w-[1380px] max-w-full;
   }
   .main-btn {
-    @apply px-4 py-2 bg-sky-500 hover:bg-sky-900 transition-all rounded text-white font-semibold;
+    @apply rounded bg-sky-500 px-4 py-2 font-semibold text-white transition-all hover:bg-sky-900;
   }
   .custom-angled-border {
     transform: skew(-0.3rad) translateY(-39%);
@@ -21,5 +21,21 @@
 
   .custom-angled-text {
     transform: skew(0.3rad);
+  }
+
+  .page-content {
+    @apply m-auto my-10 w-[1380px] max-w-full;
+  }
+  .page-content h2 {
+    @apply mb-3 text-xl font-semibold;
+  }
+  .page-content p {
+    @apply mb-2;
+  }
+  .page-content ul {
+    @apply list-inside list-disc space-y-1;
+  }
+  .page-content div {
+    @apply rounded bg-white p-4 shadow;
   }
 }

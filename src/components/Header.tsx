@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 export default function Header() {
   const [showSubmenu, setShowSubmenu] = useState(false);
-  const menuItems = ["services", "industries", "work", "contact"];
+  const menuItems = ["services", "industries", "work"];
   const pathname = usePathname();
 
   useEffect(() => {
@@ -115,7 +115,13 @@ export default function Header() {
             )}
           </li>
         </menu>
-        <div className="">
+        <div className="flex items-center justify-center gap-5">
+          <Link
+            href={"/contact"}
+            className="rounded border border-sky-500 px-4 py-2 font-semibold text-sky-500 transition-all hover:border-sky-900 hover:bg-sky-900 hover:text-white"
+          >
+            Contact
+          </Link>
           <Link href={"/"} className="main-btn">
             Book a Call
           </Link>
