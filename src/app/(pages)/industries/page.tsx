@@ -103,7 +103,7 @@ export default function Page() {
         description="At Health Site Solutions, we specialize in delivering customized web solutions across a wide range of healthcare industries. From hospitals and clinics to telehealth providers and pharmaceutical companies, our expertise ensures your online presence is professional, secure, and effective. Explore the specific industries we serve and learn how we can support your unique needs."
       />
 
-      <div className="mt-10 grid grid-cols-5 gap-5">
+      <div className="page-w mt-10 grid grid-cols-5 gap-5">
         {healthcareSectors.map((item, index) => {
           return (
             <Link key={index} href={`industries/${correctUrl(item)}`}>
@@ -128,7 +128,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <div className="">
+      <div className="page-w">
         <Image
           src={"/industries.webp"}
           alt=""
@@ -138,7 +138,7 @@ export default function Page() {
         />
       </div>
 
-      <div className="mt-10 space-y-5">
+      <div className="mt-10 space-y-5 page-w">
         {industriesInfo.map((item, index) => {
           return (
             <div key={index} className="flex items-center gap-5">
