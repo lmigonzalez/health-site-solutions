@@ -43,9 +43,9 @@ export default function Page() {
             Mobile-Friendly, Responsive Design
           </h2>
           <p>
-            In today's digital age, a mobile-friendly website is essential. Our
-            designs are fully responsive, ensuring your site looks and functions
-            perfectly on any device, from desktops to smartphones.
+            In today&apos;s digital age, a mobile-friendly website is essential.
+            Our designs are fully responsive, ensuring your site looks and
+            functions perfectly on any device, from desktops to smartphones.
           </p>
           <ul>
             <li>

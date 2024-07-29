@@ -106,7 +106,7 @@ export default function Page() {
       <div className="mt-10 grid grid-cols-5 gap-5">
         {healthcareSectors.map((item, index) => {
           return (
-            <Link href={`industries/${correctUrl(item)}`}>
+            <Link key={index} href={`industries/${correctUrl(item)}`}>
               {" "}
               <div className="flex flex-col items-center gap-1 rounded border-x border-sky-500 bg-white px-1 py-2 text-center transition-all hover:shadow">
                 <Image
