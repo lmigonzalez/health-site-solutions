@@ -10,7 +10,7 @@ export default function Page() {
         description="At Health Site Solutions, we offer transparent and competitive pricing for our healthcare web development services. Our packages are designed to meet the diverse needs and budgets of healthcare providers, from custom website design to ongoing maintenance and support. Explore our pricing options and find the perfect solution to enhance your online presence and achieve your goals."
       />
 
-      <div className="mt-20">
+      <div className="page-w mt-20">
         <div>
           <h2 className="text-center text-3xl font-bold">Pricing Packages</h2>
           <p className="text-center text-lg font-semibold">
