@@ -80,7 +80,7 @@ export default function Page() {
           <ul>
             <li>
               <b>Excellence:</b> Delivering high-quality web development and
-              design services that exceed our clients' expectations.
+              design services that exceed our clients&apos; expectations.
             </li>
             <li>
               <b>Partnership:</b> Building long-term relationships with our
