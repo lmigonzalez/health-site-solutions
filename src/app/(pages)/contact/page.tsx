@@ -8,6 +8,8 @@ type Inputs = {
   lastName: string;
   email: string;
   tel: string;
+  services: string;
+  company: string;
   notes: string;
 };
 export default function Page() {
@@ -15,7 +17,11 @@ export default function Page() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-  } = useForm<Inputs>();
+  } = useForm<Inputs>({
+    defaultValues: {
+      services: "Professional",
+    },
+  });
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
@@ -88,6 +94,31 @@ export default function Page() {
               {...register("tel", {
                 required: "Phone Number is required",
               })}
+              aria-invalid={errors.tel ? "true" : "false"}
+              className="h-10 rounded border px-2"
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <label className="font-semibold">Service Package:</label>
+            <select
+              {...register("services")}
+              aria-invalid={errors.services ? "true" : "false"}
+              className="h-10 rounded border px-2"
+            >
+              <option value="Basic">Basic - $750</option>
+              <option value="Professional">Professional - $1,500</option>
+              <option value="Premium">Premium - $4,000</option>
+              <option value="Custom">Custom</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div className="flex flex-col">
+            <label className="font-semibold">Company Name:</label>
+            <input
+              type="text"
+              {...register("company")}
               aria-invalid={errors.tel ? "true" : "false"}
               className="h-10 rounded border px-2"
             />
