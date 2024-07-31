@@ -3,8 +3,8 @@ import Link from "next/link";
 import HeroSocials from "@/components/HeroSocials";
 export default function Hero() {
   return (
-    <section className="bg-my_blue w-full min-h-[600px] px-6 bg-[url('/health-site-solutions-hero.webp')] bg-bottom bg-cover bg-no-repeat flex justify-end relative">
-      <div className="flex justify-center flex-col w-1/2 text-end gap-6">
+    <section className="bg-my_blue relative flex w-full justify-end bg-none bg-cover bg-left-bottom bg-no-repeat px-6 pt-56 md:min-h-[600px] md:bg-[url('/health-site-solutions-hero.webp')] md:pt-0">
+      <div className="flex flex-col justify-end gap-6 text-end md:w-1/2 md:justify-center">
         <h1 className="text-5xl font-bold">
           Innovative Web Solutions for Healthcare
         </h1>
@@ -12,8 +12,8 @@ export default function Hero() {
           Empowering Healthcare Professionals with Custom Website Design and
           Development Services
         </h3>
-        <div className="pt-2 flex justify-end">
-          <Link href={""} className="main-btn flex items-center gap-2 w-fit">
+        <div className="flex justify-end pt-2">
+          <Link href={""} className="main-btn flex w-fit items-center gap-2">
             Get Started Today{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"

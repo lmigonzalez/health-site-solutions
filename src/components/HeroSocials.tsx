@@ -3,24 +3,24 @@ import Link from "next/link";
 
 export default function HeroSocials() {
   return (
-    <div className="absolute h-full left-5 flex justify-center items-center flex-col gap-2">
-      <div className="h-full w-0.5 bg-white bg-opacity-50 backdrop-blur-sm"></div>
+    <div className="absolute left-0 top-5 flex h-[200px] w-full items-center justify-center gap-2 bg-[url('/health-site-solutions-hero.webp')] bg-cover md:left-5 md:top-auto md:h-full md:w-auto md:flex-col md:bg-none">
+      <div className="h-0.5 w-full bg-white bg-opacity-50 backdrop-blur-sm md:h-full md:w-0.5"></div>
 
-      <div className="flex flex-col gap-24 bg-white bg-opacity-50 backdrop-blur-sm rounded py-24 px-0">
+      <div className="flex gap-24 rounded bg-white bg-opacity-50 p-10 backdrop-blur-sm md:flex-col md:px-0 md:py-24">
         <Link
           href={""}
-          className="transform -rotate-90 bg-sky-50 text-sky-500 hover:bg-sky-900 transition-all py-2 px-4 inline-block rounded font-semibold"
+          className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-500 transition-all hover:bg-sky-900 md:-rotate-90"
         >
           Facebook
         </Link>
         <Link
-          className="transform -rotate-90 bg-sky-50 text-sky-500 hover:bg-sky-900 transition-all py-2 px-4 inline-block rounded font-semibold"
+          className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-500 transition-all hover:bg-sky-900 md:-rotate-90"
           href={""}
         >
           Instagram
         </Link>
       </div>
-      <div className="h-full w-0.5 bg-white bg-opacity-50 backdrop-blur-sm"></div>
+      <div className="h-0.5 w-full bg-white bg-opacity-50 backdrop-blur-sm md:h-full md:w-0.5"></div>
     </div>
   );
 }
