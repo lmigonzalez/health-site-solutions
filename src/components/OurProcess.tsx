@@ -58,7 +58,7 @@ export default function OurProcess() {
         {" "}
         <div className="grid grid-cols-3 gap-5 rounded-xl bg-[url('/svg/3.svg')] bg-cover bg-center bg-no-repeat p-6">
           {process.map((item, index) => {
-            return (
+            return item.step !== 0 ? (
               <div
                 key={index}
                 className="relative flex flex-col justify-start rounded bg-white p-4"
@@ -71,6 +71,8 @@ export default function OurProcess() {
                 <h4 className="text-xl font-semibold">{item.title}</h4>
                 <p className="text-sm">{item.description}</p>
               </div>
+            ) : (
+              <></>
             );
           })}
         </div>
