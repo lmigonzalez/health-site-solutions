@@ -26,16 +26,16 @@
   .page-content {
     @apply m-auto my-10 w-[1380px] max-w-full;
   }
-  .page-content h2 {
+  .page-content h3 {
     @apply mb-3 text-xl font-semibold;
   }
   .page-content p {
     @apply mb-2;
   }
   .page-content ul {
-    @apply list-inside list-disc space-y-1;
+    @apply list-inside list-decimal space-y-1;
   }
-  .page-content div {
+  /* .page-content div {
     @apply rounded bg-white p-4 shadow;
-  }
+  } */
 }
