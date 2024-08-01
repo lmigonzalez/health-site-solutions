@@ -7,7 +7,34 @@ export default function OurProcess() {
       title: "Discovery and Consultation",
       description:
         "We begin by understanding your needs, goals, and challenges through an initial consultation. We gather information about your practice, target audience, and specific requirements, allowing us to tailor our services to meet your unique needs.",
+      list: [
+        {
+          bold: "Initial Meeting:",
+          description: "Discuss your practice’s vision, goals, and challenges.",
+        },
+        {
+          bold: "Needs Assessment:",
+          description:
+            "Analyze your current online presence and specific requirements.",
+        },
+        {
+          bold: "Target Audience Analysis:",
+          description: "Understand patient demographics and behaviors.",
+        },
+        {
+          bold: "Technical Requirements:",
+          description: "Identify necessary features and compliance needs.",
+        },
+        {
+          bold: "Competitive Analysis:",
+          description:
+            "Evaluate competitors to find opportunities for differentiation",
+        },
+      ],
+      extra:
+        "This thorough discovery phase ensures we create a customized strategy that aligns with your practice's objectives and audience needs.",
     },
+
     {
       step: 2,
       title: "Planning and Strategy",
@@ -61,7 +88,7 @@ export default function OurProcess() {
             return item.step !== 0 ? (
               <div
                 key={index}
-                className="relative flex flex-col justify-start rounded bg-white p-4"
+                className={`${item.step === 1 ? "row-span-2" : ""} relative flex flex-col justify-start rounded bg-white p-4`}
               >
                 <div className="absolute right-2 top-2">
                   <p className="flex size-8 items-center justify-center rounded-full bg-green-100 text-xl font-semibold text-green-500">
@@ -70,6 +97,16 @@ export default function OurProcess() {
                 </div>
                 <h4 className="text-xl font-semibold">{item.title}</h4>
                 <p className="text-sm">{item.description}</p>
+                <ul className="mt-auto list-inside list-disc text-sm">
+                  {item.list?.map((item, index) => {
+                    return (
+                      <li key={index}>
+                        {" "}
+                        <strong>{item.bold} </strong> {item.description}
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             ) : (
               <></>
