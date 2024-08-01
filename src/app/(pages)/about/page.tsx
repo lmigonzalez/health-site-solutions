@@ -232,7 +232,7 @@ export default function Page() {
             <ul className="flex flex-col gap-1 rounded-xl border-l-4 p-2 pl-4 text-justify">
               <li className="">
                 <b>Excellence:</b> Delivering high-quality web development and
-                design services that exceed our clients' expectations. We strive
+                design services that exceed our clients&apos; expectations. We strive
                 for perfection in every project, ensuring that each website is
                 visually appealing, user-friendly, and optimized for
                 performance. Our commitment to excellence means that we
