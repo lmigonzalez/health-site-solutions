@@ -65,9 +65,9 @@ export default function ServicesOverview() {
   ];
 
   return (
-    <section className="px-4 py-20">
-      <div className="w-[700px] max-w-full m-auto text-center space-y-3 mb-10">
-        <div className="bg-green-100 text-green-500 rounded-full py-1 px-6 text-sm font-bold w-fit m-auto">
+    <section className="custom-space px-6">
+      <div className="m-auto mb-10 w-[700px] max-w-full space-y-3 text-center">
+        <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500">
           <p>Services</p>
         </div>
         <h2 className="text-3xl font-bold">Our Services</h2>
@@ -76,16 +76,16 @@ export default function ServicesOverview() {
         </h3>
       </div>
 
-      <div className="grid sm:grid-cols-3 gap-5 page-w">
+      <div className="page-w grid gap-5 sm:grid-cols-3">
         {webServices.map((item, index) => {
           return (
             <div
               key={index}
-              className="border-x-2  border-green-500 p-3 rounded shadow bg-white"
+              className="rounded border-x-2 border-green-500 bg-white p-3 shadow"
             >
               {" "}
               <div className="space-y-1">
-                <h3 className="font-semibold text-base">{item.title}</h3>
+                <h3 className="text-base font-semibold">{item.title}</h3>
                 <p className="text-sm">{item.description}</p>
               </div>
             </div>
@@ -93,10 +93,10 @@ export default function ServicesOverview() {
         })}
       </div>
 
-      <div className="pt-2 flex justify-center mt-5">
+      <div className="mt-5 flex justify-center pt-2">
         <Link
           href={""}
-          className="text-sky-500 hover:text-sky-900 transition-all flex items-center gap-2 w-fit font-bold text-lg"
+          className="flex w-fit items-center gap-2 text-lg font-bold text-sky-500 transition-all hover:text-sky-900"
         >
           Learn More About Our Services
           <svg

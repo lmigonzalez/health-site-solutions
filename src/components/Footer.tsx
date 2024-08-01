@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <footer className="mt-auto w-full bg-my_black p-6 text-white">
-      <div className="page-w grid grid-cols-5 gap-10">
+      <div className="page-w grid grid-cols-5">
         <div className="space-y-2">
           <Link href={"/"}>
             <Image
@@ -93,9 +93,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <hr className="page-w my-10" />
-      <div className="page-w my-10">
-        {" "}
+      <hr className="my-10 opacity-50" />
+      <div className="page-w">
         <small className="">
           @2024 Health Site Solutions - All rights reserved
         </small>

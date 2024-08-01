@@ -45,7 +45,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="py-24">
+    <main className="px-6 pt-24">
       {" "}
       <CustomHeader
         title="About Us"
@@ -232,9 +232,9 @@ export default function Page() {
             <ul className="flex flex-col gap-1 rounded-xl border-l-4 p-2 pl-4 text-justify">
               <li className="">
                 <b>Excellence:</b> Delivering high-quality web development and
-                design services that exceed our clients&apos; expectations. We strive
-                for perfection in every project, ensuring that each website is
-                visually appealing, user-friendly, and optimized for
+                design services that exceed our clients&apos; expectations. We
+                strive for perfection in every project, ensuring that each
+                website is visually appealing, user-friendly, and optimized for
                 performance. Our commitment to excellence means that we
                 continuously seek out new ways to innovate and improve our
                 services.
@@ -267,32 +267,37 @@ export default function Page() {
               </li>
             </ul>
 
-            <div className="">
+            <div className="relative">
               <Image
-                src={"/about/team.webp"}
+                src={"/about/mission.webp"}
                 alt=""
-                width={700}
-                height={700}
+                fill
+                objectPosition="bottom"
                 className="rounded-xl shadow-md"
               />
             </div>
           </div>
 
-          <div className="my-10">
-            {" "}
-            <p>
-              We are proud to serve a wide range of healthcare providers,
-              including hospitals, clinics, practices, dentists, laboratories,
-              pharmacies, startups, telehealth providers, urgent care centers,
-              rehab centers, home health agencies, mental health professionals,
-              nursing homes, and medical supply companies.
-            </p>
-            <p>
-              Thank you for considering HealthSiteSolutions.com as your partner
-              in digital transformation. We look forward to working with you to
-              create a powerful and effective online presence for your
-              healthcare practice.
-            </p>
+          <div className="custom-space text-center">
+            <h3 className="text-center text-2xl font-bold">
+              Serving the Healthcare Community
+            </h3>
+            <div className="mt-5 space-y-2 rounded-xl border-x-4 p-2 shadow">
+              {" "}
+              <p className="">
+                We are proud to serve a wide range of healthcare providers,
+                including hospitals, clinics, practices, dentists, laboratories,
+                pharmacies, startups, telehealth providers, urgent care centers,
+                rehab centers, home health agencies, mental health
+                professionals, nursing homes, and medical supply companies.
+              </p>
+              <p>
+                Thank you for considering HealthSiteSolutions.com as your
+                partner in digital transformation. We look forward to working
+                with you to create a powerful and effective online presence for
+                your healthcare practice.
+              </p>
+            </div>
           </div>
         </div>
       </div>

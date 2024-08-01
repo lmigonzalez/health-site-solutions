@@ -6,9 +6,9 @@ import { BiSupport } from "react-icons/bi";
 
 export default function WhyUs() {
   return (
-    <section className="relative bg-[url('/bg-image-2.webp')] bg-fixed bg-left-bottom bg-no-repeat text-white">
+    <section className="custom-space bg-center-center relative bg-[url('/bg-image-2.webp')] bg-fixed bg-no-repeat px-6 text-white bg-black">
       <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
-      <div className="page-w flex items-start justify-between gap-16 px-4 py-20">
+      <div className="page-w flex items-start justify-between gap-16">
         <div className="relative z-10 space-y-3 text-start md:w-1/2">
           <div className="w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500">
             <p>Why Us</p>

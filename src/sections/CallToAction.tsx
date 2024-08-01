@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 export default function CallToAction() {
   return (
-    <section className="px-4 py-20 bg-gray-100 mt-20">
+    <section className="custom-space mt-20 bg-gray-100 px-6">
       <div className="page-w">
         {" "}
-        <div className="w-[700px] max-w-full m-auto text-center space-y-3">
-          <div className="bg-green-100 text-green-500 rounded-full py-1 px-6 text-sm font-bold w-fit m-auto">
+        <div className="m-auto w-[700px] max-w-full space-y-3 text-center">
+          <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500">
             <p>Contact Us</p>
           </div>
           <h2 className="text-3xl font-bold">
@@ -16,10 +16,10 @@ export default function CallToAction() {
             Schedule a Call with Our Team to Discuss Your Project and Discover
             How We Can Help
           </h3>
-          <div className="pt-2 ">
+          <div className="pt-2">
             <Link
               href={""}
-              className="main-btn flex items-center gap-2 w-fit m-auto"
+              className="main-btn m-auto flex w-fit items-center gap-2"
             >
               Schedule a Call Today
               <svg

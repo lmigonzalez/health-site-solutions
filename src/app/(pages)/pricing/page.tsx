@@ -4,14 +4,14 @@ import PricingTable from "@/components/PricingTable";
 import Link from "next/link";
 export default function Page() {
   return (
-    <main className="scroll-smooth px-6 py-24">
+    <main className="scroll-smooth px-6 pt-24">
       <CustomHeader
         title="Pricing"
         description="At Health Site Solutions, we offer transparent and competitive pricing for our healthcare web development services. Our packages are designed to meet the diverse needs and budgets of healthcare providers, from custom website design to ongoing maintenance and support. Explore our pricing options and find the perfect solution to enhance your online presence and achieve your goals."
       />
 
-      <div className="page-w mt-20">
-        <div>
+      <div className="page-w">
+        <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Pricing Packages</h2>
           <p className="text-center text-lg font-semibold">
             Affordable Plans Tailored for Healthcare Providers
@@ -111,7 +111,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="my-20">
+        <div className="custom-space">
           <h2
             id="pricing-table"
             className="scroll-m-12 text-center text-3xl font-bold"
@@ -126,7 +126,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="">
+        <div className="custom-space">
           {" "}
           <h2 className="text-center text-3xl font-bold">
             Maintenance and Hosting Plan
