@@ -2,6 +2,8 @@ import React from "react";
 import CustomHeader from "@/components/CustomHeader";
 import Image from "next/image";
 import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { list } from "postcss";
 export default function Page() {
   function correctUrl(name: string) {
     const newStr = name.replace(" ", "-");
@@ -29,6 +31,28 @@ export default function Page() {
       title: "Hospitals",
       description:
         "We create comprehensive, mobile-friendly websites for hospitals that enhance patient experience and streamline operations. Our tailored websites include features such as appointment scheduling, patient portals, and expert SEO services to improve your online visibility.",
+      list: [
+        {
+          bold: "Mobile-Friendly Design: ",
+          text: "Ensures accessibility on all devices for patients and staff.",
+        },
+        {
+          bold: "Appointment Scheduling:",
+          text: "Streamlines the booking process with integrated online systems.",
+        },
+        {
+          bold: "Patient Portals: ",
+          text: " Provides secure access to health information and communication tools.",
+        },
+        {
+          bold: "Expert SEO Services:",
+          text: "Improves your hospital’s visibility in search engine results.",
+        },
+        {
+          bold: "Enhanced User Experience:",
+          text: "Focuses on easy navigation and quick access to essential information.",
+        },
+      ],
     },
     {
       title: "Clinics",
@@ -132,31 +156,37 @@ export default function Page() {
         <Image
           src={"/industries.webp"}
           alt=""
-          width={800}
+          width={1380}
           height={1000}
           className="m-auto my-10"
         />
       </div>
 
-      <div className="mt-10 space-y-5 page-w">
+      <div className="page-w grid grid-cols-3 gap-5 rounded-xl bg-[url('/svg/3.svg')] bg-cover bg-center bg-no-repeat p-6">
         {industriesInfo.map((item, index) => {
           return (
-            <div key={index} className="flex items-center gap-5">
-              <div className="h-full">
-                <div className="flex size-24 items-center justify-center rounded bg-green-100 p-1 text-4xl font-bold text-green-500">
-                  {index + 1}
-                </div>
-              </div>
-
-              <div className="">
-                <Link
-                  className="text-sky-500 transition-all hover:text-sky-900"
-                  href={`industries/${correctUrl(item.title)}`}
-                >
-                  <h4 className="text-xl font-semibold">{item.title}</h4>
-                </Link>
-                <p>{item.description}</p>
-              </div>
+            <div
+              key={index}
+              className={`${index === 0 ? "row-span-2" : ""} relative flex flex-col justify-start gap-2 rounded bg-white p-4`}
+            >
+              <Link
+                className="flex items-center gap-1 underline underline-offset-2 transition-colors hover:text-sky-500 hover:decoration-sky-500"
+                href={`industries/${correctUrl(item.title)}`}
+              >
+                <h4 className="text-xl font-semibold">{item.title}</h4>
+                <FaExternalLinkAlt />
+              </Link>
+              <p className="text-sm">{item.description}</p>
+              <ul className="mt-auto list-inside list-disc text-sm">
+                {item.list?.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      {" "}
+                      <strong>{item.bold} </strong> {item.text}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           );
         })}
