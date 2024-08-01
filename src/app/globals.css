@@ -12,6 +12,9 @@
   .page-w {
     @apply m-auto w-[1380px] max-w-full;
   }
+  .custom-space {
+    @apply py-16;
+  }
   .main-btn {
     @apply rounded bg-sky-500 px-4 py-2 font-semibold text-white transition-all hover:bg-sky-900;
   }
