@@ -162,12 +162,13 @@ export default function Page() {
         />
       </div>
 
-      <div className="page-w grid grid-cols-3 gap-5 rounded-xl bg-[url('/svg/3.svg')] bg-cover bg-center bg-no-repeat p-6">
+      <div className="page-w relative grid grid-cols-3 gap-5 bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat p-6">
+        <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
         {industriesInfo.map((item, index) => {
           return (
             <div
               key={index}
-              className={`${index === 0 ? "row-span-2" : ""} relative flex flex-col justify-start gap-2 rounded bg-white p-4`}
+              className={`${index === 0 ? "row-span-2" : ""} relative z-10 flex flex-col justify-start gap-2 rounded bg-white p-4 shadow-md`}
             >
               <Link
                 className="flex items-center gap-1 underline underline-offset-2 transition-colors hover:text-sky-500 hover:decoration-sky-500"

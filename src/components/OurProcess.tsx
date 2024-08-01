@@ -81,9 +81,9 @@ export default function OurProcess() {
         height={1000}
         className="m-auto my-10"
       /> */}
-      <div className="mt-10 overflow-hidden">
-        {" "}
-        <div className="grid grid-cols-3 gap-5 rounded-xl bg-[url('/svg/3.svg')] bg-cover bg-center bg-no-repeat p-6">
+      <div className="relative mt-10 overflow-hidden bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat p-6">
+        <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
+        <div className="grid grid-cols-3 gap-5">
           {process.map((item, index) => {
             return item.step !== 0 ? (
               <div

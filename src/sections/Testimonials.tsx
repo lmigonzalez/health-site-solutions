@@ -17,16 +17,10 @@ export default function Testimonials() {
 
   return (
     <div className="px-4">
-      <section className="page-w relative rounded bg-my_black px-4 py-20 text-white">
-        <Image
-          src={"/svg/asset.svg"}
-          alt="svg shape"
-          width={500}
-          height={500}
-          className="absolute bottom-0 right-0 z-0 h-full w-auto opacity-5"
-        />
-        <div className="m-auto mb-5 w-[700px] max-w-full space-y-3 text-center">
-          <div className="m-auto w-fit rounded-full bg-green-100 bg-opacity-50 px-6 py-1 text-sm font-bold text-green-500">
+      <section className="page-w relative overflow-hidden bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat px-4 py-20 text-white">
+        <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
+        <div className="relative z-10 m-auto mb-5 w-[700px] max-w-full space-y-3 text-center">
+          <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500">
             <p>TESTIMONIALS</p>
           </div>
           <h2 className="text-3xl font-bold">What Our Clients Say</h2>
@@ -35,7 +29,7 @@ export default function Testimonials() {
             with Our Web Solutions
           </h3>
         </div>
-        <div className="px-8 md:px-12">
+        <div className="relative z-10 px-8 md:px-12">
           <Carousel
             plugins={[plugin.current]}
             className="m-auto w-full"
@@ -49,7 +43,7 @@ export default function Testimonials() {
                     key={index}
                     className="basis h-full lg:basis-1/3"
                   >
-                    <div className="flex min-h-32 flex-col gap-2 rounded border bg-white bg-opacity-60 p-2 text-start backdrop-blur-sm">
+                    <div className="flex min-h-32 flex-col gap-2 rounded border bg-white p-2 text-start text-black">
                       <div className="flex">
                         {Array.from({ length: item.stars }).map(
                           (num, index) => {
