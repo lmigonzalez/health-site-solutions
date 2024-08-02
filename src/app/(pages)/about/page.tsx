@@ -24,6 +24,13 @@ import {
   SiGoogleanalytics,
   SiVercel,
 } from "react-icons/si";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | Health Site Solutions",
+  description:
+    "Learn about HealthSiteSolutions.com, our dedicated team, trusted partners, and our mission to empower healthcare providers with exceptional digital solutions. Discover why we focus exclusively on the healthcare industry and the technologies we use to deliver top-notch services.",
+};
 export default function Page() {
   const skills = [
     { icon: <FaHtml5 size={25} />, name: "HTML" },

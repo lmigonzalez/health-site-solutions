@@ -2,6 +2,14 @@ import React from "react";
 import CustomHeader from "@/components/CustomHeader";
 import OurProcess from "@/components/OurProcess";
 import ServiceGrid from "@/components/ServiceGrid";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Healthcare Web Development and Design Services | Health Site Solutions",
+  description:
+    "Explore our comprehensive web development and design services for healthcare providers. HealthSiteSolutions.com offers responsive websites, expert SEO, content creation, hosting, maintenance, and more to boost your online presence. Contact us to enhance your digital footprint.",
+};
 export default function Page() {
   return (
     <main className="px-6 py-24">

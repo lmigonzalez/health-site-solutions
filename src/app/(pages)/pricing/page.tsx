@@ -2,6 +2,13 @@ import React from "react";
 import CustomHeader from "@/components/CustomHeader";
 import PricingTable from "@/components/PricingTable";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pricing | Health Site Solutions",
+  description:
+    "Explore our competitive pricing plans for healthcare web development and design services. HealthSiteSolutions.com offers Basic, Professional, and Premium plans, as well as custom solutions to fit your needs. Find the perfect plan to enhance your online presence today.",
+};
 export default function Page() {
   return (
     <main className="scroll-smooth px-6 pt-24">

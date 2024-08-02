@@ -1,5 +1,12 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Industries We Serve | Health Site Solutions",
+  description:
+    "Discover the range of healthcare industries we serve at HealthSiteSolutions.com. From hospitals and clinics to dental practices and telehealth providers, we offer specialized web development and design services to enhance your online presence. Explore our industry-specific solutions today.",
+};
 export default function Page() {
   return (
     <main className="py-24">
