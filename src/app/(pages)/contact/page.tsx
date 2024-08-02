@@ -16,13 +16,17 @@ type Inputs = {
   company: string;
   notes: string;
 };
-
-export default function Page() {
-  const searchParams = useSearchParams().get("package");
+export const dynamic = "force-dynamic";
+export default function Page({
+  searchParams,
+}: {
+  searchParams: { package: string };
+}) {
+  const params = searchParams.package;
 
   useEffect(() => {
     if (searchParams) {
-      setValue("services", searchParams);
+      setValue("services", params);
     }
   }, [searchParams]);
 
