@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <footer className="mt-auto w-full bg-my_black p-6 text-white">
-      <div className="page-w grid grid-cols-5">
+      <div className="page-w grid grid-cols-4 gap-5">
         <div className="space-y-2">
           <Link href={"/"}>
             <Image
@@ -19,9 +19,8 @@ export default function Footer() {
               height={150}
             />
           </Link>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            illo!
+          <p className="text-sm">
+            Empowering Healthcare with <br /> Digital Excellence
           </p>
         </div>
         <menu className="space-y-2">
@@ -40,6 +39,12 @@ export default function Footer() {
           <li>
             <Link href={"/contact"}>Contact Us</Link>
           </li>
+          <li>
+            <Link href={"/privacy-policy"}>Privacy Policy</Link>
+          </li>
+          <li>
+            <Link href={"/terms-services"}>Terms of Service</Link>
+          </li>
         </menu>
 
         <menu className="space-y-2">
@@ -54,18 +59,6 @@ export default function Footer() {
           </li>
           <li>
             <Link href={"/pricing"}>Pricing</Link>
-          </li>
-        </menu>
-
-        <menu className="space-y-2">
-          <li>
-            <h5 className="font-semibold">Legal</h5>
-          </li>
-          <li>
-            <Link href={"/privacy-policy"}>Privacy Policy</Link>
-          </li>
-          <li>
-            <Link href={"/terms-services"}>Terms of Service</Link>
           </li>
         </menu>
 
@@ -88,8 +81,8 @@ export default function Footer() {
               </Link>
             </li>
           </menu>
-          <div className="text-sky-500">
-            <Link href={"/"}>contact@healthsitesolutions.com</Link>
+          <div className="text-sm font-semibold text-sky-500">
+            <Link href={"/"}>info@healthsitesolutions.com</Link>
           </div>
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.className} relative flex min-h-screen w-full flex-col scroll-smooth bg-slate-50 text-gray-700`}
+        className={`${openSans.className} relative flex min-h-screen w-full flex-col overflow-x-hidden scroll-smooth bg-slate-50 text-gray-700`}
       >
         <Header />
         {children}

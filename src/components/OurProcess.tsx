@@ -74,13 +74,7 @@ export default function OurProcess() {
         approach to web development and design. Here’s a step-by-step overview
         of how we bring your vision to life:
       </p>
-      {/* <Image
-        src={"/svg/process-map.png"}
-        alt=""
-        width={800}
-        height={1000}
-        className="m-auto my-10"
-      /> */}
+
       <div className="relative mt-10 overflow-hidden bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat p-6">
         <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
         <div className="grid grid-cols-3 gap-5">
