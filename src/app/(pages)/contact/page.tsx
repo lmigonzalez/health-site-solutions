@@ -7,6 +7,7 @@ import { GoDotFill } from "react-icons/go";
 import { useSearchParams } from "next/navigation";
 import axios from "axios";
 import FAQ from "@/components/FAQ";
+import Image from "next/image";
 type Inputs = {
   firstName: string;
   lastName: string;
@@ -55,10 +56,19 @@ export default function Page({
         description="Get in touch with the team at Health Site Solutions to discuss your healthcare web development needs. We are here to answer any questions, provide more information about our services, and help you start your next project. Reach out today to see how we can support your online presence and drive success for your healthcare organization."
       />
 
-      <div className="custom-space page-w">
+      <div className="custom-space page-w grid grid-cols-3 gap-10">
+        <div className="flex items-center">
+          <Image
+            src={"/contact/email.png"}
+            alt="mail icon logo"
+            width={400}
+            height={400}
+            className="opacity-50"
+          />
+        </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="m-auto grid w-[800px] max-w-full gap-5 rounded-xl bg-white p-6 shadow md:grid-cols-2"
+          className="col-span-2 m-auto grid w-[800px] max-w-full gap-5 rounded-xl bg-white p-6 shadow md:grid-cols-2"
         >
           <div className="flex flex-col">
             <label className="font-semibold after:text-red-500 after:content-['*']">
