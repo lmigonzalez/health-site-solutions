@@ -130,26 +130,27 @@ export default function Page() {
       <div className="page-w mt-10 grid grid-cols-5 gap-5">
         {healthcareSectors.map((item, index) => {
           return (
-            <Link key={index} href={`industries/${correctUrl(item)}`}>
-              {" "}
-              <div className="flex flex-col items-center gap-1 rounded border-x border-sky-500 bg-white px-1 py-2 text-center transition-all hover:shadow">
+            <Link
+              key={index}
+              href={`industries/${correctUrl(item)}`}
+              className={`${index === 0 ? "row-span-2" : ""} `}
+            >
+              <div className="flex h-full flex-col items-center justify-center gap-1 rounded border-x border-sky-500 bg-white px-1 py-2 text-center transition-all hover:shadow">
                 <Image
                   src={`/industries/${index + 1}.png`}
                   alt="logo"
-                  width={30}
-                  height={30}
+                  width={index === 0 ? 50 : 30}
+                  height={index === 0 ? 50 : 30}
                 />
-                <h5 className="font-semibold">{item}</h5>
+                <h5
+                  className={`${index === 0 ? "text-2xl" : ""} font-semibold`}
+                >
+                  {item}
+                </h5>
               </div>
             </Link>
           );
         })}
-        <Link
-          href={"/industries/#"}
-          className="flex items-center justify-center gap-1 rounded bg-sky-100 px-1 py-2 text-center text-sky-500 transition-all hover:bg-sky-900 hover:text-white"
-        >
-          <p className="font-semibold">Learn more...</p>
-        </Link>
       </div>
 
       <div className="page-w">
