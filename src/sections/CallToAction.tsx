@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 export default function CallToAction() {
   return (
-    <section className="custom-space mt-20 bg-gray-100 px-6">
+    <section className="custom-space mt-20 bg-gradient-to-r from-cyan-600 to-blue-600 px-6 text-white">
       <div className="page-w">
         {" "}
         <div className="m-auto w-[700px] max-w-full space-y-3 text-center">
@@ -19,7 +19,7 @@ export default function CallToAction() {
           <div className="pt-2">
             <Link
               href={""}
-              className="main-btn m-auto flex w-fit items-center gap-2"
+              className="m-auto flex w-fit items-center gap-2 rounded bg-white px-4 py-2 font-semibold text-black transition-all hover:bg-sky-900 hover:text-white"
             >
               Schedule a Call Today
               <svg

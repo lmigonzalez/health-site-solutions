@@ -5,31 +5,31 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing | Health Site Solutions",
+  title: "Pricing | Health Web Experts",
   description:
-    "Explore our competitive pricing plans for healthcare web development and design services. HealthSiteSolutions.com offers Basic, Professional, and Premium plans, as well as custom solutions to fit your needs. Find the perfect plan to enhance your online presence today.",
+    "Explore our competitive pricing plans for healthcare web development and design services. Health Web Experts offers Basic, Professional, and Premium plans, as well as custom solutions to fit your needs. Find the perfect plan to enhance your online presence today.",
 };
 export default function Page() {
   return (
     <main className="scroll-smooth px-6 pt-24">
       <CustomHeader
         title="Pricing"
-        description="At Health Site Solutions, we offer transparent and competitive pricing for our healthcare web development services. Our packages are designed to meet the diverse needs and budgets of healthcare providers, from custom website design to ongoing maintenance and support. Explore our pricing options and find the perfect solution to enhance your online presence and achieve your goals."
+        description="At Health Web Experts, we offer transparent and competitive pricing for our healthcare web development services. Our packages are designed to meet the diverse needs and budgets of healthcare providers, from custom website design to ongoing maintenance and support. Explore our pricing options and find the perfect solution to enhance your online presence and achieve your goals."
       />
 
       <div className="page-w custom-space">
         <div className="relative bg-[url('/bg-image-2.webp')] bg-center bg-no-repeat p-6 text-white">
-          <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
+          <div className="absolute left-0 top-0 h-full w-full bg-black opacity-50"></div>
           <div className="relative z-10">
             <h2 className="text-center text-3xl font-bold">Pricing Packages</h2>
             <p className="text-center text-lg font-semibold">
               Affordable Plans Tailored for Healthcare Providers
             </p>
-            <ul className="my-10 grid gap-5 text-my_black md:grid-cols-3">
-              <li className="flex flex-col gap-2 rounded bg-white p-4 shadow">
+            <ul className="my-10 grid gap-5 text-white md:grid-cols-3">
+              <li className="flex flex-col gap-2 rounded border bg-black p-4">
                 <div className="mb-3 space-y-1">
                   <p className="text-2xl font-semibold">Basic</p>
-                  <p className="text-2xl font-semibold text-my_black">$750</p>
+                  <p className="text-2xl font-semibold">$750</p>
                 </div>
 
                 <b>Ideal for small practices or startups.</b>
@@ -42,12 +42,15 @@ export default function Page() {
                 </ul>
                 <div className="mt-auto flex justify-center pt-5">
                   {" "}
-                  <Link className="main-btn" href={"/contact?package=basic"}>
+                  <Link
+                    className="rounded bg-white px-4 py-2 font-semibold text-my_black"
+                    href={"/contact?package=basic"}
+                  >
                     Get Started
                   </Link>
                 </div>
               </li>
-              <li className="flex flex-col gap-2 rounded bg-sky-500 p-4 text-white shadow">
+              <li className="flex flex-col gap-2 rounded border bg-black p-4">
                 <div className="mb-3 space-y-1">
                   <p className="text-2xl font-semibold">Professional</p>
                   <p className="text-2xl font-semibold">$1,500</p>
@@ -72,13 +75,10 @@ export default function Page() {
                   </Link>
                 </div>
               </li>
-              <li className="flex flex-col gap-2 rounded bg-white p-4 shadow">
+              <li className="flex flex-col gap-2 rounded border bg-black p-4">
                 <div className="mb-3 space-y-1">
                   <p className="text-2xl font-semibold">Premium</p>
-                  <p className="text-2xl font-semibold text-my_black">
-                    {" "}
-                    $4,000
-                  </p>
+                  <p className="text-2xl font-semibold"> $4,000</p>
                 </div>
                 <b>
                   Best for large practices, hospitals, or healthcare businesses.
@@ -94,7 +94,10 @@ export default function Page() {
                 </ul>
                 <div className="mt-auto flex justify-center pt-5">
                   {" "}
-                  <Link className="main-btn" href={"/contact?package=premium"}>
+                  <Link
+                    className="rounded bg-white px-4 py-2 font-semibold text-my_black"
+                    href={"/contact?package=premium"}
+                  >
                     Get Started
                   </Link>
                 </div>

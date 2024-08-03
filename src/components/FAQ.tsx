@@ -55,7 +55,7 @@ export default function FAQ() {
         "We offer custom plans tailored to meet your unique needs. If our standard plans do not cover your specific requirements, please contact us to discuss a custom solution. We can create a plan that addresses your unique challenges and goals.",
     },
     {
-      title: "How do I get started with HealthSiteSolutions.com?",
+      title: "How do I get started with Health Web Experts?",
       description:
         "Getting started is easy. Simply contact us to schedule an initial consultation. We’ll discuss your needs, goals, and challenges, and develop a tailored plan to enhance your online presence. We look forward to partnering with you to create a powerful and effective website for your healthcare practice.",
     },

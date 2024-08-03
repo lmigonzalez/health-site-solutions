@@ -9,9 +9,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Healthcare Website Design and Development | Health Site Solutions",
+  title: "Healthcare Website Design and Development | Health Web Experts",
   description:
-    "Discover expert web design and development services for healthcare providers. HealthSiteSolutions.com offers custom websites, SEO, hosting, and more to enhance your online presence and engage your patients. Contact us today for a consultation.",
+    "Discover expert web design and development services for healthcare providers. Health Web Experts offers custom websites, SEO, hosting, and more to enhance your online presence and engage your patients. Contact us today for a consultation.",
 };
 
 export default function RootLayout({

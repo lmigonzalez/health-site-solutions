@@ -53,22 +53,13 @@ export default function Page({
     <main className="px-6 pt-24">
       <CustomHeader
         title="Contact Us"
-        description="Get in touch with the team at Health Site Solutions to discuss your healthcare web development needs. We are here to answer any questions, provide more information about our services, and help you start your next project. Reach out today to see how we can support your online presence and drive success for your healthcare organization."
+        description="Get in touch with the team at Health Web Experts to discuss your healthcare web development needs. We are here to answer any questions, provide more information about our services, and help you start your next project. Reach out today to see how we can support your online presence and drive success for your healthcare organization."
       />
 
       <div className="custom-space page-w flex items-center justify-between gap-10">
-        <div className="flex items-center">
-          <Image
-            src={"/contact/email.png"}
-            alt="mail icon logo"
-            width={500}
-            height={500}
-            className="opacity-50"
-          />
-        </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="grid w-[800px] max-w-full gap-5 rounded-xl bg-white p-6 shadow md:grid-cols-2"
+          className="m-auto grid w-[800px] max-w-full gap-5 md:grid-cols-2"
         >
           <div className="flex flex-col">
             <label className="font-semibold after:text-red-500 after:content-['*']">
@@ -156,7 +147,7 @@ export default function Page({
             <textarea
               {...register("notes")}
               aria-invalid={errors.notes ? "true" : "false"}
-              className="h-10 min-h-24 rounded border p-2"
+              className="h-10 min-h-28 rounded border p-2"
             />
           </div>
 

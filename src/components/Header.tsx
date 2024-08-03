@@ -18,9 +18,9 @@ export default function Header() {
         <div className="">
           <Link href={"/"}>
             <Image
-              src={"/HSS-logo-dark.png"}
-              alt="health site solutions dark version logo"
-              width={150}
+              src={"/HWE-dark.png"}
+              alt="health web experts dark version logo"
+              width={130}
               height={50}
             />
           </Link>

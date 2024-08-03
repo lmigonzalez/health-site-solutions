@@ -27,9 +27,9 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Health Site Solutions",
+  title: "About Us | Health Web Experts",
   description:
-    "Learn about HealthSiteSolutions.com, our dedicated team, trusted partners, and our mission to empower healthcare providers with exceptional digital solutions. Discover why we focus exclusively on the healthcare industry and the technologies we use to deliver top-notch services.",
+    "Learn about Health Web Experts, our dedicated team, trusted partners, and our mission to empower healthcare providers with exceptional digital solutions. Discover why we focus exclusively on the healthcare industry and the technologies we use to deliver top-notch services.",
 };
 export default function Page() {
   const skills = [
@@ -56,13 +56,13 @@ export default function Page() {
       {" "}
       <CustomHeader
         title="About Us"
-        description="Welcome to HealthSiteSolutions.com, where we specialize in crafting tailored web solutions for the healthcare industry. Our team of experts is dedicated to helping healthcare providers improve their online presence through innovative design, advanced technology, and personalized service. Learn more about our mission, values, and the talented professionals who make it all happen."
+        description="Welcome to Health Web Experts, where we specialize in crafting tailored web solutions for the healthcare industry. Our team of experts is dedicated to helping healthcare providers improve their online presence through innovative design, advanced technology, and personalized service. Learn more about our mission, values, and the talented professionals who make it all happen."
       />
       <div className="page-w">
         <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Team</h2>
           <p className="m-auto max-w-[700px] text-center font-semibold">
-            Our team at HealthSiteSolutions.com is a group of passionate
+            Our team at Health Web Experts is a group of passionate
             professionals with a diverse range of expertise in web development,
             design, SEO, and digital marketing. We are committed to providing
             exceptional service and delivering high-quality results for our
@@ -113,7 +113,7 @@ export default function Page() {
             Tech We Love and Use
           </h2>
           <p className="m-auto max-w-[700px] text-center font-semibold">
-            At HealthSiteSolutions.com, we utilize a variety of cutting-edge
+            At Health Web Experts, we utilize a variety of cutting-edge
             technologies and tools to deliver the best possible solutions for
             our clients. Here are some of the technologies we love and use:
           </p>
@@ -139,9 +139,9 @@ export default function Page() {
           <div className="mt-5 space-y-3">
             <p>
               The healthcare industry is a vital and dynamic field that requires
-              a specialized approach to web development and design. At
-              HealthSiteSolutions.com, we chose to focus on healthcare for
-              several compelling reasons:
+              a specialized approach to web development and design. At Health
+              Web Experts, we chose to focus on healthcare for several
+              compelling reasons:
             </p>
             <p>
               Throughout the years, we have worked with a wide variety of
@@ -211,15 +211,15 @@ export default function Page() {
               </li>
             </ul>
             <p>
-              At HealthSiteSolutions.com, we are passionate about making a
-              positive impact on healthcare providers and their patients. Our
-              dedication to the healthcare industry drives us to deliver the
-              highest quality services and support, ensuring our clients have
-              the tools they need to thrive in the digital age.
+              At Health Web Experts, we are passionate about making a positive
+              impact on healthcare providers and their patients. Our dedication
+              to the healthcare industry drives us to deliver the highest
+              quality services and support, ensuring our clients have the tools
+              they need to thrive in the digital age.
             </p>
             <p>
-              Thank you for considering HealthSiteSolutions.com as your partner
-              in digital transformation. We look forward to working with you to
+              Thank you for considering Health Web Experts as your partner in
+              digital transformation. We look forward to working with you to
               create a powerful and effective online presence for your
               healthcare practice.
             </p>
@@ -229,10 +229,10 @@ export default function Page() {
         <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Mission</h2>
           <p className="m-auto max-w-[700px] text-center font-semibold">
-            Our mission at HealthSiteSolutions.com is to empower healthcare
-            providers with exceptional digital solutions that enhance their
-            online presence, improve patient engagement, and drive business
-            growth. We are dedicated to:
+            Our mission at Health Web Experts is to empower healthcare providers
+            with exceptional digital solutions that enhance their online
+            presence, improve patient engagement, and drive business growth. We
+            are dedicated to:
           </p>
 
           <div className="mt-5 grid grid-cols-2 gap-10">
@@ -299,10 +299,10 @@ export default function Page() {
                 professionals, nursing homes, and medical supply companies.
               </p>
               <p>
-                Thank you for considering HealthSiteSolutions.com as your
-                partner in digital transformation. We look forward to working
-                with you to create a powerful and effective online presence for
-                your healthcare practice.
+                Thank you for considering Health Web Experts as your partner in
+                digital transformation. We look forward to working with you to
+                create a powerful and effective online presence for your
+                healthcare practice.
               </p>
             </div>
           </div>

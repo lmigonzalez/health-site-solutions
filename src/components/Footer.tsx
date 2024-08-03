@@ -13,10 +13,10 @@ export default function Footer() {
         <div className="space-y-2">
           <Link href={"/"}>
             <Image
-              src={"/HSS-logo-light.png"}
-              alt="white version of the health site solution logo"
-              width={150}
-              height={150}
+              src={"/HWE-light.png"}
+              alt="health web experts dark version logo"
+              width={130}
+              height={50}
             />
           </Link>
           <p className="text-sm">
@@ -82,14 +82,14 @@ export default function Footer() {
             </li>
           </menu>
           <div className="text-sm font-semibold text-sky-500">
-            <Link href={"/"}>info@healthsitesolutions.com</Link>
+            <Link href={"/"}>info@healthwebexperts.com</Link>
           </div>
         </div>
       </div>
       <hr className="my-10 opacity-50" />
       <div className="page-w">
         <small className="">
-          @2024 Health Site Solutions - All rights reserved
+          @2024 Health Web Experts - All rights reserved
         </small>
       </div>
     </footer>

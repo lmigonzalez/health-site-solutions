@@ -70,7 +70,7 @@ export default function OurProcess() {
     <div className="page-w mt-24">
       <h2 className="text-center text-3xl font-bold">Our Process</h2>
       <p className="m-auto max-w-[600px] text-center">
-        At HealthSiteSolutions.com, we believe in a structured and transparent
+        At Health Web Experts, we believe in a structured and transparent
         approach to web development and design. Here’s a step-by-step overview
         of how we bring your vision to life:
       </p>
