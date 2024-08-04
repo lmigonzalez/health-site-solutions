@@ -14,7 +14,6 @@ export default function Home() {
       <WhyUs />
       <ServicesOverview />
       <Testimonials />
-      <CallToAction />
     </main>
   );
 }

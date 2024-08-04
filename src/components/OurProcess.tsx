@@ -84,8 +84,8 @@ export default function OurProcess() {
                 key={index}
                 className={`${item.step === 1 ? "row-span-2" : ""} relative flex flex-col justify-start rounded bg-white p-4`}
               >
-                <div className="absolute right-2 top-2">
-                  <p className="flex size-8 items-center justify-center rounded-full bg-green-100 text-xl font-semibold text-green-500">
+                <div className="absolute right-1 top-1">
+                  <p className="flex size-8 items-center justify-center rounded-full bg-black text-xl font-semibold text-white">
                     {item.step}
                   </p>
                 </div>

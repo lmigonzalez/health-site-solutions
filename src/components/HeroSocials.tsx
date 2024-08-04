@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HeroSocials() {
   return (
-    <div className="absolute left-0 top-5 flex h-[200px] w-full items-center justify-center gap-2 bg-[url('/health-site-solutions-hero.webp')] bg-cover md:left-5 md:top-auto md:h-full md:w-auto md:flex-col md:bg-none">
+    <div className="absolute left-0 top-5 hidden h-[200px] w-full items-center justify-center gap-2 bg-[url('/health-site-solutions-hero.webp')] bg-cover md:left-5 md:top-auto md:flex md:h-full md:w-auto md:flex-col md:bg-none">
       <div className="h-0.5 w-full bg-white bg-opacity-50 backdrop-blur-sm md:h-full md:w-0.5"></div>
 
       <div className="flex gap-24 rounded bg-white bg-opacity-50 p-10 backdrop-blur-sm md:flex-col md:px-0 md:py-24">

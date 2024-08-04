@@ -18,7 +18,7 @@ export default function CallToAction() {
           </h3>
           <div className="pt-2">
             <Link
-              href={""}
+              href={"/contact"}
               className="m-auto flex w-fit items-center gap-2 rounded bg-white px-4 py-2 font-semibold text-black transition-all hover:bg-sky-900 hover:text-white"
             >
               Schedule a Call Today

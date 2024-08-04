@@ -13,7 +13,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="w-full bg-white p-6 shadow">
+    <header className="w-full bg-white px-6 py-3 shadow">
       <nav className="flex w-full items-center justify-between">
         <div className="">
           <Link href={"/"}>

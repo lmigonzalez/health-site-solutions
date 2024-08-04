@@ -52,7 +52,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="px-6 pt-24">
+    <main className="px-6 pt-16">
       {" "}
       <CustomHeader
         title="About Us"
@@ -68,8 +68,8 @@ export default function Page() {
             exceptional service and delivering high-quality results for our
             clients. Meet some of our key team members:
           </p>
-          <ul className="my-10 grid grid-cols-3 gap-10">
-            <li className="flex flex-col items-center justify-center gap-2 rounded border-l-2 border-green-500 p-6 text-center shadow">
+          <ul className="my-10 grid gap-10 md:grid-cols-3">
+            <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-l-2">
               <Image src={"/boy.png"} alt="" width={50} height={50} />
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Founder & CEO
@@ -93,7 +93,7 @@ export default function Page() {
                 to revolutionize the digital presence of healthcare providers.
               </p>
             </li>
-            <li className="flex flex-col items-center justify-center gap-2 rounded border-r-2 border-green-500 p-6 text-center shadow">
+            <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-r-2">
               <Image src={"/boy.png"} alt="" width={50} height={50} />
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Founder & CEO
@@ -118,11 +118,11 @@ export default function Page() {
             our clients. Here are some of the technologies we love and use:
           </p>
 
-          <div className="m-auto mt-5 flex max-w-fit items-center gap-3">
+          <div className="page-w m-auto mt-5 flex max-w-fit flex-wrap items-center justify-center gap-3">
             {skills.map((item, index) => {
               return (
                 <div key={index} className="flex items-center justify-center">
-                  <div className="flex aspect-square size-14 flex-col items-center justify-center gap-1 rounded-full bg-gray-200 p-0.5 text-gray-500">
+                  <div className="flex aspect-square size-10 flex-col items-center justify-center gap-1 rounded-full bg-gray-200 p-0.5 text-gray-500 md:size-14">
                     {item.icon}
                     {/* <p className="text-xs font-semibold">{item.name}</p> */}
                   </div>
@@ -226,7 +226,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="custom-space">
+        <div className="">
           <h2 className="text-center text-3xl font-bold">Our Mission</h2>
           <p className="m-auto max-w-[700px] text-center font-semibold">
             Our mission at Health Web Experts is to empower healthcare providers
@@ -235,8 +235,8 @@ export default function Page() {
             are dedicated to:
           </p>
 
-          <div className="mt-5 grid grid-cols-2 gap-10">
-            <ul className="flex flex-col gap-1 rounded-xl border-l-4 p-2 pl-4 text-justify">
+          <div className="mt-5 grid gap-10 md:grid-cols-2">
+            <ul className="flex flex-col gap-1 rounded-xl p-2 text-justify md:border-l-4 md:pl-4">
               <li className="">
                 <b>Excellence:</b> Delivering high-quality web development and
                 design services that exceed our clients&apos; expectations. We

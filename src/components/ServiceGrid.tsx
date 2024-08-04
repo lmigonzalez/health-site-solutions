@@ -271,19 +271,19 @@ export default function ServiceGrid() {
     },
   ];
   return (
-    <div className="grid w-full gap-5 md:grid-cols-2">
+    <div className="custom-space grid w-full gap-5 md:grid-cols-2">
       {services.map((item, index) => {
         return (
           <div
             key={index}
-            className="group relative min-h-[150px] cursor-pointer rounded border-x-2 border-sky-500 bg-white p-4"
+            className="group relative min-h-[150px] cursor-pointer rounded border-x-2 border-green-500 bg-white p-4"
           >
             <div className="flex flex-col items-start justify-start text-start">
-              <h3>{item.title}</h3>
+              <h3 className="font-semibold">{item.title}</h3>
               <p className="text-base font-normal">{item.description}</p>
             </div>
-            <div className="absolute left-0 top-0 z-10 flex h-full w-0 items-center justify-start overflow-hidden bg-sky-500 text-white transition-all duration-300 group-hover:w-full">
-              <ul className="ml-2 text-transparent transition-all delay-200 group-hover:text-current">
+            {/* <div className="absolute left-0 top-0 z-10 flex h-full w-0 items-center justify-start overflow-hidden bg-sky-500 text-white transition-all duration-300 group-hover:w-full">
+              <ul className="ml-2 p-2 text-transparent transition-all delay-200 group-hover:text-current">
                 {item.content.map((item, index) => {
                   return (
                     <li key={index}>
@@ -292,7 +292,7 @@ export default function ServiceGrid() {
                   );
                 })}
               </ul>
-            </div>
+            </div> */}
           </div>
         );
       })}
