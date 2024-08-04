@@ -52,13 +52,13 @@ export default function Page() {
   ];
 
   return (
-    <main className="px-6 pt-16">
+    <main className="pt-16 md:px-6">
       {" "}
       <CustomHeader
         title="About Us"
         description="Welcome to Health Web Experts, where we specialize in crafting tailored web solutions for the healthcare industry. Our team of experts is dedicated to helping healthcare providers improve their online presence through innovative design, advanced technology, and personalized service. Learn more about our mission, values, and the talented professionals who make it all happen."
       />
-      <div className="page-w">
+      <div className="page-w px-6">
         <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Team</h2>
           <p className="m-auto max-w-[700px] text-center font-semibold">

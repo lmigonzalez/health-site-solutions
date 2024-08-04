@@ -18,7 +18,7 @@ export default function Footer() {
       {!pageToAvoid.includes(pathname) && <CallToAction />}
 
       <footer className="w-full bg-my_black p-6 text-white">
-        <div className="page-w grid grid-cols-4 gap-5">
+        <div className="page-w grid gap-5 md:grid-cols-4">
           <div className="space-y-2">
             <Link href={"/"}>
               <Image

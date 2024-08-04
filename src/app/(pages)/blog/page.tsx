@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className="py-24">
+    <main className="pt-16">
       {" "}
       <CustomHeader
         title="Our Blog"

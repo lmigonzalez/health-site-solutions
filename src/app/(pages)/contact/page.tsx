@@ -50,13 +50,13 @@ export default function Page({
     } catch (error) {}
   };
   return (
-    <main className="px-6 pt-24">
+    <main className="pt-16 md:px-6">
       <CustomHeader
         title="Contact Us"
         description="Get in touch with the team at Health Web Experts to discuss your healthcare web development needs. We are here to answer any questions, provide more information about our services, and help you start your next project. Reach out today to see how we can support your online presence and drive success for your healthcare organization."
       />
 
-      <div className="custom-space page-w flex items-center justify-between gap-10">
+      <div className="custom-space page-w flex items-center justify-between gap-10 px-6">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="m-auto grid w-[800px] max-w-full gap-5 md:grid-cols-2"

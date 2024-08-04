@@ -271,7 +271,7 @@ export default function ServiceGrid() {
     },
   ];
   return (
-    <div className="custom-space grid w-full gap-5 md:grid-cols-2">
+    <div className="custom-space grid w-full gap-5 px-6 md:grid-cols-2 md:px-0">
       {services.map((item, index) => {
         return (
           <div

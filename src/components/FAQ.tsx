@@ -61,7 +61,7 @@ export default function FAQ() {
     },
   ];
   return (
-    <div className="page-w custom-space">
+    <div className="page-w custom-space px-6">
       <div className="mb-5 text-center">
         <h2 className="text-3xl font-bold">
           Frequently Asked Questions (FAQs)
@@ -75,8 +75,12 @@ export default function FAQ() {
         {data.map((item, index) => {
           return (
             <AccordionItem key={index} value={item.title}>
-              <AccordionTrigger>{item.title}</AccordionTrigger>
-              <AccordionContent>{item.description}</AccordionContent>
+              <AccordionTrigger className="text-start">
+                {item.title}
+              </AccordionTrigger>
+              <AccordionContent className="text-start">
+                {item.description}
+              </AccordionContent>
             </AccordionItem>
           );
         })}

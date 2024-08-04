@@ -77,12 +77,12 @@ export default function OurProcess() {
 
       <div className="relative mt-10 overflow-hidden bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat p-6">
         <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid gap-5 md:grid-cols-3">
           {process.map((item, index) => {
             return item.step !== 0 ? (
               <div
                 key={index}
-                className={`${item.step === 1 ? "row-span-2" : ""} relative flex flex-col justify-start rounded bg-white p-4`}
+                className={`${item.step === 1 ? "md:row-span-2" : ""} relative flex flex-col justify-start rounded bg-white p-4`}
               >
                 <div className="absolute right-1 top-1">
                   <p className="flex size-8 items-center justify-center rounded-full bg-black text-xl font-semibold text-white">
@@ -91,7 +91,7 @@ export default function OurProcess() {
                 </div>
                 <h4 className="text-xl font-semibold">{item.title}</h4>
                 <p className="text-sm">{item.description}</p>
-                <ul className="mt-auto list-inside list-disc text-sm">
+                <ul className="mt-auto hidden list-inside list-disc text-sm md:block">
                   {item.list?.map((item, index) => {
                     return (
                       <li key={index}>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className="scroll-smooth px-6 pt-24">
+    <main className="pt-24 md:px-6">
       <CustomHeader
         title="Pricing"
         description="At Health Web Experts, we offer transparent and competitive pricing for our healthcare web development services. Our packages are designed to meet the diverse needs and budgets of healthcare providers, from custom website design to ongoing maintenance and support. Explore our pricing options and find the perfect solution to enhance your online presence and achieve your goals."
@@ -116,12 +116,12 @@ export default function Page() {
           <p className="text-center text-lg font-semibold">
             Find the Right Solution for Your Practice
           </p>
-          <div className="page-w mt-10 overflow-x-auto">
+          <div className="page-w mt-10 overflow-x-auto px-6">
             <PricingTable />
           </div>
         </div>
 
-        <div className="custom-space grid grid-cols-2 gap-10">
+        <div className="custom-space grid gap-10 md:grid-cols-2">
           <div className="flex flex-col justify-between gap-2 rounded-xl border-l-4 p-2 pl-4">
             <h2 className="text-3xl font-bold">Maintenance and Hosting Plan</h2>
             <p className="">
@@ -140,7 +140,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="relative overflow-hidden rounded-xl bg-[url('/bg-image-2.webp')] bg-center bg-no-repeat p-6 text-white">
+          <div className="relative overflow-hidden bg-[url('/bg-image-2.webp')] bg-center bg-no-repeat p-6 text-white md:rounded-xl">
             <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
             <div className="relative z-10 space-y-3">
               <p className="text-xl font-semibold">

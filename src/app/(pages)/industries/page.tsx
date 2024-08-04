@@ -121,19 +121,19 @@ export default function Page() {
     },
   ];
   return (
-    <main className="px-6 py-24">
+    <main className="pt-16 md:px-6">
       <CustomHeader
         title="Industries We Serve"
         description="At Health Web Experts, we specialize in delivering customized web solutions across a wide range of healthcare industries. From hospitals and clinics to telehealth providers and pharmaceutical companies, our expertise ensures your online presence is professional, secure, and effective. Explore the specific industries we serve and learn how we can support your unique needs."
       />
 
-      <div className="page-w mt-10 grid grid-cols-5 gap-5">
+      <div className="page-w custom-space grid grid-cols-2 gap-5 px-6 md:grid-cols-5 md:px-0">
         {healthcareSectors.map((item, index) => {
           return (
             <Link
               key={index}
               href={`industries/${correctUrl(item)}`}
-              className={`${index === 0 ? "row-span-2" : ""} `}
+              className={`${index === 0 ? "md:row-span-2" : ""} `}
             >
               <div className="flex h-full flex-col items-center justify-center gap-1 rounded border-x border-sky-500 bg-white px-1 py-2 text-center transition-all hover:shadow">
                 <Image
@@ -141,9 +141,10 @@ export default function Page() {
                   alt="logo"
                   width={index === 0 ? 50 : 30}
                   height={index === 0 ? 50 : 30}
+                  className="h-auto w-10"
                 />
                 <h5
-                  className={`${index === 0 ? "text-2xl" : ""} font-semibold`}
+                  className={`${index === 0 ? "md:text-2xl" : ""} font-semibold`}
                 >
                   {item}
                 </h5>
@@ -153,23 +154,13 @@ export default function Page() {
         })}
       </div>
 
-      <div className="page-w">
-        <Image
-          src={"/industries.webp"}
-          alt=""
-          width={1380}
-          height={1000}
-          className="m-auto my-10"
-        />
-      </div>
-
-      <div className="page-w relative grid grid-cols-3 gap-5 bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat p-6">
+      <div className="md:page-w relative grid gap-5 bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat p-6 md:grid-cols-3">
         <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
         {industriesInfo.map((item, index) => {
           return (
             <div
               key={index}
-              className={`${index === 0 ? "row-span-2" : ""} relative z-10 flex flex-col justify-start gap-2 rounded bg-white p-4 shadow-md`}
+              className={`${index === 0 ? "md:row-span-2" : ""} relative z-10 flex flex-col justify-start gap-2 rounded bg-white p-4 shadow-md`}
             >
               <Link
                 className="flex items-center gap-1 underline underline-offset-2 transition-colors hover:text-sky-500 hover:decoration-sky-500"
@@ -179,7 +170,7 @@ export default function Page() {
                 <FaExternalLinkAlt />
               </Link>
               <p className="text-sm">{item.description}</p>
-              <ul className="mt-auto list-inside list-disc text-sm">
+              <ul className="mt-auto hidden list-inside list-disc text-sm md:block">
                 {item.list?.map((item, index) => {
                   return (
                     <li key={index}>
