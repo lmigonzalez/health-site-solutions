@@ -282,17 +282,6 @@ export default function ServiceGrid() {
               <h3 className="font-semibold">{item.title}</h3>
               <p className="text-base font-normal">{item.description}</p>
             </div>
-            {/* <div className="absolute left-0 top-0 z-10 flex h-full w-0 items-center justify-start overflow-hidden bg-sky-500 text-white transition-all duration-300 group-hover:w-full">
-              <ul className="ml-2 p-2 text-transparent transition-all delay-200 group-hover:text-current">
-                {item.content.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <strong>{item.bold}</strong> {item.text}{" "}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div> */}
           </div>
         );
       })}

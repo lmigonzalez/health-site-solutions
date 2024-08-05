@@ -15,7 +15,7 @@ export default function Page() {
       <div className="page-w">
         <CustomHeader
           title="Our Services"
-          description="At Health Web Experts, we provide comprehensive web solutions tailored specifically for healthcare providers. Our range of services includes custom web development, SEO optimization, and secure medical portals. Discover how our expertise can help elevate your online presence and improve patient engagement."
+          description="At Health Web Experts, we provide comprehensive web solutions designed specifically for healthcare providers. Our services include custom web development, SEO optimization, secure medical portals, and more. Discover how our expertise can elevate your online presence and improve patient engagement."
         />
         <ServiceGrid />
         <OurProcess />

@@ -74,23 +74,23 @@ export default function Page() {
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Founder & CEO
               </p>
-              <h5 className="font-semibold">John Doe</h5>
+              <h5 className="font-semibold">Luis Gonzalez</h5>
               <p className="text-sm">
-                With over 15 years of experience in web development and a
-                background in healthcare IT, John leads our team with a vision
-                to revolutionize the digital presence of healthcare providers.
+                Luis Gonzalez is the Founder and CEO, a full-stack web developer
+                with 4 years of experience specializing in creating visually
+                appealing websites using Next.js.
               </p>
             </li>
             <li className="flex flex-col items-center justify-center gap-2 rounded p-6 text-center shadow">
               <Image src={"/boy.png"} alt="" width={50} height={50} />
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
-                Founder & CEO
+                Lead Developer
               </p>
-              <h5 className="font-semibold">John Doe</h5>
+              <h5 className="font-semibold">Jose Gonzalez</h5>
               <p className="text-sm">
-                With over 15 years of experience in web development and a
-                background in healthcare IT, John leads our team with a vision
-                to revolutionize the digital presence of healthcare providers.
+                With 6 years of experience, Jose Gonzalez is a full-stack web
+                developer who excels in problem-solving and primarily works with
+                Next.js.
               </p>
             </li>
             <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-r-2">
@@ -98,11 +98,11 @@ export default function Page() {
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Founder & CEO
               </p>
-              <h5 className="font-semibold">John Doe</h5>
+              <h5 className="font-semibold">Claudia Leon</h5>
               <p className="text-sm">
-                With over 15 years of experience in web development and a
-                background in healthcare IT, John leads our team with a vision
-                to revolutionize the digital presence of healthcare providers.
+                Claudia Leon is a web designer with over 3 years of experience.
+                She studied medicine for 3 years in college and her favorite
+                design tool is Figma.
               </p>
             </li>
           </ul>
