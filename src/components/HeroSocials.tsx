@@ -15,9 +15,10 @@ export default function HeroSocials() {
         </Link>
         <Link
           className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-500 transition-all hover:bg-sky-900 md:-rotate-90"
-          href={""}
+          href={"https://www.linkedin.com/company/health-web-experts/"}
+          target="_blank"
         >
-          Instagram
+          Linkedin
         </Link>
       </div>
       <div className="h-0.5 w-full bg-white bg-opacity-50 backdrop-blur-sm md:h-full md:w-0.5"></div>
