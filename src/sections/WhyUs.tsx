@@ -37,8 +37,7 @@ export default function WhyUs() {
             </div>
             <h4 className="text-lg font-bold">Proven Experience</h4>
             <p className="font-light">
-              Over 10 years of combined experience in healthcare web
-              development.
+              Bringing Over 10 Years of Combined Experience in Web Development
             </p>
           </div>
 

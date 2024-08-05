@@ -25,7 +25,7 @@ export default function ServicesOverview() {
     {
       title: "Medical Copywriting:",
       description:
-        "Create compelling and informative content tailored to the healthcare industry.",
+        "Create compelling and informative content customized for the healthcare industry.",
     },
     {
       title: "Logo Design: ",
@@ -72,7 +72,7 @@ export default function ServicesOverview() {
         </div>
         <h2 className="text-3xl font-bold">Our Services</h2>
         <h3 className="text-lg font-semibold">
-          Comprehensive Web Solutions Tailored for Healthcare Providers
+          Comprehensive Web Solutions Designed for Healthcare Providers
         </h3>
       </div>
 
