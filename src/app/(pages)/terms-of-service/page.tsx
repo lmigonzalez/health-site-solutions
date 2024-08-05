@@ -7,7 +7,7 @@ export default function Page() {
         <h1>Terms of Service</h1>
         <h4>Introduction</h4>
         <p>
-          Welcome to HealthSiteSolutions.com. These terms of service ("Terms")
+          Welcome to HealthSiteSolutions.com. These terms of service (&quot;Terms&quot;)
           govern your use of our website and services. By accessing or using our
           services, you agree to be bound by these Terms. If you do not agree
           with any part of these Terms, please do not use our services.
@@ -102,8 +102,8 @@ export default function Page() {
         <h2>Limitation of Liability</h2>
         <ul>
           <li>
-            <b>No Warranties:</b> Our services are provided "as is" and "as
-            available." We make no warranties, express or implied, regarding the
+            <b>No Warranties:</b> Our services are provided &quot;as is&quot; and &quot;as
+            available.&quot; We make no warranties, express or implied, regarding the
             service.
           </li>
           <li>
