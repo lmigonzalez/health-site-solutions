@@ -38,7 +38,43 @@
   .page-content ul {
     @apply list-inside list-decimal space-y-1;
   }
-  /* .page-content div {
-    @apply rounded bg-white p-4 shadow;
-  } */
+
+  .article {
+    @apply m-auto max-w-[800px] pt-16;
+  }
+
+  .article h1 {
+    @apply mb-5 text-2xl font-semibold;
+  }
+
+  .article h2 {
+    @apply mb-2 mt-5 text-xl font-semibold;
+  }
+
+  .article h3 {
+    @apply mb-2 mt-5 text-lg font-semibold;
+  }
+
+  .article h4 {
+    @apply mb-2 mt-5 font-semibold;
+  }
+
+  .article p {
+    @apply my-2;
+  }
+
+  .article ul {
+    @apply list-disc;
+  }
+
+  .article ol {
+    @apply list-decimal;
+  }
+  .article ul,
+  .article ol {
+    @apply ml-6 space-y-2;
+  }
+  .article a {
+    @apply font-semibold text-sky-500;
+  }
 }
