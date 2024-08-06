@@ -21,7 +21,7 @@ export default function CallToAction() {
               href={"/contact"}
               className="m-auto flex w-fit items-center gap-2 rounded bg-white px-4 py-2 font-semibold text-black transition-all hover:bg-sky-900 hover:text-white"
             >
-              "Contact Us Now"
+              Contact Us Now
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
