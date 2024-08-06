@@ -13,15 +13,15 @@ export default function CallToAction() {
             Ready to Transform Your Online Presence?
           </h2>
           <h3 className="text-lg font-semibold">
-            Schedule a Call with Our Team to Discuss Your Project and Discover
-            How We Can Help
+            Get in touch with us today to discuss your project and explore how
+            we can help elevate your business!
           </h3>
           <div className="pt-2">
             <Link
               href={"/contact"}
               className="m-auto flex w-fit items-center gap-2 rounded bg-white px-4 py-2 font-semibold text-black transition-all hover:bg-sky-900 hover:text-white"
             >
-              Schedule a Call Today
+              "Contact Us Now"
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
