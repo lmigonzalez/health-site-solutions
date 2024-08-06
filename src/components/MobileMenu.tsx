@@ -1,15 +1,26 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 export default function MobileMenu() {
-  const menuItems = ["services", "industries", "work"];
+  const [openMenu, setOpenMenu] = useState(false);
+  const menuItems = [
+    "services",
+    "industries",
+    "work",
+    "about",
+    "pricing",
+    "contact",
+  ];
   const pathname = usePathname();
 
-  useEffect(() => {}, [pathname]);
+  useEffect(() => {
+    setOpenMenu(false);
+  }, [pathname]);
 
   const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.currentTarget.classList.toggle("active");
+    setOpenMenu(!openMenu);
   };
   return (
     <div className="relative block md:hidden">
@@ -59,37 +70,39 @@ export default function MobileMenu() {
         </svg>
       </div>
 
-      <div className="fixed left-0 top-0 z-40 flex h-full w-full items-center bg-red-400">
-        <div className="h-full w-1/3 bg-black"></div>
-        <menu className="w-2/3 items-center gap-3 text-lg md:flex">
-          <li>
-            <Link
-              href={`/`}
-              className={`px-2 py-1 capitalize font-medium${
-                pathname === "/" ? "rounded bg-sky-50 text-sky-500" : ""
-              } `}
-            >
-              Home
-            </Link>
-          </li>
-          {menuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <Link
-                  href={`/${item}`}
-                  className={`px-2 py-1 capitalize font-medium${
-                    pathname.includes(item)
-                      ? "rounded bg-sky-50 text-sky-500"
-                      : ""
-                  } `}
-                >
-                  {item}
-                </Link>
-              </li>
-            );
-          })}
-        </menu>
-      </div>
+      <div
+        className={`${!openMenu ? "-left-full" : "left-0"} fixed top-0 z-40 flex h-full w-1/3 bg-black bg-opacity-40 backdrop-blur-sm transition-all duration-300`}
+      ></div>
+      <menu
+        className={`${!openMenu ? "-right-full" : "right-0"} fixed top-0 z-40 flex h-full w-2/3 flex-col items-center justify-start gap-10 bg-white pt-36 text-lg transition-all duration-300`}
+      >
+        <li>
+          <Link
+            href={`/`}
+            className={`px-2 py-1 capitalize font-medium${
+              pathname === "/" ? "rounded bg-sky-50 text-sky-500" : ""
+            } `}
+          >
+            Home
+          </Link>
+        </li>
+        {menuItems.map((item, index) => {
+          return (
+            <li key={index}>
+              <Link
+                href={`/${item}`}
+                className={`px-2 py-1 capitalize font-medium${
+                  pathname.includes(item)
+                    ? "rounded bg-sky-50 text-sky-500"
+                    : ""
+                } `}
+              >
+                {item}
+              </Link>
+            </li>
+          );
+        })}
+      </menu>
     </div>
   );
 }
