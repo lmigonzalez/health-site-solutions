@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import MobileMenu from "./MobileMenu";
 export default function Header() {
   const [showSubmenu, setShowSubmenu] = useState(false);
   const menuItems = ["services", "industries", "work"];
@@ -13,7 +14,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="w-full bg-white px-6 py-3 shadow">
+    <header className="w-full bg-white px-6 md:py-3 shadow">
       <nav className="flex w-full items-center justify-between">
         <div className="">
           <Link href={"/"}>
@@ -25,7 +26,7 @@ export default function Header() {
             />
           </Link>
         </div>
-        <menu className="flex items-center gap-3 text-lg">
+        <menu className="hidden items-center gap-3 text-lg md:flex">
           <li>
             <Link
               href={`/`}
@@ -115,11 +116,12 @@ export default function Header() {
             )}
           </li>
         </menu>
-        <div className="flex items-center justify-center gap-5">
+        <div className="hidden items-center justify-center gap-5 md:flex">
           <Link href={"/contact"} className="main-btn">
             Contact Us
           </Link>
         </div>
+        <MobileMenu />
       </nav>
     </header>
   );
