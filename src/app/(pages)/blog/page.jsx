@@ -1,6 +1,6 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
-import { Pagination } from "@/components/ui/pagination";
+import ArticlesPagination from "@/components/ArticlesPagination";
 import { createClient } from "contentful";
 import Link from "next/link";
 export const metadata = {
@@ -65,7 +65,7 @@ export default async function Page({ searchParams }) {
           );
         })}
       </div>
-      <Pagination total={total} />
+      <ArticlesPagination total={total} />
     </main>
   );
 }
