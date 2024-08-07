@@ -36,7 +36,7 @@ async function Page({ params }) {
   const { title, content } = await getArticle(params.name);
   return (
     <main>
-      <article className="article">
+      <article className="article shadow">
         <h1>{title}</h1>
         <div className="">{documentToReactComponents(content)}</div>
       </article>

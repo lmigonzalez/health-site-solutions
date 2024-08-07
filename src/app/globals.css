@@ -40,7 +40,7 @@
   }
 
   .article {
-    @apply m-auto max-w-[800px] pt-16;
+    @apply m-auto mt-16 max-w-[800px] border bg-white p-10 shadow;
   }
 
   .article h1 {
