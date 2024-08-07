@@ -96,7 +96,7 @@ export default function Page() {
             <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-r-2">
               <Image src={"/boy.png"} alt="" width={50} height={50} />
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
-                Founder & CEO
+                Web Designer
               </p>
               <h5 className="font-semibold">Claudia Leon</h5>
               <p className="text-sm">
