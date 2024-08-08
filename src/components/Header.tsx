@@ -14,7 +14,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="w-full bg-white px-6 md:py-3 shadow">
+    <header className="w-full bg-white px-6 shadow md:py-3">
       <nav className="flex w-full items-center justify-between">
         <div className="">
           <Link href={"/"}>
@@ -30,7 +30,7 @@ export default function Header() {
           <li>
             <Link
               href={`/`}
-              className={`px-2 py-1 capitalize font-medium${
+              className={`px-2 py-1 font-medium capitalize hover:text-sky-500 transition-colors${
                 pathname === "/" ? "rounded bg-sky-50 text-sky-500" : ""
               } `}
             >
@@ -42,7 +42,7 @@ export default function Header() {
               <li key={index}>
                 <Link
                   href={`/${item}`}
-                  className={`px-2 py-1 capitalize font-medium${
+                  className={`px-2 py-1 font-medium capitalize hover:text-sky-500 transition-colors${
                     pathname.includes(item)
                       ? "rounded bg-sky-50 text-sky-500"
                       : ""
