@@ -24,12 +24,18 @@ export default async function Page({ searchParams }) {
         skip: skip,
       });
 
-      const articles = data.items.map((item) => {
-        const description = item.fields.content.content[0].content[0].value;
+      const articles = data.items.map(({ fields }) => {
+        const paragraphNode = fields.content.content.find(
+          (item) => item.nodeType === "paragraph",
+        );
+
+        const description = paragraphNode.content
+          .map((item) => item.value)
+          .join("");
 
         return {
-          title: item.fields.title,
-          slug: item.fields.slug,
+          title: fields.title,
+          slug: fields.slug,
           preview: description,
         };
       });
