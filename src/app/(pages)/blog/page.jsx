@@ -4,7 +4,7 @@ import ArticlesPagination from "@/components/ArticlesPagination";
 import { createClient } from "contentful";
 import Link from "next/link";
 export const metadata = {
-  title: "Industries We Serve | Health Web Experts",
+  title: "Our Blog | Health Web Experts",
   description:
     "Discover the range of healthcare industries we serve at Health Web Experts. From hospitals and clinics to dental practices and telehealth providers, we offer specialized web development and design services to enhance your online presence. Explore our industry-specific solutions today.",
 };

@@ -3,7 +3,12 @@ import CustomHeader from "@/components/CustomHeader";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { list } from "postcss";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Industries We Serve | Health Web Experts",
+  description:
+    "Discover the range of healthcare industries we serve at Health Web Experts. From hospitals and clinics to dental practices and telehealth providers, we offer specialized web development and design services to enhance your online presence. Explore our industry-specific solutions today.",
+};
 export default function Page() {
   function correctUrl(name: string) {
     const newStr = name.replace(" ", "-");
