@@ -70,7 +70,12 @@ export default function Page() {
           </p>
           <ul className="my-10 grid gap-10 md:grid-cols-3">
             <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-l-2">
-              <Image src={"/boy.png"} alt="" width={50} height={50} />
+              <Image
+                src={"/about/Luis-w.png"}
+                alt=""
+                width={100}
+                height={100}
+              />
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Founder & CEO
               </p>
@@ -82,7 +87,7 @@ export default function Page() {
               </p>
             </li>
             <li className="flex flex-col items-center justify-center gap-2 rounded p-6 text-center shadow">
-              <Image src={"/boy.png"} alt="" width={50} height={50} />
+              <Image src={"/about/Jose.png"} alt="" width={100} height={100} />
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Lead Developer
               </p>
@@ -94,7 +99,12 @@ export default function Page() {
               </p>
             </li>
             <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-r-2">
-              <Image src={"/boy.png"} alt="" width={50} height={50} />
+              <Image
+                src={"/about/Claudia-w.png"}
+                alt=""
+                width={100}
+                height={100}
+              />
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Web Designer
               </p>

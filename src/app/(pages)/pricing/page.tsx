@@ -111,7 +111,7 @@ export default function Page() {
             id="pricing-table"
             className="scroll-m-12 text-center text-3xl font-bold"
           >
-            Compare Our Plans
+            Compare Our Packages
           </h2>
           <p className="text-center text-lg font-semibold">
             Find the Right Solution for Your Practice
