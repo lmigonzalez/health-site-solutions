@@ -29,7 +29,7 @@ export default function Page() {
             />
           </div>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 px-6 md:px-0">
             <h3 className="text-2xl font-semibold">
               Faith is Health - Health Center Website
             </h3>
