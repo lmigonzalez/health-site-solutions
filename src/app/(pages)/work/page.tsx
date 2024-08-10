@@ -19,6 +19,7 @@ export default function Page() {
       />
 
       <div className="page-w custom-space">
+        {/* Work 1 */}
         <div className="grid gap-10 md:grid-cols-2">
           <div className="flex items-center justify-center">
             <Image
@@ -77,6 +78,59 @@ export default function Page() {
                 <MdKeyboardDoubleArrowRight size={20} className="mt-0.5" />
               </Link>
             </div>
+          </div>
+        </div>
+
+        <hr className="my-16" />
+
+        {/* Work 2 */}
+        <div className="grid gap-10 md:grid-cols-2">
+          <div className="flex items-center justify-center">
+            <Image
+              src={"/work/macc.webp"}
+              alt="macc health portal"
+              width={2000}
+              height={1400}
+            />
+          </div>
+
+          <div className="flex flex-col gap-3 px-6 md:px-0">
+            <h3 className="text-2xl font-semibold">
+              MACC - Employee Management System
+            </h3>
+            <p>
+              The MACC Employee Management System is a robust web application
+              designed to streamline the management of hospital employees. This
+              system enables efficient tracking of employee attendance, vacation
+              requests, and time off, while providing an intuitive interface for
+              both employees and administrators.
+            </p>
+            <ul className="list-disc space-y-1">
+              <li>
+                {" "}
+                <b>Responsive Design:</b> The website is fully responsive,
+                ensuring a smooth and engaging experience on all devices, from
+                desktops to smartphones.
+              </li>
+              <li>
+                {" "}
+                <b>Location Services:</b> Integrated with the Google API for
+                location services, enhancing functionality such as geolocation
+                tracking for employee attendance.
+              </li>
+              <li>
+                {" "}
+                <b>Comprehensive Management: </b> Allows employees to manage
+                their attendance, request vacations, and track time off with
+                ease.
+              </li>
+              <li>
+                {" "}
+                <b>Admin Access:</b> Admins have access to a range of
+                administrative functions, including monitoring employee records,
+                managing requests, and generating reports.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
