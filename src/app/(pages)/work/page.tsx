@@ -36,7 +36,7 @@ export default function Page() {
             <p>
               Faith is Health is a modern health center based in Miami,
               dedicated to providing comprehensive care and support to the local
-              community. The website was designed to reflect the center’s
+              community. The website was designed to reflect the center&apos;s
               commitment to health and wellness while offering a seamless user
               experience.
             </p>
