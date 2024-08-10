@@ -51,7 +51,7 @@ export default function Page() {
                 {" "}
                 <b>Modern Aesthetic:</b> The design features a clean,
                 contemporary look with a focus on usability and visual appeal,
-                aligning with the health center's brand identity.
+                aligning with the health center&apos;s brand identity.
               </li>
               <li>
                 {" "}
