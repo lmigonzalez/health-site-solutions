@@ -2,12 +2,9 @@
 import React, { useEffect } from "react";
 import CustomHeader from "@/components/CustomHeader";
 import { SubmitHandler, useForm } from "react-hook-form";
-import Link from "next/link";
-import { GoDotFill } from "react-icons/go";
-import { useSearchParams } from "next/navigation";
 import axios from "axios";
 import FAQ from "@/components/FAQ";
-import Image from "next/image";
+import LoadingSpinner from "@/components/LoadingSpinner";
 type Inputs = {
   firstName: string;
   lastName: string;
@@ -24,13 +21,6 @@ export default function Page({
   searchParams: { package: string };
 }) {
   const params = searchParams.package;
-
-  useEffect(() => {
-    if (searchParams) {
-      setValue("services", params);
-    }
-  }, [searchParams]);
-
   const {
     register,
     handleSubmit,
@@ -38,17 +28,22 @@ export default function Page({
     formState: { errors, isSubmitting },
   } = useForm<Inputs>({
     defaultValues: {
-      services: "Professional",
+      services: "professional",
     },
   });
 
+  useEffect(() => {
+    if (searchParams.package) {
+      setValue("services", params);
+    }
+  }, [searchParams]);
+
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
-      console.log(data);
-
-      // const res = await axios.post("/api/contact", data);
+      await axios.post("/api/contact", data);
     } catch (error) {}
   };
+
   return (
     <main className="pt-16 md:px-6">
       <CustomHeader
@@ -91,19 +86,33 @@ export default function Page({
               aria-invalid={errors.lastName ? "true" : "false"}
               className="h-10 rounded border px-2"
             />
+            {errors.lastName && (
+              <p className="mt-1 text-sm font-light text-red-500" role="alert">
+                {errors.lastName.message}
+              </p>
+            )}
           </div>
           <div className="flex flex-col">
             <label className="font-semibold after:text-red-500 after:content-['*']">
               Email Address:
             </label>
             <input
-              type="text"
+              type="email"
               {...register("email", {
                 required: "Email Address is required",
+                pattern: {
+                  value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                  message: "Entered value does not match email format",
+                },
               })}
               aria-invalid={errors.email ? "true" : "false"}
               className="h-10 rounded border px-2"
             />
+            {errors.email && (
+              <p className="mt-1 text-sm font-light text-red-500" role="alert">
+                {errors.email.message}
+              </p>
+            )}
           </div>
           <div className="flex flex-col">
             <label className="font-semibold">Phone Number:</label>
@@ -152,7 +161,14 @@ export default function Page({
           </div>
 
           <div className="flex justify-end md:col-span-2">
-            <button className="main-btn">Submit Form</button>
+            <button
+              disabled={isSubmitting}
+              className={`rounded px-4 py-2 font-semibold text-white transition-all ${
+                isSubmitting ? "bg-gray-200" : "bg-sky-600 hover:bg-sky-900"
+              }`}
+            >
+              {isSubmitting ? <LoadingSpinner size="small" /> : "Submit Form"}
+            </button>
           </div>
         </form>
       </div>
