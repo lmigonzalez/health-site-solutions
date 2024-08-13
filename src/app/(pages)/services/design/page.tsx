@@ -17,12 +17,13 @@ export default function Page() {
       <div className="page-w">
         <HeadingDecorator title="Unique and Modern Design" />
         <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
-          In today&apos;s digital world, your website is often the first impression
-          your business makes on potential customers. A unique and modern design
-          isn&apos;t just about looking good; it&apos;s about standing out in a crowded
-          marketplace and ensuring that your brand is memorable. At our agency,
-          we prioritize creating website designs that not only capture attention
-          but also communicate your brand's message clearly and effectively.
+          In today&apos;s digital world, your website is often the first
+          impression your business makes on potential customers. A unique and
+          modern design isn&apos;t just about looking good; it&apos;s about
+          standing out in a crowded marketplace and ensuring that your brand is
+          memorable. At our agency, we prioritize creating website designs that
+          not only capture attention but also communicate your brand&apos;s
+          message clearly and effectively.
         </p>
 
         <div className="relative m-auto mt-5 flex w-fit justify-center p-10">
@@ -50,8 +51,8 @@ export default function Page() {
         </h2>
         <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
           The importance of unique and modern design cannot be overstated. Your
-          website is a reflection of your business, and in many cases, it&apos;s the
-          first thing potential customers see. A well-designed website can:
+          website is a reflection of your business, and in many cases, it&apos;s
+          the first thing potential customers see. A well-designed website can:
         </p>
 
         <ul className="mt-10 grid grid-cols-4 gap-5">
@@ -78,12 +79,12 @@ export default function Page() {
             <b>Enhance User Experience:</b>
             <p className="text-sm">
               {" "}
-              A modern design isn&apos;t just about aesthetics; it&apos;s also about
-              functionality. Your website should be easy to navigate, with a
-              layout that guides users to the information they&apos;re looking for. A
-              good design improves the overall user experience, making visitors
-              more likely to stay on your site longer and engage with your
-              content.
+              A modern design isn&apos;t just about aesthetics; it&apos;s also
+              about functionality. Your website should be easy to navigate, with
+              a layout that guides users to the information they&apos;re looking
+              for. A good design improves the overall user experience, making
+              visitors more likely to stay on your site longer and engage with
+              your content.
             </p>
           </li>
           <li className="flex flex-col gap-1 rounded bg-white p-4 shadow">
@@ -92,9 +93,9 @@ export default function Page() {
               {" "}
               A unique design can help differentiate your website from
               competitors. By incorporating interactive elements, eye-catching
-              visuals, and engaging content, you can capture your audience&apos;s
-              attention and encourage them to explore more of what your site has
-              to offer.
+              visuals, and engaging content, you can capture your
+              audience&apos;s attention and encourage them to explore more of
+              what your site has to offer.
             </p>
           </li>
         </ul>
@@ -106,14 +107,14 @@ export default function Page() {
         <div className="m-auto max-w-[800px] text-center">
           {" "}
           <p className="text-lg text-slate-500">
-            When we talk about unique and modern design, we&apos;re referring to a
-            style that is fresh, current, and tailored specifically to your
-            business. A unique design means that your website won&apos;t look like
-            everyone else&apos;s; it will have elements that are specific to your
-            brand, making it instantly recognizable. A modern design refers to
-            using up-to-date design trends and technologies, ensuring that your
-            website not only looks good today but remains relevant in the
-            future.
+            When we talk about unique and modern design, we&apos;re referring to
+            a style that is fresh, current, and tailored specifically to your
+            business. A unique design means that your website won&apos;t look
+            like everyone else&apos;s; it will have elements that are specific
+            to your brand, making it instantly recognizable. A modern design
+            refers to using up-to-date design trends and technologies, ensuring
+            that your website not only looks good today but remains relevant in
+            the future.
           </p>
         </div>
 
@@ -126,8 +127,8 @@ export default function Page() {
           </h2>
           <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
             We believe that every business is unique, and your website should
-            reflect that. Here&apos;s how we approach designing a website that is
-            both unique and modern:
+            reflect that. Here&apos;s how we approach designing a website that
+            is both unique and modern:
           </p>
           <ul className="mt-10 grid gap-5 md:grid-cols-3">
             <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
@@ -251,8 +252,8 @@ export default function Page() {
           </li>
           <li className="flex flex-col gap-1 rounded bg-my_black p-4 text-white">
             <b>Improved SEO:</b>Modern design practices, such as responsive
-            layouts and fast-loading pages, can improve your site&apos;s SEO, helping
-            you rank higher in search engine results.
+            layouts and fast-loading pages, can improve your site&apos;s SEO,
+            helping you rank higher in search engine results.
           </li>
           <li className="flex flex-col gap-1 rounded bg-my_black p-4 text-white">
             <b>Competitive Advantage:</b> A unique design sets you apart from
@@ -265,10 +266,10 @@ export default function Page() {
       <div className="rounded-xl border-l-4 p-5 text-lg text-slate-500">
         <p>
           A unique and modern design is more than just a pretty face for your
-          website; it&apos;s a strategic tool that can help you achieve your business
-          goals. At our agency, we are dedicated to creating designs that not
-          only look great but also perform well, delivering a website that you
-          can be proud of.
+          website; it&apos;s a strategic tool that can help you achieve your
+          business goals. At our agency, we are dedicated to creating designs
+          that not only look great but also perform well, delivering a website
+          that you can be proud of.
         </p>
         <p>
           When you choose us, you can expect a design that is tailored to your
