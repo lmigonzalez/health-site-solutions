@@ -142,7 +142,7 @@ export default function Page() {
               space, ensuring that everything looks clean and organized, no
               matter the device.
             </li>
-            <li className="flex flex-col gap-1 rounded bg-white p-4">
+            <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
               <b>Responsive Images and Media:</b>Images and media are crucial
               elements of any website, but they can also be tricky to manage
               across different devices. We ensure that all images, videos, and
@@ -156,7 +156,7 @@ export default function Page() {
               fine-tune the layout for specific devices, ensuring a tailored
               experience for all users.
             </li>
-            <li className="flex flex-col gap-1 rounded bg-white p-4">
+            <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
               <b>Touch-Friendly Navigation:</b> For mobile devices, we design
               touch-friendly navigation elements, such as larger buttons and
               menus that are easy to tap. This ensures that users can navigate
