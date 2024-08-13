@@ -10,6 +10,7 @@ export default function ServiceGrid() {
     },
 
     {
+      url: "responsive-layout",
       title: "Responsive Layout",
       description:
         "We ensure your website looks great on any device, whether it's a smartphone, tablet, or desktop computer. This means your customers will have a seamless experience, no matter how they access your site.",
