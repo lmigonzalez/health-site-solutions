@@ -3,64 +3,63 @@ import Link from "next/link";
 export default function ServicesOverview() {
   const webServices = [
     {
-      title: "Tailored Websites:",
+      title: "Unique and Modern Design:",
       description:
-        "Custom-designed websites to meet your specific requirements and goals, ensuring a unique online presence.",
+        "We create designs that are visually appealing and tailored to your brand.",
     },
     {
-      title: "Mobile-Friendly, Responsive Design:",
+      title: "Responsive Layout:",
       description:
-        "Websites that provide an excellent user experience across all devices, from desktops to smartphones.",
-    },
-    {
-      title: "Utilizes the Latest Technology Stack:",
-      description:
-        "Fast, secure, and scalable websites using cutting-edge technology.",
-    },
-    {
-      title: "Expert SEO Services:",
-      description:
-        "Improve your online visibility and reach more patients with our comprehensive SEO strategies.",
-    },
-    {
-      title: "Medical Copywriting:",
-      description:
-        "Create compelling and informative content customized for the healthcare industry.",
-    },
-    {
-      title: "Logo Design: ",
-      description:
-        "Establish a strong, professional brand identity with a custom logo.",
-    },
-    {
-      title: "Hosting and Maintenance:",
-      description:
-        "Reliable hosting and ongoing maintenance to keep your website running smoothly.",
-    },
-    {
-      title: "Social Media Management:",
-      description:
-        "Enhance your online presence and engagement through effective social media strategies.",
+        "Your website will look great on all devices, from smartphones to desktops.",
     },
     {
       title: "Speed Optimization:",
       description:
-        "Ensure faster loading times and a better user experience with our speed optimization services.",
+        "Fast loading times to keep visitors engaged and improve their experience.",
     },
     {
-      title: "Additional Development Services:",
+      title: "Secure Website:",
       description:
-        "Full support for all your online needs, including custom features and integrations.",
+        "We ensure your website is safe from hackers and keeps your data secure.",
+    },
+    {
+      title: "SEO:",
+      description:
+        "We help your website appear higher in search engine results, so more people can find you.",
+    },
+    {
+      title: "Expert Copywriting:",
+      description:
+        "Professional content that communicates your message clearly and effectively.",
+    },
+    {
+      title: "Logo Design Included:",
+      description: "We create or integrate a logo that represents your brand.",
+    },
+    {
+      title: "Scheduling Integration:",
+      description:
+        "Allow your customers to easily book appointments directly from your website.",
+    },
+    {
+      title: "Live Chat:",
+      description:
+        "Engage with your visitors in real time through a built-in chat feature.",
+    },
+    {
+      title: "Hosting and Maintenance:",
+      description:
+        "We take care of your website's hosting and keep it running smoothly.",
+    },
+    {
+      title: "Social Media Management:",
+      description:
+        "We help manage your social media profiles to keep your audience engaged.",
     },
     {
       title: "Analytics and Reporting:",
       description:
-        "Gain valuable insights with detailed analytics and reporting to track your website's performance.",
-    },
-    {
-      title: "E-commerce Solutions:",
-      description:
-        "Robust e-commerce capabilities to facilitate online sales and streamline transactions.",
+        "We provide easy-to-understand reports on how your website is performing.",
     },
   ];
 
@@ -70,9 +69,9 @@ export default function ServicesOverview() {
         <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500">
           <p>Services</p>
         </div>
-        <h2 className="text-3xl font-bold">Our Services</h2>
+        <h2 className="text-3xl font-bold">What We Offer</h2>
         <h3 className="text-lg font-semibold">
-          Comprehensive Web Solutions Designed for Healthcare Providers
+          Clear, Complete, and Effective Solutions for Your Business
         </h3>
       </div>
 
