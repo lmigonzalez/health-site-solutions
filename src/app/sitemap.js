@@ -26,6 +26,54 @@ async function getArticles() {
         data: tDate.toISOString(),
       },
       {
+        slug: `services/design`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/responsive-layout`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/speed-optimization`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/secure-website`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/seo`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/expert-copywriting`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/logo-design`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/scheduling-integration`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/live-chat`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/hosting-maintenance`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/social-media`,
+        data: tDate.toISOString(),
+      },
+      {
+        slug: `services/analytics`,
+        data: tDate.toISOString(),
+      },
+      {
         slug: `industries`,
         data: tDate.toISOString(),
       },

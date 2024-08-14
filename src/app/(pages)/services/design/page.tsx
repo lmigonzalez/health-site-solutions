@@ -7,9 +7,9 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Healthcare Web Development and Design Services | Health Web Experts",
+  title: "Unique and Modern Web Design for Healthcare | Health Web Experts",
   description:
-    "Explore our comprehensive web development and design services for healthcare providers. Health Web Experts offers responsive websites, expert SEO, content creation, hosting, maintenance, and more to boost your online presence. Contact us to enhance your digital footprint.",
+    "Transform your healthcare website with unique and modern design solutions that enhance user experience and reflect your brand's identity. Partner with Health Web Experts for innovative web design.",
 };
 export default function Page() {
   return (

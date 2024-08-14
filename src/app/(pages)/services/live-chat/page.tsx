@@ -7,9 +7,10 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Healthcare Web Development and Design Services | Health Web Experts",
+  title:
+    "Seamless Live Chat Integration for Healthcare Websites | Health Web Experts",
   description:
-    "Explore our comprehensive web development and design services for healthcare providers. Health Web Experts offers responsive websites, expert SEO, content creation, hosting, maintenance, and more to boost your online presence. Contact us to enhance your digital footprint.",
+    "Enhance patient engagement and support with our seamless live chat integration services. Improve communication and service on your healthcare website with Health Web Experts' expert solutions.",
 };
 export default function Page() {
   return (

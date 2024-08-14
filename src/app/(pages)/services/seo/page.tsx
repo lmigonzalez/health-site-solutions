@@ -7,9 +7,10 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Healthcare Web Development and Design Services | Health Web Experts",
+  title:
+    "Healthcare SEO Services to Boost Your Website’s Visibility | Health Web Experts",
   description:
-    "Explore our comprehensive web development and design services for healthcare providers. Health Web Experts offers responsive websites, expert SEO, content creation, hosting, maintenance, and more to boost your online presence. Contact us to enhance your digital footprint.",
+    "Enhance your healthcare website's search engine rankings with our expert SEO services. Drive more traffic and attract the right audience with Health Web Experts' tailored SEO strategies for the healthcare sector.",
 };
 export default function Page() {
   return (
@@ -19,9 +20,9 @@ export default function Page() {
         <p className="relative z-10 m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
           In the vast digital landscape, having a beautiful and functional
           website is just the beginning. To truly succeed online, your website
-          needs to be visible to potential customers, and that&apos;s where Search
-          Engine Optimization (SEO) comes into play. SEO is the practice of
-          optimizing your website to rank higher in search engine results,
+          needs to be visible to potential customers, and that&apos;s where
+          Search Engine Optimization (SEO) comes into play. SEO is the practice
+          of optimizing your website to rank higher in search engine results,
           making it easier for people to find you. At our agency, we prioritize
           SEO to ensure that your website not only looks great but also attracts
           the right audience.
@@ -64,14 +65,14 @@ export default function Page() {
           </li>
           <li className="flex flex-col gap-1 rounded bg-white p-4 shadow">
             <b>More Organic Traffic:</b> SEO drives organic traffic to your
-            website, which is the traffic you don&apos;t have to pay for. Unlike paid
-            advertising, which requires ongoing investment, SEO helps attract
-            visitors to your site naturally through search engines.
+            website, which is the traffic you don&apos;t have to pay for. Unlike
+            paid advertising, which requires ongoing investment, SEO helps
+            attract visitors to your site naturally through search engines.
           </li>
           <li className="flex flex-col gap-1 rounded bg-white p-4 shadow">
-            <b>Better User Experience:</b> SEO isn&apos;t just about pleasing search
-            engines; it&apos;s also about improving the user experience. A
-            well-optimized website is easier to navigate, loads faster, and
+            <b>Better User Experience:</b> SEO isn&apos;t just about pleasing
+            search engines; it&apos;s also about improving the user experience.
+            A well-optimized website is easier to navigate, loads faster, and
             provides valuable content, all of which contribute to a positive
             experience for your visitors.
           </li>
@@ -105,11 +106,11 @@ export default function Page() {
           {" "}
           <p className="text-slate-500 md:text-lg">
             SEO, or Search Engine Optimization, is a set of strategies and
-            techniques used to improve a website&apos;s visibility on search engines
-            like Google, Bing, and Yahoo. The goal of SEO is to increase organic
-            (non-paid) traffic to your website by improving its ranking in
-            search engine results pages (SERPs). SEO involves optimizing various
-            aspects of your website, including content, structure, and
+            techniques used to improve a website&apos;s visibility on search
+            engines like Google, Bing, and Yahoo. The goal of SEO is to increase
+            organic (non-paid) traffic to your website by improving its ranking
+            in search engine results pages (SERPs). SEO involves optimizing
+            various aspects of your website, including content, structure, and
             performance, to align with the algorithms used by search engines to
             rank websites.
           </p>
@@ -125,8 +126,8 @@ export default function Page() {
           <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
             At our agency, we take a comprehensive approach to SEO, focusing on
             both on-page and off-page factors to ensure your website ranks well
-            in search engines. Here&apos;s how we optimize your website for search
-            engines:
+            in search engines. Here&apos;s how we optimize your website for
+            search engines:
           </p>
           <ul className="mt-10 grid gap-5">
             <li className="flex flex-col gap-1">
@@ -236,9 +237,9 @@ export default function Page() {
             </li>
             <hr />
             <li className="flex flex-col gap-1">
-              <b>Off-Page SEO:</b> Off-page SEO involves building your website&apos;s
-              authority and reputation through activities outside of your
-              website. This includes:
+              <b>Off-Page SEO:</b> Off-page SEO involves building your
+              website&apos;s authority and reputation through activities outside
+              of your website. This includes:
               <ul className="list-disc pl-5">
                 <li>
                   <b>Link Building:</b> We build high-quality backlinks from
@@ -262,11 +263,11 @@ export default function Page() {
             <li className="flex flex-col gap-1">
               <b>Monitoring and Reporting:</b> SEO is an ongoing process that
               requires regular monitoring and adjustments. We track your
-              website&apos;s performance using tools like Google Analytics and Search
-              Console, providing you with detailed reports on key metrics such
-              as traffic, rankings, and conversions. Based on the data, we make
-              continuous improvements to your SEO strategy to ensure long-term
-              success.
+              website&apos;s performance using tools like Google Analytics and
+              Search Console, providing you with detailed reports on key metrics
+              such as traffic, rankings, and conversions. Based on the data, we
+              make continuous improvements to your SEO strategy to ensure
+              long-term success.
             </li>
           </ul>
         </div>
@@ -277,11 +278,11 @@ export default function Page() {
         <h3 className="m-auto text-center text-xl font-semibold">
           Benefits of Investing in SEO
         </h3>
-        <p className="m-auto mt-5 max-w-[800px] text-center md:text-lg text-slate-500">
+        <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
           Investing in SEO offers numerous benefits for your business,
           including:
         </p>
-        <ul className="mt-10 grid md:grid-cols-4 gap-5">
+        <ul className="mt-10 grid gap-5 md:grid-cols-4">
           <li className="flex flex-col gap-1 rounded bg-my_black p-4 text-white">
             <b>Increased Website Traffic: </b>By improving your search engine
             rankings, SEO helps drive more organic traffic to your website,

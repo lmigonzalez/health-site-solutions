@@ -7,9 +7,10 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Healthcare Web Development and Design Services | Health Web Experts",
+  title:
+    "Speed Optimization Services for Healthcare Websites | Health Web Experts",
   description:
-    "Explore our comprehensive web development and design services for healthcare providers. Health Web Experts offers responsive websites, expert SEO, content creation, hosting, maintenance, and more to boost your online presence. Contact us to enhance your digital footprint.",
+    "Improve your healthcare website’s performance with our speed optimization services. Enhance user experience and reduce load times with Health Web Experts' expert solutions for faster, more efficient websites.",
 };
 export default function Page() {
   return (
@@ -50,9 +51,9 @@ export default function Page() {
           Why Is Speed Optimization Important?
         </h2>
         <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
-          Speed optimization is not just about convenience—it&apos;s about improving
-          your website&apos;s overall performance and effectiveness. Here&apos;s why it&apos;s
-          so important:
+          Speed optimization is not just about convenience—it&apos;s about
+          improving your website&apos;s overall performance and effectiveness.
+          Here&apos;s why it&apos;s so important:
         </p>
         <ul className="mt-10 grid gap-5 md:grid-cols-2">
           <li className="lex flex-col gap-1 rounded bg-white p-4 shadow">
@@ -139,23 +140,24 @@ export default function Page() {
               the appropriate image size based on the user&apos;s device.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
-              <b>Using Asynchronous Loading:</b>IWe optimize how your website&apos;s
-              scripts and stylesheets load by using asynchronous loading
-              techniques. This allows certain elements of your page to load
-              simultaneously, rather than waiting for each element to load one
-              after the other, speeding up the overall process.
+              <b>Using Asynchronous Loading:</b>IWe optimize how your
+              website&apos;s scripts and stylesheets load by using asynchronous
+              loading techniques. This allows certain elements of your page to
+              load simultaneously, rather than waiting for each element to load
+              one after the other, speeding up the overall process.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Leveraging Browser Caching: </b> Browser caching stores parts
-              of your website in a visitor&apos;s browser, so they don&apos;t have to
-              reload the entire page every time they visit. We set up caching
-              rules that ensure repeat visitors experience faster load times.
+              of your website in a visitor&apos;s browser, so they don&apos;t
+              have to reload the entire page every time they visit. We set up
+              caching rules that ensure repeat visitors experience faster load
+              times.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
               <b>Enabling Compression:</b> We use Gzip or Brotli compression to
-              reduce the size of your website&apos;s files before they are sent to
-              the browser. This significantly decreases the amount of data that
-              needs to be transferred, speeding up load times.
+              reduce the size of your website&apos;s files before they are sent
+              to the browser. This significantly decreases the amount of data
+              that needs to be transferred, speeding up load times.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Optimizing Code:</b> We clean up your website&apos;s code by
@@ -172,10 +174,10 @@ export default function Page() {
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Reducing Server Response Time: </b> The time it takes for a
-              server to respond to a user&apos;s request can significantly impact
-              page load times. We optimize your server&apos;s performance by using
-              reliable hosting, optimizing databases, and reducing the server&apos;s
-              workload.
+              server to respond to a user&apos;s request can significantly
+              impact page load times. We optimize your server&apos;s performance
+              by using reliable hosting, optimizing databases, and reducing the
+              server&apos;s workload.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Deferring Offscreen Images:</b> We use lazy loading to defer
@@ -192,9 +194,9 @@ export default function Page() {
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Eliminating Render-Blocking Resources: </b>We ensure that CSS
               and JavaScript files do not block the rendering of your web pages
-              by loading these resources in a way that doesn&apos;t hold up the rest
-              of the content. This allows the visible content to load faster,
-              improving perceived performance.
+              by loading these resources in a way that doesn&apos;t hold up the
+              rest of the content. This allows the visible content to load
+              faster, improving perceived performance.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Monitoring and Ongoing Optimization:</b> Speed optimization is
