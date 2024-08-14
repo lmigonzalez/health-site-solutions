@@ -16,6 +16,7 @@ export default function ServiceGrid() {
         "We ensure your website looks great on any device, whether it's a smartphone, tablet, or desktop computer. This means your customers will have a seamless experience, no matter how they access your site.",
     },
     {
+      url: "speed-optimization",
       title: "Speed Optimization",
       description:
         "A fast website keeps visitors happy and improves your ranking in search engines. We optimize your website’s speed, so pages load quickly, keeping users engaged and reducing bounce rates.",

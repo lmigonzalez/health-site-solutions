@@ -224,7 +224,7 @@ export default function Page() {
             alt=""
             width={500}
             height={500}
-            className="h-full w-auto rounded-xl shadow-xl"
+            className="h-auto rounded-xl shadow-xl"
           />
         </div>
       </div>
