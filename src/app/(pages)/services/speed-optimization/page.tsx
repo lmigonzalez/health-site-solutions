@@ -13,34 +13,34 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className="page-w mt-16 md:px-6">
+    <main className="page-w mt-16 px-6">
       <div className="page-w">
         <HeadingDecorator title="Speed Optimization" />
-        <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
+        <p className="relative z-10 m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
           In the fast-paced digital world, speed is everything. A slow-loading
           website can frustrate users, lead to higher bounce rates, and
-          ultimately hurt your business. That's why speed optimization is a
+          ultimately hurt your business. That&apos;s why speed optimization is a
           crucial aspect of web development. It ensures that your website loads
           quickly, providing a smooth and seamless experience for your visitors.
           At our agency, we prioritize speed optimization to help your website
           perform at its best.
         </p>
 
-        <div className="relative m-auto mt-5 flex w-fit justify-center p-10">
+        <div className="relative m-auto mt-5 flex w-fit justify-center md:p-10">
           <Image
-            src={"/services/responsive/1.jpg"}
+            src={"/services/speed/1.jpg"}
             alt=""
             width={700}
-            height={850}
+            height={700}
             className="relative z-10 rounded-xl shadow-2xl"
           />
 
           <Image
             src={"/blob.svg"}
             alt=""
-            width={1000}
-            height={1000}
-            className="absolute left-1/3 top-1/2 h-[1000px] w-[1000px] -translate-x-1/2 -translate-y-1/2 transform"
+            width={800}
+            height={800}
+            className="absolute left-1/3 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 transform"
           />
         </div>
 
@@ -49,45 +49,43 @@ export default function Page() {
         <h2 className="m-auto text-center text-xl font-semibold">
           Why Is Speed Optimization Important?
         </h2>
-        <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
-          Speed optimization is not just about convenience—it's about improving
-          your website's overall performance and effectiveness. Here’s why it’s
+        <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
+          Speed optimization is not just about convenience—it&apos;s about improving
+          your website&apos;s overall performance and effectiveness. Here&apos;s why it&apos;s
           so important:
         </p>
-
-        <ul className="mt-10 grid grid-cols-4 gap-5">
-          <li className="flex flex-col gap-1 rounded bg-white p-4 shadow">
+        <ul className="mt-10 grid gap-5 md:grid-cols-2">
+          <li className="lex flex-col gap-1 rounded bg-white p-4 shadow">
             <b>Improved User Experience:</b>
-            <p className="text-sm">
-              {" "}
+            <p>
               Users expect websites to load quickly. If your site takes too long
               to load, visitors may become frustrated and leave before they even
               see what you have to offer. A fast website ensures a positive user
               experience, keeping visitors engaged and reducing bounce rates.
             </p>
           </li>
-          <li className="flex flex-col gap-1 rounded bg-white p-4 shadow">
+          <li className="lex flex-col gap-1 rounded bg-white p-4 shadow">
             <b>Better SEO Rankings: </b>
-            <p className="text-sm">
+            <p>
               Search engines like Google consider page speed as a ranking
               factor. Websites that load quickly are more likely to rank higher
               in search engine results, leading to increased visibility and more
               organic traffic to your site.
             </p>
           </li>
-          <li className="flex flex-col gap-1 rounded bg-white p-4 shadow">
+          <li className="lex flex-col gap-1 rounded bg-white p-4 shadow">
             <b>Increased Conversion Rates:</b>
-            <p className="text-sm">
+            <p>
               Speed is directly linked to conversions. A faster website can lead
-              to higher conversion rates, whether it's making a purchase,
+              to higher conversion rates, whether it&apos;s making a purchase,
               signing up for a newsletter, or filling out a contact form.
               Studies have shown that even a one-second delay in page load time
               can result in a significant drop in conversions.
             </p>
           </li>
-          <li className="flex flex-col gap-1 rounded bg-white p-4 shadow">
+          <li className="lex flex-col gap-1 rounded bg-white p-4 shadow">
             <b>Mobile Friendliness: </b>
-            <p className="text-sm">
+            <p>
               With the increasing number of users accessing websites from mobile
               devices, speed optimization becomes even more critical. Mobile
               users often have slower internet connections, so a fast-loading
@@ -95,6 +93,7 @@ export default function Page() {
             </p>
           </li>
         </ul>
+
         <CustomSeparator />
         <h2 className="m-auto my-5 text-center text-xl font-semibold">
           What Is Speed Optimization?
@@ -102,7 +101,7 @@ export default function Page() {
 
         <div className="m-auto max-w-[800px] text-center">
           {" "}
-          <p className="text-lg text-slate-500">
+          <p className="text-slate-500 md:text-lg">
             Speed optimization involves a series of techniques and practices
             aimed at reducing the time it takes for a web page to load. This
             includes optimizing the code, compressing images, leveraging browser
@@ -117,12 +116,12 @@ export default function Page() {
         <div className="rounded-lg bg-slate-100 p-5 md:py-10">
           {" "}
           <h2 className="m-auto text-center text-xl font-semibold">
-            How We Optimize Your Website’s Speed
+            How We Optimize Your Website&apos;s Speed
           </h2>
-          <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
+          <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
             At our agency, we employ a comprehensive approach to speed
             optimization, using the latest tools and techniques to ensure your
-            website loads as quickly as possible. Here’s how we do it:
+            website loads as quickly as possible. Here&apos;s how we do it:
           </p>
           <ul className="mt-10 grid gap-5 md:grid-cols-3">
             <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
@@ -137,10 +136,10 @@ export default function Page() {
               contributors to slow page load times. We optimize your images by
               compressing them without sacrificing quality, using modern formats
               like WebP, and implementing responsive image techniques that load
-              the appropriate image size based on the user's device.
+              the appropriate image size based on the user&apos;s device.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
-              <b>Using Asynchronous Loading:</b>IWe optimize how your website's
+              <b>Using Asynchronous Loading:</b>IWe optimize how your website&apos;s
               scripts and stylesheets load by using asynchronous loading
               techniques. This allows certain elements of your page to load
               simultaneously, rather than waiting for each element to load one
@@ -148,34 +147,34 @@ export default function Page() {
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Leveraging Browser Caching: </b> Browser caching stores parts
-              of your website in a visitor's browser, so they don’t have to
+              of your website in a visitor&apos;s browser, so they don&apos;t have to
               reload the entire page every time they visit. We set up caching
               rules that ensure repeat visitors experience faster load times.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
               <b>Enabling Compression:</b> We use Gzip or Brotli compression to
-              reduce the size of your website’s files before they are sent to
+              reduce the size of your website&apos;s files before they are sent to
               the browser. This significantly decreases the amount of data that
               needs to be transferred, speeding up load times.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
-              <b>Optimizing Code:</b> We clean up your website’s code by
+              <b>Optimizing Code:</b> We clean up your website&apos;s code by
               minifying CSS, JavaScript, and HTML files. This process removes
               unnecessary characters, such as spaces and comments, making the
               code lighter and quicker to load.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Implementing Content Delivery Networks (CDNs):</b> A CDN
-              distributes your website's content across multiple servers
+              distributes your website&apos;s content across multiple servers
               worldwide, so users can load the website from a server that is
               geographically closer to them. This reduces latency and improves
               load times, especially for global audiences.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Reducing Server Response Time: </b> The time it takes for a
-              server to respond to a user's request can significantly impact
-              page load times. We optimize your server’s performance by using
-              reliable hosting, optimizing databases, and reducing the server’s
+              server to respond to a user&apos;s request can significantly impact
+              page load times. We optimize your server&apos;s performance by using
+              reliable hosting, optimizing databases, and reducing the server&apos;s
               workload.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
@@ -193,13 +192,13 @@ export default function Page() {
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Eliminating Render-Blocking Resources: </b>We ensure that CSS
               and JavaScript files do not block the rendering of your web pages
-              by loading these resources in a way that doesn’t hold up the rest
+              by loading these resources in a way that doesn&apos;t hold up the rest
               of the content. This allows the visible content to load faster,
               improving perceived performance.
             </li>
             <li className="flex flex-col gap-1 rounded bg-white p-4">
               <b>Monitoring and Ongoing Optimization:</b> Speed optimization is
-              not a one-time task. We continuously monitor your website’s
+              not a one-time task. We continuously monitor your website&apos;s
               performance and make adjustments as needed to ensure it remains
               fast, even as you add new content or features.
             </li>
@@ -212,11 +211,11 @@ export default function Page() {
         <h3 className="m-auto text-center text-xl font-semibold">
           Benefits of Speed Optimization
         </h3>
-        <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
+        <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
           Investing in speed optimization provides numerous benefits for your
           website and business:
         </p>
-        <ul className="mt-10 grid grid-cols-4 gap-5">
+        <ul className="mt-10 grid gap-5 md:grid-cols-4">
           <li className="flex flex-col gap-1 rounded bg-my_black p-4 text-white">
             <b>Happier Users:</b>Fast load times lead to a better user
             experience, which translates to happier visitors who are more likely
@@ -241,7 +240,7 @@ export default function Page() {
       </div>
 
       <CustomSeparator />
-      <div className="rounded-xl border-l-4 p-5 text-lg text-slate-500">
+      <div className="space-y-2 rounded-xl text-slate-500 md:border-l-4 md:p-5 md:text-lg">
         <p>
           Speed optimization is a critical component of web development that
           directly impacts user experience, search engine rankings, and

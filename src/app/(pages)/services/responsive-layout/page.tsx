@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className="page-w mt-16 md:px-6">
+    <main className="page-w mt-16 px-6">
       <div className="page-w">
         <HeadingDecorator title="Responsive Layout" />
-        <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
+        <p className="relative z-10 m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
           In today’s digital age, people access websites from a variety of
           devices—smartphones, tablets, laptops, and desktops. This means your
           website needs to be flexible enough to provide a seamless experience,
@@ -27,7 +27,7 @@ export default function Page() {
           everyone.
         </p>
 
-        <div className="relative m-auto mt-5 flex w-fit justify-center p-10">
+        <div className="relative m-auto mt-5 flex w-fit justify-center md:p-10">
           <Image
             src={"/services/responsive/1.jpg"}
             alt=""
@@ -50,13 +50,13 @@ export default function Page() {
         <h2 className="m-auto text-center text-xl font-semibold">
           Why Is a Responsive Layout Important?
         </h2>
-        <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
+        <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
           The importance of a responsive layout cannot be overstated in today’s
           multi-device world. Here are some key reasons why a responsive layout
           is crucial for your website:
         </p>
 
-        <ul className="mt-10 grid grid-cols-4 gap-5">
+        <ul className="mt-10 grid gap-5 md:grid-cols-4">
           <li className="flex flex-col gap-1 rounded bg-white p-4 shadow">
             <b>Improved User Experience:</b>
             <p className="text-sm">
@@ -102,7 +102,7 @@ export default function Page() {
 
         <div className="m-auto max-w-[800px] text-center">
           {" "}
-          <p className="text-lg text-slate-500">
+          <p className="text-slate-500 md:text-lg">
             A responsive layout is a web design approach that ensures your
             website looks and functions well on all devices, from the smallest
             smartphone to the largest desktop monitor. Instead of creating
@@ -122,7 +122,7 @@ export default function Page() {
           <h2 className="m-auto text-center text-xl font-semibold">
             How We Create Responsive Layouts
           </h2>
-          <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
+          <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
             At our agency, we take pride in designing websites that are not only
             visually appealing but also highly functional on all devices. Here’s
             how we approach creating a responsive layout:
@@ -135,7 +135,7 @@ export default function Page() {
               well on the smallest screens, which is crucial as mobile traffic
               continues to grow.
             </li>
-            <li className="flex flex-col gap-1 rounded bg-white p-4">
+            <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
               <b>Flexible Grids and Layouts:</b> We use flexible grids that
               adjust based on the screen size. This means that the content on
               your website will resize and rearrange itself to fit the available
@@ -149,7 +149,7 @@ export default function Page() {
               other media files are responsive, meaning they scale appropriately
               without losing quality or causing slow load times.
             </li>
-            <li className="flex flex-col gap-1 rounded bg-white p-4">
+            <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
               <b>CSS Media Queries:</b> CSS media queries allow us to apply
               different styles based on the characteristics of the device, such
               as screen width, resolution, and orientation. This enables us to
@@ -162,7 +162,7 @@ export default function Page() {
               menus that are easy to tap. This ensures that users can navigate
               your site effortlessly, even on smaller screens.
             </li>
-            <li className="flex flex-col gap-1 rounded bg-white p-4">
+            <li className="flex flex-col gap-1 rounded bg-white p-4 shadow-lg">
               <b>Testing Across Devices:</b> We rigorously test your website
               across a wide range of devices and screen sizes to ensure that it
               performs well on all of them. This includes testing on different
@@ -174,13 +174,13 @@ export default function Page() {
       </div>
 
       <CustomSeparator />
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid gap-10 md:grid-cols-2">
         <div className="">
           {" "}
           <h3 className="text-xl font-semibold">
             Examples of Responsive Layout Features
           </h3>
-          <p className="text-lg text-slate-500">
+          <p className="text-slate-500 md:text-lg">
             Here are some common features of a responsive layout that we
             incorporate into your website:
           </p>
@@ -234,11 +234,11 @@ export default function Page() {
         <h3 className="m-auto text-center text-xl font-semibold">
           The Benefits of a Responsive Layout
         </h3>
-        <p className="m-auto mt-5 max-w-[800px] text-center text-lg text-slate-500">
+        <p className="m-auto mt-5 max-w-[800px] text-center text-slate-500 md:text-lg">
           Investing in a responsive layout for your website offers numerous
           benefits, including:
         </p>
-        <ul className="mt-10 grid grid-cols-4 gap-5">
+        <ul className="mt-10 grid gap-5 md:grid-cols-4">
           <li className="flex flex-col gap-1 rounded bg-my_black p-4 text-white">
             <b>Consistent User Experience: </b>A responsive layout ensures that
             your website provides a consistent and enjoyable experience across
@@ -264,7 +264,7 @@ export default function Page() {
       </div>
 
       <CustomSeparator />
-      <div className="rounded-xl border-l-4 p-5 text-lg text-slate-500">
+      <div className="space-y-2 rounded-xl text-slate-500 md:border-l-4 md:p-5 md:text-lg">
         <p>
           A unique and modern design is more than just a pretty face for your
           website; it&apos;s a strategic tool that can help you achieve your
