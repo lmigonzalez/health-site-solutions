@@ -228,8 +228,8 @@ export default function Page() {
             </h2>
             <p className="">
               Investing in a custom-built website offers numerous benefits that
-              can significantly enhance your business's online presence and
-              overall success. Here’s why a custom website is a valuable asset
+              can significantly enhance your business&apos;s online presence and
+              overall success. Here&apos;s why a custom website is a valuable asset
             </p>
             <ul className="ml-5 mt-5 list-disc space-y-2">
               {benefits.map((item, index) => {
