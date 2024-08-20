@@ -8,8 +8,10 @@ export default function HeroSocials() {
 
       <div className="flex gap-24 rounded bg-white bg-opacity-50 p-10 backdrop-blur-sm md:flex-col md:px-0 md:py-24">
         <Link
-          href={""}
+          target="_blank"
+          href={"/www.facebook.com"}
           className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-500 transition-all hover:bg-sky-900 md:-rotate-90"
+          aria-label="Visit Our Facebook Page"
         >
           Facebook
         </Link>
@@ -17,6 +19,7 @@ export default function HeroSocials() {
           className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-500 transition-all hover:bg-sky-900 md:-rotate-90"
           href={"https://www.linkedin.com/company/health-web-experts/"}
           target="_blank"
+          aria-label="Visit Our linkedin Page"
         >
           Linkedin
         </Link>

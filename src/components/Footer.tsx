@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
           <menu className="space-y-2">
             <li>
-              <h5 className="font-semibold">Company</h5>
+              <b className="font-semibold">Company</b>
             </li>
             <li>
               <Link href={"/"}>Home</Link>
@@ -58,7 +58,7 @@ export default function Footer() {
 
           <menu className="space-y-2">
             <li>
-              <h5 className="font-semibold">Services</h5>
+              <b className="font-semibold">Services</b>
             </li>
             <li>
               <Link href={"/services"}>Services</Link>
@@ -72,20 +72,32 @@ export default function Footer() {
           </menu>
 
           <div className="space-y-2">
-            <h5 className="font-semibold">Connect</h5>
+            <b className="font-semibold">Connect</b>
             <menu className="flex items-center gap-2">
-              <li>
-                <Link href={"/"}>
+              {/* <li>
+                <Link
+                  href={"/"}
+                  aria-label="Visit Our linkedin Page"
+                  target="_blank"
+                >
                   <FaFacebookSquare size={25} />
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link href={"/"}>
+                <Link
+                  href={"https://www.instagram.com/healthwebexperts/"}
+                  target="_blank"
+                  aria-label="Visit Our Instagram Page"
+                >
                   <FaInstagramSquare size={25} />
                 </Link>
               </li>
               <li>
-                <Link href={"/"}>
+                <Link
+                  href={"/https://www.linkedin.com/company/health-web-experts/"}
+                  target="_blank"
+                  aria-label="Visit Our Linkedin Page"
+                >
                   <FaLinkedin size={25} />
                 </Link>
               </li>
