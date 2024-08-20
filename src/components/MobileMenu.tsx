@@ -80,7 +80,7 @@ export default function MobileMenu() {
           <Link
             href={`/`}
             className={`px-2 py-1 capitalize font-medium${
-              pathname === "/" ? "rounded bg-sky-50 text-sky-500" : ""
+              pathname === "/" ? "rounded bg-sky-50 text-sky-700" : ""
             } `}
           >
             Home
@@ -93,7 +93,7 @@ export default function MobileMenu() {
                 href={`/${item}`}
                 className={`px-2 py-1 capitalize font-medium${
                   pathname.includes(item)
-                    ? "rounded bg-sky-50 text-sky-500"
+                    ? "rounded bg-sky-50 text-sky-700"
                     : ""
                 } `}
               >

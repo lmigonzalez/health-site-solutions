@@ -30,8 +30,8 @@ export default function Header() {
           <li>
             <Link
               href={`/`}
-              className={`px-2 py-1 font-medium capitalize hover:text-sky-500 transition-colors${
-                pathname === "/" ? "rounded bg-sky-50 text-sky-500" : ""
+              className={`px-2 py-1 font-medium capitalize hover:text-sky-700 transition-colors${
+                pathname === "/" ? "rounded bg-sky-50 text-sky-700" : ""
               } `}
             >
               Home
@@ -42,9 +42,9 @@ export default function Header() {
               <li key={index}>
                 <Link
                   href={`/${item}`}
-                  className={`px-2 py-1 font-medium capitalize hover:text-sky-500 transition-colors${
+                  className={`px-2 py-1 font-medium capitalize hover:text-sky-700 transition-colors${
                     pathname.includes(item)
-                      ? "rounded bg-sky-50 text-sky-500"
+                      ? "rounded bg-sky-50 text-sky-700"
                       : ""
                   } `}
                 >
@@ -81,7 +81,7 @@ export default function Header() {
                     href={"/about"}
                     className={`px-2 py-1 capitalize font-medium${
                       pathname.includes("/about")
-                        ? "rounded bg-sky-50 text-sky-500"
+                        ? "rounded bg-sky-50 text-sky-700"
                         : ""
                     } `}
                   >
@@ -93,7 +93,7 @@ export default function Header() {
                     href={"/blog"}
                     className={`px-2 py-1 capitalize font-medium${
                       pathname.includes("/blog")
-                        ? "rounded bg-sky-50 text-sky-500"
+                        ? "rounded bg-sky-50 text-sky-700"
                         : ""
                     } `}
                   >
@@ -105,7 +105,7 @@ export default function Header() {
                     href={"pricing"}
                     className={`px-2 py-1 capitalize font-medium${
                       pathname.includes("/pricing")
-                        ? "rounded bg-sky-50 text-sky-500"
+                        ? "rounded bg-sky-50 text-sky-700"
                         : ""
                     } `}
                   >

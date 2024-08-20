@@ -10,13 +10,13 @@ export default function HeroSocials() {
         <Link
           target="_blank"
           href={"/www.facebook.com"}
-          className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-500 transition-all hover:bg-sky-900 md:-rotate-90"
+          className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-700 transition-all hover:bg-sky-900 md:-rotate-90"
           aria-label="Visit Our Facebook Page"
         >
           Facebook
         </Link>
         <Link
-          className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-500 transition-all hover:bg-sky-900 md:-rotate-90"
+          className="inline-block transform rounded bg-sky-50 px-4 py-2 font-semibold text-sky-700 transition-all hover:bg-sky-900 md:-rotate-90"
           href={"https://www.linkedin.com/company/health-web-experts/"}
           target="_blank"
           aria-label="Visit Our linkedin Page"

@@ -70,7 +70,7 @@ export default function Page() {
 
             <div className="">
               <Link
-                className="flex items-center gap-0.5 text-sky-500 transition-all hover:gap-1"
+                className="flex items-center gap-0.5 text-sky-700 transition-all hover:gap-1"
                 target="_blank"
                 href={"https://www.faithishealth.com/"}
               >

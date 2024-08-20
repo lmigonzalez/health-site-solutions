@@ -102,7 +102,7 @@ export default function Footer() {
                 </Link>
               </li>
             </menu>
-            <div className="text-sm font-semibold text-sky-500">
+            <div className="text-sm font-semibold text-sky-700">
               <Link href={"/"}>info@healthwebexperts.com</Link>
             </div>
           </div>
