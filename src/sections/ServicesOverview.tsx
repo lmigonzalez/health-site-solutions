@@ -95,7 +95,7 @@ export default function ServicesOverview() {
       <div className="mt-5 flex justify-center pt-2">
         <Link
           href={"/services"}
-          className="flex w-fit items-center gap-2 text-lg font-bold text-sky-500 transition-all hover:text-sky-900"
+          className="flex w-fit items-center gap-2 text-lg font-bold text-sky-700 transition-all hover:text-sky-900"
         >
           Learn More About Our Services
           <svg
