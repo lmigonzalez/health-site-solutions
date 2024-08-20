@@ -46,7 +46,7 @@ export default function Industries() {
   return (
     <section className="custom-space mxl:px-6">
       <div className="m-auto mb-5 w-[700px] max-w-full space-y-3 px-6 text-center">
-        <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500 shadow shadow-green-100">
+        <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-700 shadow shadow-green-100">
           <p>Industries</p>
         </div>
         <h2 className="text-3xl font-bold">Industries We Serve</h2>

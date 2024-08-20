@@ -6,7 +6,7 @@ export default function CallToAction() {
       <div className="page-w">
         {" "}
         <div className="m-auto w-[700px] max-w-full space-y-3 text-center">
-          <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500">
+          <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-700">
             <p>Contact Us</p>
           </div>
           <h2 className="text-3xl font-bold">

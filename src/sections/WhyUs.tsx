@@ -10,7 +10,7 @@ export default function WhyUs() {
       <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
       <div className="page-w flex flex-col items-start justify-between gap-16 md:flex-row">
         <div className="relative z-10 space-y-3 text-start md:w-1/2">
-          <div className="w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500">
+          <div className="w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-700">
             <p>Why Us</p>
           </div>
           <h2 className="text-3xl font-bold">Why Choose Us</h2>

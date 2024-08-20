@@ -20,7 +20,7 @@ export default function Testimonials() {
       <section className="page-w relative overflow-hidden bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat px-6 py-20 text-white">
         <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
         <div className="relative z-10 m-auto mb-5 w-[700px] max-w-full space-y-3 text-center">
-          <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-500">
+          <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-700">
             <p>TESTIMONIALS</p>
           </div>
           <h2 className="text-3xl font-bold">What Our Clients Say</h2>

@@ -16,7 +16,7 @@
     @apply py-16;
   }
   .main-btn {
-    @apply rounded bg-sky-500 px-4 py-2 font-semibold text-white transition-all hover:bg-sky-900;
+    @apply rounded bg-sky-700 px-4 py-2 font-semibold text-white transition-all hover:bg-sky-900;
   }
   .custom-angled-border {
     transform: skew(-0.3rad) translateY(-39%);

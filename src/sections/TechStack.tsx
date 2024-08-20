@@ -59,7 +59,7 @@ export default function TechStack() {
   return (
     <section className="px-4 py-20">
       <div className="w-[700px] max-w-full m-auto text-center space-y-3 mb-5">
-        <div className="bg-green-100 text-green-500 rounded-full py-1 px-6 text-sm font-bold w-fit m-auto shadow shadow-green-100">
+        <div className="bg-green-100 text-green-700 rounded-full py-1 px-6 text-sm font-bold w-fit m-auto shadow shadow-green-100">
           <p>TECH STACK</p>
         </div>
         <h2 className="text-3xl font-bold">Our Technology Stack</h2>
