@@ -85,7 +85,7 @@ export default function TechStack() {
                 >
                   <div className="bg-my_black text-white py-5 px-1 text-center flex justify-center items-center rounded gap-2 border border-my_black">
                     {item.icon}
-                    <h5 className="font-semibold">{item.name}</h5>
+                    <b className="font-semibold">{item.name}</b>
                   </div>
                 </CarouselItem>
               );

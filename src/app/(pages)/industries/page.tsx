@@ -181,11 +181,11 @@ export default function Page() {
                   height={index === 0 ? 50 : 30}
                   className="h-auto w-10"
                 />
-                <h5
+                <b
                   className={`${index === 0 ? "md:text-2xl" : ""} font-semibold`}
                 >
                   {item}
-                </h5>
+                </b>
               </div>
             </div>
           );

@@ -80,7 +80,7 @@ export default function Industries() {
                       width={30}
                       height={30}
                     />
-                    <h5 className="font-semibold">{item}</h5>
+                    <b className="font-semibold">{item}</b>
                   </div>
                 </CarouselItem>
               );

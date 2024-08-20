@@ -79,7 +79,7 @@ export default function Page() {
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Founder & CEO
               </p>
-              <h5 className="font-semibold">Luis Gonzalez</h5>
+              <b className="font-semibold">Luis Gonzalez</b>
               <p className="text-sm">
                 Luis Gonzalez is the Founder and CEO, a full-stack web developer
                 with 4 years of experience specializing in creating visually
@@ -91,7 +91,7 @@ export default function Page() {
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Lead Developer
               </p>
-              <h5 className="font-semibold">Jose Gonzalez</h5>
+              <b className="font-semibold">Jose Gonzalez</b>
               <p className="text-sm">
                 With 6 years of experience, Jose Gonzalez is a full-stack web
                 developer who excels in problem-solving and primarily works with
@@ -108,7 +108,7 @@ export default function Page() {
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Web Designer
               </p>
-              <h5 className="font-semibold">Claudia Leon</h5>
+              <b className="font-semibold">Claudia Leon</b>
               <p className="text-sm">
                 Claudia Leon is a web designer with over 3 years of experience.
                 She studied medicine for 3 years in college and her favorite
