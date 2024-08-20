@@ -1,8 +1,7 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
 import Image from "next/image";
-import Link from "next/link";
-import { FaExternalLinkAlt } from "react-icons/fa";
+
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Industries We Serve | Health Web Experts",
@@ -125,6 +124,41 @@ export default function Page() {
         "We develop e-commerce websites for medical supply companies, ensuring a secure and efficient online shopping experience. Our speed optimization and analytics and reporting services help you maximize your sales and performance.",
     },
   ];
+
+  const benefits = [
+    {
+      bold: "Unique Design Tailored to Your Brand",
+      text: "A custom website is designed specifically for your brand, ensuring that it stands out from competitors. Your site will reflect your unique identity, making a strong impression on visitors.",
+    },
+    {
+      bold: "Enhanced User Experience",
+      text: "With a custom website, you have complete control over the user experience. From navigation to functionality, every element can be optimized to meet the needs of your target audience, leading to higher engagement and satisfaction.",
+    },
+    {
+      bold: "Scalability and Flexibility",
+      text: "Custom websites are built to grow with your business. Whether you need to add new features, expand your product offerings, or integrate with new technologies, a custom site provides the flexibility to scale as needed.",
+    },
+    {
+      bold: " Improved SEO Performance",
+      text: "Custom websites can be optimized for search engines right from the start. By implementing SEO best practices during the development process, your site will have a stronger foundation for achieving higher rankings and increased visibility.",
+    },
+    {
+      bold: "Better Security",
+      text: "Security is a top priority in custom web development. Custom websites are built with the latest security measures, reducing the risk of vulnerabilities and ensuring your data and customer information are protected.",
+    },
+    {
+      bold: "Integration with Business Tools",
+      text: "A custom website can be seamlessly integrated with the tools and software your business uses, such as CRM systems, e-commerce platforms, and marketing automation tools. This integration streamlines your operations and improves efficiency.",
+    },
+    {
+      bold: "Long-Term Cost Efficiency",
+      text: "While the initial investment may be higher, a custom website can save you money in the long run. It’s built to last, with fewer limitations and lower maintenance costs compared to pre-built templates that may require frequent updates or replacements.",
+    },
+    {
+      bold: "Competitive Advantage",
+      text: "A custom website gives you a competitive edge by offering unique features and functionality that set your business apart from others in your industry. It allows you to provide a superior online experience that can attract and retain customers.",
+    },
+  ];
   return (
     <main className="pt-16 md:px-6">
       <CustomHeader
@@ -135,9 +169,8 @@ export default function Page() {
       <div className="page-w custom-space grid grid-cols-2 gap-5 px-6 md:grid-cols-5 md:px-0">
         {healthcareSectors.map((item, index) => {
           return (
-            <Link
+            <div
               key={index}
-              href={`industries/${correctUrl(item)}`}
               className={`${index === 0 ? "md:row-span-2" : ""} `}
             >
               <div className="flex h-full flex-col items-center justify-center gap-1 rounded border-x border-sky-500 bg-white px-1 py-2 text-center transition-all hover:shadow">
@@ -154,7 +187,7 @@ export default function Page() {
                   {item}
                 </h5>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
@@ -167,13 +200,9 @@ export default function Page() {
               key={index}
               className={`${index === 0 ? "md:row-span-2" : ""} relative z-10 flex flex-col justify-start gap-2 rounded bg-white p-4 shadow-md`}
             >
-              <Link
-                className="flex items-center gap-1 underline underline-offset-2 transition-colors hover:text-sky-500 hover:decoration-sky-500"
-                href={`industries/${correctUrl(item.title)}`}
-              >
+              <div className="flex items-center gap-1">
                 <h4 className="text-xl font-semibold">{item.title}</h4>
-                <FaExternalLinkAlt />
-              </Link>
+              </div>
               <p className="text-sm">{item.description}</p>
               <ul className="mt-auto hidden list-inside list-disc text-sm md:block">
                 {item.list?.map((item, index) => {
@@ -188,6 +217,42 @@ export default function Page() {
             </div>
           );
         })}
+      </div>
+
+      <div className="custom-space page-w px-6 md:px-0">
+        <div className="custom-space grid gap-10 md:grid-cols-3">
+          <div className="md:col-span-2">
+            {" "}
+            <h2 className="text-xl font-semibold">
+              Advantages of a Custom-Built Website
+            </h2>
+            <p className="">
+              Investing in a custom-built website offers numerous benefits that
+              can significantly enhance your business&apos;s online presence and
+              overall success. Here&apos;s why a custom website is a valuable asset
+            </p>
+            <ul className="ml-5 mt-5 list-disc space-y-2">
+              {benefits.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <b>{item.bold}</b>
+                    <p className="text-sm">{item.text}</p>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          <div className="hidden justify-center md:col-span-1 md:flex">
+            <Image
+              src={"/industries/Healthcare Business Growth Chart.webp"}
+              alt="A vertical graphic showing a rising chart symbolizing growth in the healthcare business, featuring healthcare-related icons like a stethoscope, medical cross, and heart symbol, with an upward trend representing success in the industry."
+              width={1000}
+              height={1000}
+              className="max-h-[800px] w-auto rounded-xl shadow-xl"
+            />
+          </div>
+        </div>
       </div>
     </main>
   );

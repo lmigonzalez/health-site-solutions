@@ -150,7 +150,7 @@ export default function Page() {
                 $75/month
               </p>
               <p className="text-lg font-semibold">Includes:</p>
-              <ul className="mt-2 grid list-inside list-disc grid-cols-2 gap-1.5">
+              <ul className="mt-2 grid list-inside list-disc gap-1.5 md:grid-cols-2">
                 <li>Reliable Fast Hosting</li>
                 <li>Monthly Security Updates</li>
                 <li>Performance Monitoring</li>
