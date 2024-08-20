@@ -52,7 +52,7 @@ export default function Industries() {
         <h2 className="text-3xl font-bold">Industries We Serve</h2>
         <h3 className="text-lg font-semibold">
           Delivering Specialized Web Solutions Across Various Healthcare{" "}
-          <Link className="text-sky-700" href={"/industries"}>
+          <Link className="font-semibold text-sky-700" href={"/industries"}>
             Industries
           </Link>
         </h3>
