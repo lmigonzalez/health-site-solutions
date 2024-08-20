@@ -8,9 +8,10 @@ export default function Hero() {
         <h1 className="text-2xl font-bold md:text-4xl">
           Expert Healthcare Web Design and Development Services
         </h1>
-        <h2 className="font-semibold md:text-xl">
-          Creating Innovative and Secure Websites Designed for Hospitals,
-          Clinics, Medical Practices, and More
+        <h2 className="md:text-lg">
+          Professional Websites for the Health Industry: Custom{" "}
+          <b>Hand-Coded Sites</b> Starting at $750 — No Page Builders or
+          WordPress
         </h2>
         <div className="flex justify-end pt-2">
           <Link
