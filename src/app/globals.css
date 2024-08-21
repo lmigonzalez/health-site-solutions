@@ -78,6 +78,10 @@
     @apply font-semibold text-sky-700;
   }
 
+  .article hr {
+    @apply my-10;
+  }
+
   /* ICON */
   .container {
     cursor: pointer;
