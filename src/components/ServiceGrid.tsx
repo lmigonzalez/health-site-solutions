@@ -69,7 +69,7 @@ export default function ServiceGrid() {
             </p>
           </div>
 
-          <div className="mt-auto">
+          <div className="">
             <Link
               href={"/services"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
@@ -135,7 +135,7 @@ export default function ServiceGrid() {
             </p>
           </div>
 
-          <div className="mt-auto">
+          <div className="">
             <Link
               href={"/services"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
@@ -186,7 +186,7 @@ export default function ServiceGrid() {
             </p>
           </div>
 
-          <div className="mt-auto">
+          <div className="">
             <Link
               href={"/services"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
@@ -232,9 +232,7 @@ export default function ServiceGrid() {
           />
         </div>
         <div className="flex flex-col">
-          <h3 className="text-2xl font-semibold">
-            Unique and Responsive Design
-          </h3>
+          <h3 className="text-2xl font-semibold">On-Page SEO Optimization</h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
               We implement comprehensive on-page SEO strategies to enhance your
@@ -246,14 +244,14 @@ export default function ServiceGrid() {
             <p>
               We meticulously craft meta tags, optimize headings, and use
               structured data to improve how search engines understand and rank
-              your site. By adhering to Google&apos;s best practices, we aim to boost
-              your rankings and drive more organic traffic to your website,
-              helping you stand out from the competition and reach a larger
-              audience.
+              your site. By adhering to Google&apos;s best practices, we aim to
+              boost your rankings and drive more organic traffic to your
+              website, helping you stand out from the competition and reach a
+              larger audience.
             </p>
           </div>
 
-          <div className="mt-auto">
+          <div className="">
             <Link
               href={"/services"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
