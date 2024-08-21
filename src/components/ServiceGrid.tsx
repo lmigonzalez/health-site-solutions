@@ -71,7 +71,7 @@ export default function ServiceGrid() {
 
           <div className="">
             <Link
-              href={"/services"}
+              href={"/services/speed-optimization"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
             >
               Learn More

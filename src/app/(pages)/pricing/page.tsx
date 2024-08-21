@@ -5,9 +5,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing | Health Web Experts",
+  title: "Pricing | Healthcare Web Design & Development Agency",
   description:
-    "Explore our competitive pricing plans for healthcare web development and design services. Health Web Experts offers Basic, Professional, and Premium plans, as well as custom solutions to fit your needs. Find the perfect plan to enhance your online presence today.",
+    "Health Web Experts offers transparent, competitive pricing for healthcare web development. Choose the right package to enhance your online presence. Contact us.",
 };
 export default function Page() {
   return (

@@ -6,9 +6,9 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Portfolio | Health Web Experts",
+  title: "Healthcare Websites Portfolio | Health Web Experts",
   description:
-    "Browse our portfolio to see the successful healthcare web development and design projects completed by Health Web Experts. Discover how we help hospitals, clinics, and other healthcare providers enhance their online presence with custom websites, SEO, and more.",
+    "Showcasing successful healthcare web development projects. Custom websites, SEO, and design solutions to enhance online presence for hospitals and clinics.",
 };
 export default function Page() {
   return (

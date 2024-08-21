@@ -27,9 +27,9 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Health Web Experts",
+  title: "About Us | Custom Healthcare Web Design & Development Agency",
   description:
-    "Learn about Health Web Experts, our dedicated team, trusted partners, and our mission to empower healthcare providers with exceptional digital solutions. Discover why we focus exclusively on the healthcare industry and the technologies we use to deliver top-notch services.",
+    "Health Web Experts specializes in custom health web design solutions for healthcare. We empower providers with innovative designs, advanced technology & support",
 };
 export default function Page() {
   const skills = [

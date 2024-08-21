@@ -5,9 +5,9 @@ import ServiceGrid from "@/components/ServiceGrid";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Healthcare Web Development and Design Services | Health Web Experts",
+  title: "Healthcare Website Design Services | Custom Web Development",
   description:
-    "Explore our comprehensive web development and design services for healthcare providers. Health Web Experts offers responsive websites, expert SEO, content creation, hosting, maintenance, and more to boost your online presence. Contact us to enhance your digital footprint.",
+    "Health Web Experts offers custom web development, SEO, and secure medical portals for healthcare providers. Boost your online presence and website engagement.",
 };
 export default function Page() {
   return (

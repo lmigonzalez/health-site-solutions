@@ -10,9 +10,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Healthcare Website Design and Development | Health Web Experts",
+  title: "Healthcare Web Design Company | Custom Website Development",
   description:
-    "Discover expert web design and development services for healthcare providers. Health Web Experts offers custom websites, SEO, hosting, and more to enhance your online presence and engage your patients. Contact us today for a consultation.",
+    "HealthWebExperts offers specialized web design & development for healthcare. We build secure, responsive websites for hospitals, clinics, and medical practices.",
 };
 
 export default function RootLayout({
@@ -20,8 +20,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
-
   return (
     <html lang="en">
       <body
@@ -30,7 +28,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <LiveChat />
+        {/* <LiveChat /> */}
       </body>
     </html>
   );

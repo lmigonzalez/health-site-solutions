@@ -4,9 +4,9 @@ import ArticlesPagination from "@/components/ArticlesPagination";
 import { createClient } from "contentful";
 import Link from "next/link";
 export const metadata = {
-  title: "Our Blog | Health Web Experts",
+  title: "Our Blog | Custom Healthcare Web Design & Development Agency",
   description:
-    "Discover the range of healthcare industries we serve at Health Web Experts. From hospitals and clinics to dental practices and telehealth providers, we offer specialized web development and design services to enhance your online presence. Explore our industry-specific solutions today.",
+    "Stay updated with Health Web Experts. Our blog offers insights on healthcare web design, digital marketing & the latest trends to enhance your online presence.",
 };
 
 const client = createClient({

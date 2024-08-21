@@ -4,9 +4,9 @@ import Image from "next/image";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Industries We Serve | Health Web Experts",
+  title: "Healthcare Industries We Serve | Custom Web Design Company",
   description:
-    "Discover the range of healthcare industries we serve at Health Web Experts. From hospitals and clinics to dental practices and telehealth providers, we offer specialized web development and design services to enhance your online presence. Explore our industry-specific solutions today.",
+    "Health Web Experts provides tailored web solutions for hospitals, clinics, telehealth & more. Enhance your healthcare services with our professional web design.",
 };
 export default function Page() {
   function correctUrl(name: string) {
