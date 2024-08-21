@@ -9,10 +9,10 @@ export default function CallToAction() {
           <div className="m-auto w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-700">
             <p>Contact Us</p>
           </div>
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-2xl font-bold">
             Ready to Transform Your Online Presence?
           </h2>
-          <h3 className="text-lg font-semibold">
+          <h3 className="text-lg">
             Get in touch with us today to discuss your project and explore how
             we can help elevate your business!
           </h3>
