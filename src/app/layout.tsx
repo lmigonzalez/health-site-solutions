@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LiveChat from "@/components/LiveChat";
+import { Analytics } from "@vercel/analytics/react";
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -28,6 +29,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
         {/* <LiveChat /> */}
       </body>
     </html>
