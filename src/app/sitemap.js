@@ -26,53 +26,22 @@ async function getArticles() {
         data: tDate.toISOString(),
       },
       {
-        slug: `services/design`,
-        data: tDate.toISOString(),
-      },
-      {
-        slug: `services/responsive-layout`,
-        data: tDate.toISOString(),
-      },
-      {
         slug: `services/speed-optimization`,
         data: tDate.toISOString(),
       },
       {
-        slug: `services/secure-website`,
+        slug: `services/unique-and-responsive-design`,
         data: tDate.toISOString(),
       },
       {
-        slug: `services/seo`,
+        slug: `services/custom-website`,
         data: tDate.toISOString(),
       },
       {
-        slug: `services/expert-copywriting`,
+        slug: `services/on-page-seo-optimization`,
         data: tDate.toISOString(),
       },
-      {
-        slug: `services/logo-design`,
-        data: tDate.toISOString(),
-      },
-      {
-        slug: `services/scheduling-integration`,
-        data: tDate.toISOString(),
-      },
-      {
-        slug: `services/live-chat`,
-        data: tDate.toISOString(),
-      },
-      {
-        slug: `services/hosting-maintenance`,
-        data: tDate.toISOString(),
-      },
-      {
-        slug: `services/social-media`,
-        data: tDate.toISOString(),
-      },
-      {
-        slug: `services/analytics`,
-        data: tDate.toISOString(),
-      },
+
       {
         slug: `industries`,
         data: tDate.toISOString(),
