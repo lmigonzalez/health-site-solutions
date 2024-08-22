@@ -22,7 +22,9 @@ export default function OurProcess() {
 
       <div className="mb-12 mt-36 hidden px-10 md:block">
         <div className="relative flex min-h-12 justify-between">
-          <div className="absolute left-1/2 top-1/2 h-1 w-full -translate-x-1/2 -translate-y-1/2 transform bg-sky-700 shadow-xl"></div>
+          <div className="absolute left-1/2 top-1/2 h-1 w-full -translate-x-1/2 -translate-y-1/2 transform shadow-xl px-1">
+            <div className="h-full w-full bg-sky-700"></div>{" "}
+          </div>
           {process.map((i, index) => {
             return (
               <div key={index} className="relative">
