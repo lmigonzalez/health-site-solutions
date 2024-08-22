@@ -173,6 +173,18 @@ export default function Page({
         </form>
       </div>
       <FAQ />
+
+      <div className="custom-space">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d921447.6779744207!2d-81.11754095691083!3d25.558189514391444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d98b054de91839%3A0x49691e748195638b!2sMiami-Dade%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1724362450895!5m2!1sen!2sus"
+          width="100%"
+          height="auto"
+          className="min-h-[500px]"
+          style={{ border: 0 }}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </main>
   );
 }
