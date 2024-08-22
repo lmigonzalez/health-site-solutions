@@ -1,68 +1,34 @@
 import React from "react";
 import Link from "next/link";
-export default function ServicesOverview() {
-  const webServices = [
-    {
-      title: "Unique and Modern Design:",
-      description:
-        "We create designs that are visually appealing and tailored to your brand.",
-    },
-    {
-      title: "Responsive Layout:",
-      description:
-        "Your website will look great on all devices, from smartphones to desktops.",
-    },
-    {
-      title: "Speed Optimization:",
-      description:
-        "Fast loading times to keep visitors engaged and improve their experience.",
-    },
-    {
-      title: "Secure Website:",
-      description:
-        "We ensure your website is safe from hackers and keeps your data secure.",
-    },
-    {
-      title: "SEO:",
-      description:
-        "We help your website appear higher in search engine results, so more people can find you.",
-    },
-    {
-      title: "Expert Copywriting:",
-      description:
-        "Professional content that communicates your message clearly and effectively.",
-    },
-    {
-      title: "Logo Design Included:",
-      description: "We create or integrate a logo that represents your brand.",
-    },
-    {
-      title: "Scheduling Integration:",
-      description:
-        "Allow your customers to easily book appointments directly from your website.",
-    },
-    {
-      title: "Live Chat:",
-      description:
-        "Engage with your visitors in real time through a built-in chat feature.",
-    },
-    {
-      title: "Hosting and Maintenance:",
-      description:
-        "We take care of your website's hosting and keep it running smoothly.",
-    },
-    {
-      title: "Social Media Management:",
-      description:
-        "We help manage your social media profiles to keep your audience engaged.",
-    },
-    {
-      title: "Analytics and Reporting:",
-      description:
-        "We provide easy-to-understand reports on how your website is performing.",
-    },
-  ];
+import Image from "next/image";
+const data = [
+  {
+    title: "Blazing-Fast Websites",
+    description:
+      "Experience lightning-fast website speeds that keep your healthcare practice ahead of the competition.",
+    img: "fast",
+  },
+  {
+    title: "Unique & Responsive Design",
+    description:
+      "Stand out with custom designs that look great on any device, ensuring a seamless experience for your patients.",
+    img: "design",
+  },
+  {
+    title: "Custom Hand-Coded Solutions",
+    description:
+      "Receive bespoke web solutions crafted from scratch to perfectly fit your healthcare needs.",
+    img: "code",
+  },
+  {
+    title: "Expert On-Page SEO",
+    description:
+      "Boost your online visibility with expertly optimized pages that attract and engage your target audience.",
+    img: "seo",
+  },
+];
 
+export default function ServicesOverview() {
   return (
     <section className="custom-space px-6">
       <div className="m-auto mb-10 w-[700px] max-w-full space-y-3 text-center">
@@ -75,17 +41,21 @@ export default function ServicesOverview() {
         </h3>
       </div>
 
-      <div className="page-w grid gap-5 sm:grid-cols-3">
-        {webServices.map((item, index) => {
+      <div className="page-w grid gap-5 sm:grid-cols-4">
+        {data.map((item, index) => {
           return (
-            <div
-              key={index}
-              className="rounded border-x-2 border-green-500 bg-white p-3 shadow"
-            >
-              {" "}
-              <div className="space-y-1">
-                <h3 className="text-base font-semibold">{item.title}</h3>
-                <p className="text-sm">{item.description}</p>
+            <div key={index} className="rounded border-x-2 bg-white p-4 shadow">
+              <div className="flex flex-col items-center justify-center gap-2">
+                <div className="">
+                  <Image
+                    src={`/services-section/${item.img}.png`}
+                    alt={`Blue Icon Representing the ${item.title} Service`}
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <h3 className="text-base font-bold">{item.title}</h3>
+                <p className="text-center">{item.description}</p>
               </div>
             </div>
           );
@@ -95,16 +65,16 @@ export default function ServicesOverview() {
       <div className="mt-5 flex justify-center pt-2">
         <Link
           href={"/services"}
-          className="flex w-fit items-center gap-2 text-lg font-bold text-sky-700 transition-all hover:text-sky-900"
+          className="flex w-fit items-center gap-2 text-center font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
         >
-          Learn More About Our Services
+          Discover Our Additional Services
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6"
+            className="hidden size-6 md:block"
           >
             <path
               strokeLinecap="round"

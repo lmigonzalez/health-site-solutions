@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
 import { FaLightbulb } from "react-icons/fa";
 import { IoLogoWechat, IoDiamond } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
@@ -18,87 +18,80 @@ export default function WhyUs() {
             High-Speed, Custom Websites for Healthcare
           </h3>
           <p className="text-justify">
-            With years of web development experience, we specialize in creating
-            high-speed, custom-coded websites designed to excel in search engine
-            rankings. Our expertise ensures that each website we build is not
-            only secure and scalable but also optimized for performance and user
-            experience. We focus on delivering solutions that meet the specific
-            needs of healthcare professionals, from advanced SEO optimization to
-            responsive design that looks great on any device.
+            With years of web development experience, we create high-speed,
+            custom-coded websites that rank well on search engines. Our sites
+            are secure, scalable, and optimized for both performance and user
+            experience. We specialize in advanced SEO and responsive design for
+            healthcare professionals, ensuring a professional online presence
+            that helps you stand out. Trust us to deliver a website that exceeds
+            your expectations and supports your success in the healthcare
+            industry.
           </p>
-          <p className="text-justify">
-            Our commitment is to provide a professional online presence that
-            helps you stand out in a competitive market. By combining quality
-            custom code with strategic design, we enhance your ability to
-            connect with more patients and achieve your business goals. Trust us
-            to deliver a website that exceeds your expectations and supports
-            your success in the healthcare industry.
-          </p>
+
+          <div className="mt-5 flex justify-start pt-2">
+            <Link
+              href={"/about"}
+              className="flex w-fit items-center gap-2 text-center font-bold text-white transition-all hover:text-sky-900 md:text-lg"
+            >
+              Discover more about us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </Link>
+          </div>
         </div>
         <div className="relative z-10 grid gap-10 md:w-1/2 md:grid-cols-2">
           <div className="">
             <div className="w-fit rounded border border-white bg-yellow-500 p-2 text-white">
-              <Image
-                src={"/why-us/speed.png"}
-                alt="Speed Icon: Icon representing website speed with a fast-moving arrow or gauge."
-                width={25}
-                height={25}
-              />
+              <FaLightbulb size={25} />
             </div>
-            <h4 className="text-lg font-bold">High-Speed Performance</h4>
+            <h4 className="text-lg font-bold">Proven Experience</h4>
             <p className="font-light">
-              Our websites are optimized to load extremely fast, achieving an
-              average score of over 90 on PageSpeed Insights.
+              Bringing Over 10 Years of Combined Experience in Web Development
             </p>
           </div>
 
           <div className="">
             <div className="w-fit rounded border border-white bg-sky-500 p-2 text-white">
-              <Image
-                src={"/why-us/seo.png"}
-                alt="SEO Icon: Icon symbolizing search engine optimization, featuring a magnifying glass over a graph or web elements."
-                width={25}
-                height={25}
-              />
+              <IoLogoWechat size={25} />
             </div>
-            <h4 className="text-lg font-bold">SEO Optimization</h4>
+            <h4 className="text-lg font-bold">Exceptional Communication</h4>
             <p className="font-light">
-              We follow Google&apos;s best practices and conduct thorough keyword
-              research to ensure your website ranks above the competition.
+              Clear and consistent communication to ensure your vision is
+              realized.
             </p>
           </div>
 
           <div className="">
             <div className="w-fit rounded border border-white bg-emerald-500 p-2 text-white">
-              <Image
-                src={"/why-us/code.png"}
-                alt="Code Icon: Icon illustrating hand-coding or programming, such as code brackets or a coding terminal."
-                width={25}
-                height={25}
-              />
+              <BiSupport size={25} />
             </div>
-            <h4 className="text-lg font-bold">Hand-Coded Excellence</h4>
+            <h4 className="text-lg font-bold">Ongoing Support</h4>
             <p className="font-light">
-              Every website is custom hand-coded using technologies like Astro
-              or Next.js, avoiding page builders for maximum performance and
-              flexibility.
+              Continuous support and maintenance to keep your website performing
+              at its best.
             </p>
           </div>
 
           <div className="">
             <div className="w-fit rounded border border-white bg-purple-500 p-2 text-white">
-              <Image
-                src={"/why-us/design.png"}
-                alt="Design Icon: Icon denoting unique web design, with a paintbrush or design palette."
-                width={25}
-                height={25}
-              />
+              <IoDiamond size={25} />
             </div>
-            <h4 className="text-lg font-bold">Unique Design</h4>
+            <h4 className="text-lg font-bold">Quality Guarantee</h4>
             <p className="font-light">
-              Our designers craft a unique and tailored design for each website,
-              ensuring it perfectly reflects your brand and stands out from the
-              rest.
+              Commitment to delivering high-quality, reliable, and effective web
+              solutions.
             </p>
           </div>
         </div>

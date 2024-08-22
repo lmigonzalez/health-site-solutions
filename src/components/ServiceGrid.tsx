@@ -2,52 +2,52 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import CustomSeparator from "./CustomSeparator";
-export default function ServiceGrid() {
-  const services = [
-    {
-      url: "secure-website",
-      title: "Secure Website",
-      description:
-        "Security is a top priority. We implement the latest security measures to protect your site from threats, ensuring your data and your customers’ information are safe.",
-    },
+const services = [
+  {
+    url: "secure-website",
+    title: "Secure Website",
+    description:
+      "Security is a top priority. We implement the latest security measures to protect your site from threats, ensuring your data and your customers’ information are safe.",
+  },
 
-    {
-      url: "expert-copywriting",
-      title: "Expert Copywriting",
-      description:
-        "The right words can make a big difference. Our copywriting service ensures your website’s content is clear, compelling, and tailored to your audience, helping you communicate your message effectively.",
-    },
-    {
-      url: "logo-design",
-      title: "Logo Design Included",
-      description:
-        "If you don’t have a logo or need a refresh, we’ve got you covered. We create or integrate a logo that perfectly represents your brand and fits seamlessly with your website’s design.",
-    },
-    {
-      url: "scheduling-integration",
-      title: "Scheduling Integration",
-      description:
-        "Make it easy for your customers to book appointments directly through your website. We integrate user-friendly scheduling tools that sync with your calendar, simplifying the booking process.",
-    },
-    {
-      url: "live-chat",
-      title: "Live Chat",
-      description:
-        "Engage with your website visitors instantly with our live chat feature. Answer questions in real time, provide support, and guide potential customers, improving their experience and increasing conversions.",
-    },
-    {
-      url: "hosting-maintenance",
-      title: "Hosting and Maintenance",
-      description:
-        "We handle all the technical aspects, including hosting your website and keeping it updated. This means your website stays live and runs smoothly, with no hassle for you.",
-    },
-    {
-      url: "analytics",
-      title: "Analytics and Reporting",
-      description:
-        "Understand how your website is performing with our detailed yet easy-to-read reports. We track important metrics like visitor numbers, page views, and conversion rates, so you can see what’s working and where to improve.",
-    },
-  ];
+  {
+    url: "expert-copywriting",
+    title: "Expert Copywriting",
+    description:
+      "The right words can make a big difference. Our copywriting service ensures your website’s content is clear, compelling, and tailored to your audience, helping you communicate your message effectively.",
+  },
+  {
+    url: "logo-design",
+    title: "Logo Design Included",
+    description:
+      "If you don’t have a logo or need a refresh, we’ve got you covered. We create or integrate a logo that perfectly represents your brand and fits seamlessly with your website’s design.",
+  },
+  {
+    url: "scheduling-integration",
+    title: "Scheduling Integration",
+    description:
+      "Make it easy for your customers to book appointments directly through your website. We integrate user-friendly scheduling tools that sync with your calendar, simplifying the booking process.",
+  },
+  {
+    url: "live-chat",
+    title: "Live Chat",
+    description:
+      "Engage with your website visitors instantly with our live chat feature. Answer questions in real time, provide support, and guide potential customers, improving their experience and increasing conversions.",
+  },
+  {
+    url: "hosting-maintenance",
+    title: "Hosting and Maintenance",
+    description:
+      "We handle all the technical aspects, including hosting your website and keeping it updated. This means your website stays live and runs smoothly, with no hassle for you.",
+  },
+  {
+    url: "analytics",
+    title: "Analytics and Reporting",
+    description:
+      "Understand how your website is performing with our detailed yet easy-to-read reports. We track important metrics like visitor numbers, page views, and conversion rates, so you can see what’s working and where to improve.",
+  },
+];
+export default function ServiceGrid() {
   return (
     <div className="mt-16 px-6 md:px-0">
       <div className="grid gap-10 md:grid-cols-2">
