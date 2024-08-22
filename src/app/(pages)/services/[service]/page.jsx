@@ -38,6 +38,7 @@ const options = {
 };
 
 async function getArticle(slug) {
+  console.log(slug)
   try {
     const res = await client.getEntries({
       "fields.slug": slug,
@@ -52,7 +53,7 @@ async function getArticle(slug) {
 }
 
 async function Page({ params }) {
-  const { title, content } = await getArticle(params.name);
+  const { title, content } = await getArticle(params.service);
   return (
     <main>
       <article className="article shadow">
