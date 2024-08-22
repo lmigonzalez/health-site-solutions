@@ -10,12 +10,12 @@ export default function FAQ() {
     {
       title: "How long does it take to develop a website?",
       description:
-        "The timeline for developing a website can vary depending on the complexity and specific requirements of your project. On average, a basic website can take 4-6 weeks, while more complex projects may take 8-12 weeks. We work closely with our clients to establish a realistic timeline that meets their needs.",
+        "The timeline for developing a website can vary depending on the complexity and specific requirements of your project. On average, a basic website can take 2-4 weeks, while more complex projects may take 8-12 weeks. We work closely with our clients to establish a realistic timeline that meets their needs.",
     },
     {
       title: "What is included in the Basic Plan?",
       description:
-        "Our Basic Plan includes a fully responsive website, speed optimization, on-page SEO, up to 5 pages, and hosting. This plan is ideal for small practices or startups looking to establish a professional online presence.",
+        "Our Basic Plan includes a fully responsive website, speed optimization, on-page SEO, up to 5 pages, and hosting setup. This plan is ideal for small practices or startups looking to establish a professional online presence.",
     },
     {
       title: "Can I upgrade my plan later?",
@@ -40,7 +40,7 @@ export default function FAQ() {
     {
       title: "What kind of support do you offer after the website is launched?",
       description:
-        "We provide ongoing support and maintenance to ensure your website continues to perform optimally. Our services include regular updates, technical support, performance monitoring, and content updates. You can rely on us to keep your website running smoothly and efficiently.",
+        "We provide ongoing support and maintenance to ensure your website continues to perform optimally. Our services include regular updates, technical support, performance monitoring, and content updates. You can rely on us to keep your website running smoothly and efficiently. This service is available for an additional $75 per month.",
     },
     {
       title:
