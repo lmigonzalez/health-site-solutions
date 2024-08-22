@@ -69,7 +69,7 @@ export default function ServiceGrid() {
             </p>
           </div>
 
-          <div className="">
+          <div className="mt-5">
             <Link
               href={"/services/speed-optimization"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
@@ -135,7 +135,7 @@ export default function ServiceGrid() {
             </p>
           </div>
 
-          <div className="">
+          <div className="mt-5">
             <Link
               href={"/services/unique-and-responsive-design"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
@@ -186,9 +186,9 @@ export default function ServiceGrid() {
             </p>
           </div>
 
-          <div className="">
+          <div className="mt-5">
             <Link
-              href={"/services"}
+              href={"/services/custom-website"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
             >
               Learn More
@@ -251,9 +251,9 @@ export default function ServiceGrid() {
             </p>
           </div>
 
-          <div className="">
+          <div className="mt-5">
             <Link
-              href={"/services"}
+              href={"/services/on-page-seo-optimization"}
               className="flex w-fit items-center gap-2 font-bold text-sky-700 transition-all hover:text-sky-900 md:text-lg"
             >
               Learn More
@@ -284,22 +284,21 @@ export default function ServiceGrid() {
         </h2>
         <p className="m-auto max-w-[800px] text-center md:text-lg">
           Along with our core website development, you’ll get extra features
-          designed to enhance your site. This includes robust security, expert
-          copywriting, custom logo design, scheduling integration, live chat,
-          reliable hosting and maintenance, and analytics to track your site’s
-          performance.
+          designed to enhance your site. This includes <b>robust security</b>,{" "}
+          <b>expert copywriting</b>, <b>custom logo design</b>,{" "}
+          <b>scheduling integration</b>, <b>live chat</b>, reliable{" "}
+          <b>hosting and maintenance</b>, <b>analytics</b> to track your site’s
+          performance and more.
         </p>
-        <div className="mt-10 grid w-full gap-5 px-6 md:grid-cols-2 md:px-0">
+        <div className="mt-10 grid w-full gap-5 px-6 md:px-0">
           {services.map((item, index) => {
             return (
-              <Link href={`/services/${item.url}`} key={index}>
-                <div className="group relative min-h-[150px] cursor-pointer rounded border-x-2 border-sky-500 bg-white p-4 transition-all hover:shadow-xl">
-                  <div className="flex flex-col items-start justify-start text-start">
-                    <h3 className="font-semibold">{item.title}</h3>
-                    <p className="text-base font-normal">{item.description}</p>
-                  </div>
+              <div key={index} className="border-l-4 border-l-green-500 pl-4">
+                <div className="flex flex-col items-start justify-start text-start">
+                  <h3 className="font-semibold">{item.title}</h3>
+                  <p className="text-base font-normal">{item.description}</p>
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>
