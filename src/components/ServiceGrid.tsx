@@ -290,7 +290,7 @@ export default function ServiceGrid() {
           <b>hosting and maintenance</b>, <b>analytics</b> to track your site’s
           performance and more.
         </p>
-        <div className="mt-10 grid w-full gap-5 px-6 md:px-0">
+        <div className="mt-10 grid w-full gap-5  md:px-0">
           {services.map((item, index) => {
             return (
               <div key={index} className="border-l-4 border-l-green-500 pl-4">

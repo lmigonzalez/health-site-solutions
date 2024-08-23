@@ -56,11 +56,11 @@
   }
 
   .article h4 {
-    @apply mb-2 mt-8 font-semibold;
+    @apply mb-2 mt-8 font-bold;
   }
 
   .article p {
-    @apply my-5;
+    @apply my-4;
   }
 
   .article ul {
@@ -72,7 +72,11 @@
   }
   .article ul,
   .article ol {
-    @apply ml-6 space-y-3;
+    @apply ml-6 space-y-2;
+  }
+  .article ul p,
+  .article ol p{
+    @apply m-0;
   }
   .article a {
     @apply font-bold text-sky-700 transition-colors hover:text-sky-900;
@@ -80,6 +84,31 @@
 
   .article hr {
     @apply my-10;
+  }
+
+  /* Table */
+  .article table {
+    @apply border;
+  }
+
+  .article table {
+    @apply w-full border-collapse my-10;
+  }
+
+  .article table th,
+  .article table td {
+    @apply border px-2;
+  }
+
+  .article table tr:nth-child(even) {
+    @apply bg-slate-100;
+  }
+
+  .article table tr:nth-of-type(1) {
+    @apply border bg-gray-800 py-0 text-white;
+  }
+  .article table p {
+    @apply my-1 ;
   }
 
   /* ICON */
