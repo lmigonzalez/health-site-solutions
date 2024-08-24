@@ -220,7 +220,7 @@ export default function ServiceGrid() {
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
               Our advanced on-page SEO strategies are meticulously crafted to
-              boost your <b>healthcare website's</b> visibility and performance
+              boost your <b>healthcare website&apos;s</b> visibility and performance
               in search engines. We align your website design with user search
               intent by conducting in-depth keyword research and precise
               optimization. This approach not only elevates your search engine
@@ -260,7 +260,7 @@ export default function ServiceGrid() {
         <h2 className="text-center text-3xl font-semibold">
           Additional Services
         </h2>
-        <p className="m-auto max-w-[800px] text-center md:text-lg">
+        <p className="m-auto max-w-[800px] text-center">
           In addition to our core web design services, we offer a range of
           additional features that enhance your <b>medical web design</b>{" "}
           experience. These services are designed to add value to your website,

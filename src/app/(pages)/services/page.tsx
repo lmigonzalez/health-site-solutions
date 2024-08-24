@@ -28,7 +28,7 @@ export default function Page() {
             </h2>
             <p>
               Your practice’s website is often the first impression potential
-              patients have of your services. At Health Web Experts, we
+              patients have of your services. We
               specialize in creating custom, responsive websites that cater to
               the unique needs of medical professionals.
             </p>
