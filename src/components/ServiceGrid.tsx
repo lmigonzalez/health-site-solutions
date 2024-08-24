@@ -51,7 +51,7 @@ export default function ServiceGrid() {
   return (
     <div className="mt-16 px-6 md:px-0">
       <div className="grid items-center gap-10 md:grid-cols-2">
-        <div className="order-2 flex flex-col">
+        <div className="order-2 md:order-1 flex flex-col">
           <h3 className="text-2xl font-semibold">Extremely Fast Websites</h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
@@ -88,7 +88,7 @@ export default function ServiceGrid() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end order-1 md:order-2">
           <Image
             src={"/services/page-speed.png"}
             alt="speed image"
@@ -193,7 +193,7 @@ export default function ServiceGrid() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end order-1 md:order-2">
           <Image
             src={"/services/code.png"}
             alt="code icon"
