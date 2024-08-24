@@ -51,7 +51,7 @@ export default function ServiceGrid() {
   return (
     <div className="mt-16 px-6 md:px-0">
       <div className="grid items-center gap-10 md:grid-cols-2">
-        <div className="order-2 md:order-1 flex flex-col">
+        <div className="order-2 flex flex-col md:order-1">
           <h3 className="text-2xl font-semibold">Extremely Fast Websites</h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
@@ -88,7 +88,7 @@ export default function ServiceGrid() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-end order-1 md:order-2">
+        <div className="order-1 flex justify-end md:order-2">
           <Image
             src={"/services/page-speed.png"}
             alt="speed image"
@@ -193,7 +193,7 @@ export default function ServiceGrid() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-end order-1 md:order-2">
+        <div className="order-1 flex justify-end md:order-2">
           <Image
             src={"/services/code.png"}
             alt="code icon"
@@ -219,12 +219,13 @@ export default function ServiceGrid() {
           <h3 className="text-2xl font-semibold">On-Page SEO Optimization</h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
-              Our comprehensive on-page SEO strategies are designed to enhance
-              your website’s visibility and performance in search engines. We
-              ensure your <b>website design for healthcare</b> aligns with user
-              search intent through thorough keyword research and optimization.
-              This boosts your rankings, drives organic traffic, and helps you
-              stand out from the competition.
+              Our advanced on-page SEO strategies are meticulously crafted to
+              boost your <b>healthcare website's</b> visibility and performance
+              in search engines. We align your website design with user search
+              intent by conducting in-depth keyword research and precise
+              optimization. This approach not only elevates your search engine
+              rankings but also drives targeted organic traffic, ensuring that
+              your website stands out in a competitive healthcare landscape.
             </p>
           </div>
 
