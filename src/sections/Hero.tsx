@@ -9,7 +9,7 @@ export default function Hero() {
           Expert Healthcare Web Design and Development Services
         </h1>
         <h2 className="md:text-lg">
-          Professional Websites for the Health Industry: Custom{" "}
+        Professional Medical Websites: Custom{" "}
           <b>Hand-Coded Sites</b> Starting at $750 — No Page Builders or
           WordPress
         </h2>
