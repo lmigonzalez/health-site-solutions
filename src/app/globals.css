@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  p {
+    @apply md:text-lg;
+  }
 }
 
 @layer components {
@@ -75,7 +78,7 @@
     @apply ml-6 space-y-2;
   }
   .article ul p,
-  .article ol p{
+  .article ol p {
     @apply m-0;
   }
   .article a {
@@ -92,7 +95,7 @@
   }
 
   .article table {
-    @apply w-full border-collapse my-10;
+    @apply my-10 w-full border-collapse;
   }
 
   .article table th,
@@ -108,7 +111,7 @@
     @apply border bg-gray-800 py-0 text-white;
   }
   .article table p {
-    @apply my-1 ;
+    @apply my-1;
   }
 
   /* ICON */

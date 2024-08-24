@@ -7,65 +7,61 @@ const services = [
     url: "secure-website",
     title: "Secure Website",
     description:
-      "Security is a top priority. We implement the latest security measures to protect your site from threats, ensuring your data and your customers’ information are safe.",
+      "Security is paramount. We implement the latest security measures to protect your site, ensuring your data and your patients’ information are safe.",
   },
 
   {
     url: "expert-copywriting",
     title: "Expert Copywriting",
     description:
-      "The right words can make a big difference. Our copywriting service ensures your website’s content is clear, compelling, and tailored to your audience, helping you communicate your message effectively.",
+      "Content is king. Our expert copywriting service ensures your website’s content is clear, compelling, and tailored to your audience, helping you communicate your message effectively.",
   },
   {
     url: "logo-design",
     title: "Logo Design Included",
     description:
-      "If you don’t have a logo or need a refresh, we’ve got you covered. We create or integrate a logo that perfectly represents your brand and fits seamlessly with your website’s design.",
+      "A logo is a key part of your brand. If you don’t have one or need a refresh, we can create or integrate a logo that perfectly represents your practice and fits seamlessly with your medical website design.",
   },
   {
     url: "scheduling-integration",
     title: "Scheduling Integration",
     description:
-      "Make it easy for your customers to book appointments directly through your website. We integrate user-friendly scheduling tools that sync with your calendar, simplifying the booking process.",
+      "Make it easy for patients to book appointments directly through your website. We integrate user-friendly scheduling tools that sync with your calendar, simplifying the booking process.",
   },
   {
     url: "live-chat",
     title: "Live Chat",
     description:
-      "Engage with your website visitors instantly with our live chat feature. Answer questions in real time, provide support, and guide potential customers, improving their experience and increasing conversions.",
+      "Engage with your website visitors instantly with our live chat feature. Answer questions in real-time, provide support, and guide potential patients, improving their experience and increasing conversions.",
   },
   {
     url: "hosting-maintenance",
     title: "Hosting and Maintenance",
     description:
-      "We handle all the technical aspects, including hosting your website and keeping it updated. This means your website stays live and runs smoothly, with no hassle for you.",
+      "We handle all the technical aspects, including hosting your website and keeping it updated. This means your site stays live and runs smoothly, with no hassle for you.",
   },
   {
     url: "analytics",
     title: "Analytics and Reporting",
     description:
-      "Understand how your website is performing with our detailed yet easy-to-read reports. We track important metrics like visitor numbers, page views, and conversion rates, so you can see what’s working and where to improve.",
+      "Get insights into your family practice website performance with our detailed yet easy-to-read reports. We track important metrics like visitor numbers, page views, and conversion rates, so you can see what’s working and where to improve.",
   },
 ];
 export default function ServiceGrid() {
   return (
     <div className="mt-16 px-6 md:px-0">
-      <div className="grid gap-10 md:grid-cols-2">
-        <div className="flex flex-col">
+      <div className="grid items-center gap-10 md:grid-cols-2">
+        <div className="order-2 flex flex-col">
           <h3 className="text-2xl font-semibold">Extremely Fast Websites</h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
-              A fast website keeps visitors happy and improves your ranking in
-              search engines. We focus on every aspect of speed optimization to
-              ensure your site loads extremely fast, achieving an average score
-              of over 90 on PageSpeed Insights. This includes compressing and
-              converting images to WebP format for faster load times.
-            </p>
-            <p>
-              By enhancing your website’s performance, we boost user engagement,
-              reduce bounce rates, and improve overall satisfaction. Our goal is
-              to deliver a seamless browsing experience that keeps your visitors
-              coming back.
+              A fast website is crucial for keeping visitors engaged and
+              improving your ranking in search engines. We focus on every aspect
+              of speed optimization, ensuring your site loads extremely fast,
+              with an average score of over 90 on PageSpeed Insights. By
+              enhancing your <b>medical website design</b> performance, we boost
+              user engagement, reduce bounce rates, and improve overall
+              satisfaction.
             </p>
           </div>
 
@@ -105,7 +101,7 @@ export default function ServiceGrid() {
 
       <CustomSeparator />
 
-      <div className="grid gap-10 md:grid-cols-2">
+      <div className="grid items-center gap-10 md:grid-cols-2">
         <div className="flex justify-start">
           <Image
             src={"/services/design.png"}
@@ -121,17 +117,12 @@ export default function ServiceGrid() {
           </h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
-              Our designers craft unique and tailored designs for each website
-              using Figma, ensuring that your site perfectly reflects your brand
-              and stands out in a crowded market. We create designs that are not
-              only visually appealing but also fully responsive, meaning they
-              adapt seamlessly to any device, from desktops to mobile phones.
-            </p>
-            <p>
-              This approach ensures an optimal user experience, with every
-              element thoughtfully placed to enhance usability and engagement.
-              By focusing on both aesthetics and functionality, we help you make
-              a memorable impression and connect with your audience effectively.
+              Our designers craft unique and tailored{" "}
+              <b>web design for medical practices</b> using Figma, ensuring that
+              your site perfectly reflects your brand and stands out in a
+              crowded market. Every design is fully responsive, meaning it
+              adapts seamlessly to any device, ensuring an optimal user
+              experience across desktops, tablets, and mobile phones.
             </p>
           </div>
 
@@ -162,27 +153,20 @@ export default function ServiceGrid() {
 
       <CustomSeparator />
 
-      <div className="grid gap-10 md:grid-cols-2">
-        <div className="flex flex-col">
+      <div className="grid items-center gap-10 md:grid-cols-2">
+        <div className="order-2 flex flex-col md:order-1">
           <h3 className="text-2xl font-semibold">
             Custom Hand-Coded Solutions
           </h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
-              Custom hand-coding ensures that your website is crafted with the
-              utmost precision and flexibility. We build your site using
-              advanced technologies like Astro or Next.js, avoiding the
-              limitations of page builders to deliver a solution that is
-              uniquely tailored to your needs. This approach allows us to create
-              a website with superior performance, robust security, and complete
-              control over every aspect of the design and functionality.
-            </p>
-            <p>
-              By focusing on custom code, we ensure that your site is optimized
-              for speed and efficiency while perfectly aligning with your brand
-              and business goals. Our meticulous hand-coding process results in
-              a high-quality, bespoke website that stands out and meets your
-              specific requirements.
+              Custom hand-coding allows us to create highly specialized{" "}
+              <b>medical web design</b> solutions using advanced technologies
+              like Astro or Next.js. This ensures your site is not just another
+              template but a uniquely tailored website that aligns with your
+              specific needs. We focus on creating a <b>doctor website</b> that
+              offers superior performance, robust security, and complete control
+              over every aspect of the design and functionality.
             </p>
           </div>
 
@@ -222,7 +206,7 @@ export default function ServiceGrid() {
 
       <CustomSeparator />
 
-      <div className="grid gap-10 md:grid-cols-2">
+      <div className="grid items-center gap-10 md:grid-cols-2">
         <div className="flex justify-start">
           <Image
             src={"/services/seo.png"}
@@ -235,19 +219,12 @@ export default function ServiceGrid() {
           <h3 className="text-2xl font-semibold">On-Page SEO Optimization</h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
-              We implement comprehensive on-page SEO strategies to enhance your
-              website’s visibility and performance in search engines. Our
-              approach includes thorough keyword research and optimization,
-              ensuring that your content aligns with what users are searching
-              for.
-            </p>
-            <p>
-              We meticulously craft meta tags, optimize headings, and use
-              structured data to improve how search engines understand and rank
-              your site. By adhering to Google&apos;s best practices, we aim to
-              boost your rankings and drive more organic traffic to your
-              website, helping you stand out from the competition and reach a
-              larger audience.
+              Our comprehensive on-page SEO strategies are designed to enhance
+              your website’s visibility and performance in search engines. We
+              ensure your <b>website design for healthcare</b> aligns with user
+              search intent through thorough keyword research and optimization.
+              This boosts your rankings, drives organic traffic, and helps you
+              stand out from the competition.
             </p>
           </div>
 
@@ -283,17 +260,18 @@ export default function ServiceGrid() {
           Additional Services
         </h2>
         <p className="m-auto max-w-[800px] text-center md:text-lg">
-          Along with our core website development, you’ll get extra features
-          designed to enhance your site. This includes <b>robust security</b>,{" "}
-          <b>expert copywriting</b>, <b>custom logo design</b>,{" "}
-          <b>scheduling integration</b>, <b>live chat</b>, reliable{" "}
-          <b>hosting and maintenance</b>, <b>analytics</b> to track your site’s
-          performance and more.
+          In addition to our core web design services, we offer a range of
+          additional features that enhance your <b>medical web design</b>{" "}
+          experience. These services are designed to add value to your website,
+          making it a powerful tool for your practice.
         </p>
-        <div className="mt-10 grid w-full gap-5  md:px-0">
+        <div className="mt-10 grid w-full gap-5 md:px-0">
           {services.map((item, index) => {
             return (
-              <div key={index} className="border-l-4 border-l-green-500 pl-4">
+              <div
+                key={index}
+                className="rounded-xl border-l-4 border-l-green-500 pl-4"
+              >
                 <div className="flex flex-col items-start justify-start text-start">
                   <h3 className="font-semibold">{item.title}</h3>
                   <p className="text-base font-normal">{item.description}</p>
