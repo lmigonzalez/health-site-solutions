@@ -1,18 +1,104 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
 import Image from "next/image";
-
+import Link from "next/link";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
   title: "Healthcare Industries We Serve | Custom Web Design Company",
   description:
     "Health Web Experts provides tailored web solutions for hospitals, clinics, telehealth & more. Enhance your healthcare services with our professional web design.",
 };
+
+const extraFeatures = [
+  {
+    title: "Payment Integration",
+    description:
+      "Enable your patients to make payments online through a secure payment gateway. This feature allows for easy handling of co-pays, outstanding balances, and payment plans directly from your website, providing convenience for your patients and streamlining your billing process.",
+  },
+  {
+    title: "Live Chat",
+    description:
+      "Integrate a live chat feature to offer real-time assistance to your patients. This tool allows patients to quickly get answers to their questions, schedule appointments, or receive guidance on navigating the website, enhancing their overall experience.",
+  },
+  {
+    title: "Scheduling Integration",
+    description:
+      "Allow patients to book, reschedule, or cancel appointments directly through your website. With scheduling integration, patients can see available slots and choose a time that works best for them, reducing the need for phone calls and improving efficiency.",
+  },
+  {
+    title: "Patient Portal",
+    description:
+      "A patient portal gives your patients secure access to their health information, including medical records, test results, and visit summaries. It also allows them to communicate with their healthcare providers, request prescription refills, and manage their healthcare more effectively.",
+  },
+  {
+    title: "Telemedicine Integration",
+    description:
+      "Offer telemedicine services to your patients, allowing them to consult with healthcare providers from the comfort of their homes. This feature is especially valuable for routine check-ups, follow-ups, and initial consultations, reducing the need for in-person visits.",
+  },
+  {
+    title: "Prescription Refill Requests",
+    description:
+      "Allow patients to request prescription refills through your website, making it convenient for them to manage their medications. This feature streamlines the process for both patients and providers, ensuring timely access to necessary medications.",
+  },
+  {
+    title: "HIPAA-Compliant Forms",
+    description:
+      "Ensure that all forms on your website are HIPAA-compliant, protecting your patients’ sensitive information. This feature is crucial for maintaining trust and meeting legal requirements while collecting health information, appointment requests, or insurance details.",
+  },
+  {
+    title: "Doctor Profiles and Credentials",
+    description:
+      "Showcase the expertise of your healthcare professionals with detailed doctor profiles. Include information about their qualifications, specialties, experience, and patient reviews to help build trust and allow patients to make informed decisions about their care.",
+  },
+  {
+    title: "Patient Reviews and Testimonials",
+    description:
+      "Display patient reviews and testimonials on your website to highlight positive experiences and build trust with potential patients. Authentic feedback from satisfied patients can significantly influence new patient decisions and enhance your reputation.",
+  },
+  {
+    title: "Health Education Resources",
+    description:
+      "Provide access to a library of health education resources, including articles, videos, and guides on various health topics. This feature helps educate patients, encourages healthy behaviors, and positions your practice as a trusted source of information.",
+  },
+  {
+    title: "Appointment Reminders via SMS/Email",
+    description:
+      "Send automated appointment reminders to patients via SMS or email. This feature helps reduce no-shows and ensures that patients are well-prepared for their appointments, improving overall scheduling efficiency.",
+  },
+  {
+    title: "Multilingual Support",
+    description:
+      "Offer multilingual support on your website to cater to patients who speak different languages. This feature can include translated content, language selection options, and even multilingual chat support, making your services accessible to a broader audience.",
+  },
+  {
+    title: "Blog and Health Articles",
+    description:
+      "Maintain a blog with regularly updated health articles, tips, and news. This feature helps engage patients, improve SEO, and position your practice as an authority in healthcare, while also providing valuable information to your audience.",
+  },
+  {
+    title: "Emergency Contact Information",
+    description:
+      "Ensure that emergency contact information is prominently displayed on your website. This feature provides patients with easy access to critical phone numbers and addresses in case of an emergency, offering peace of mind and quick assistance when needed.",
+  },
+  {
+    title: "Insurance Verification Tools",
+    description:
+      "Integrate tools that allow patients to verify their insurance coverage online. This feature streamlines the process for both the patient and your office staff, reducing confusion and ensuring that patients understand their coverage before receiving care.",
+  },
+  {
+    title: "Customizable Patient Intake Forms",
+    description:
+      "Offer customizable patient intake forms that can be filled out online before appointments. This feature saves time during check-in, reduces paperwork, and ensures that you have all the necessary information before the patient arrives.",
+  },
+  {
+    title: "Accessibility Features",
+    description:
+      "Ensure your website is accessible to all patients, including those with disabilities. Implement features like screen reader compatibility, keyboard navigation, and adjustable text size, making your website user-friendly and compliant with accessibility standards.",
+  },
+];
+
 export default function Page() {
-  function correctUrl(name: string) {
-    const newStr = name.replace(" ", "-");
-    return newStr.toLocaleLowerCase();
-  }
   const healthcareSectors = [
     "Hospitals",
     "Clinics",
@@ -30,140 +116,11 @@ export default function Page() {
     "Medical Supplies",
   ];
 
-  const industriesInfo = [
-    {
-      title: "Hospitals",
-      description:
-        "We create comprehensive, mobile-friendly websites for hospitals that enhance patient experience and streamline operations. Our tailored websites include features such as appointment scheduling, patient portals, and expert SEO services to improve your online visibility.",
-      list: [
-        {
-          bold: "Mobile-Friendly Design: ",
-          text: "Ensures accessibility on all devices for patients and staff.",
-        },
-        {
-          bold: "Appointment Scheduling:",
-          text: "Streamlines the booking process with integrated online systems.",
-        },
-        {
-          bold: "Patient Portals: ",
-          text: " Provides secure access to health information and communication tools.",
-        },
-        {
-          bold: "Expert SEO Services:",
-          text: "Improves your hospital’s visibility in search engine results.",
-        },
-        {
-          bold: "Enhanced User Experience:",
-          text: "Focuses on easy navigation and quick access to essential information.",
-        },
-      ],
-    },
-    {
-      title: "Clinics",
-      description:
-        "Our customized web solutions for clinics ensure that your services are easily accessible to patients. From responsive design to social media management, we cover all aspects to help you grow your practice.",
-    },
-    {
-      title: "Medical Practices",
-      description:
-        "We develop professional websites for individual and group medical practices, focusing on user-friendly design and speed optimization. Our services include medical copywriting and logo design to strengthen your brand identity.",
-    },
-    {
-      title: "Dentists",
-      description:
-        "Our web design services for dentists include creating engaging, informative websites that attract new patients. With our expert SEO services and social media management, we help your practice stand out in a competitive market.",
-    },
-    {
-      title: "Laboratories",
-      description:
-        "We build robust websites for laboratories that facilitate easy access to services and information. Our solutions include tailored content creation and analytics and reporting to help you monitor your site's performance.",
-    },
-    {
-      title: "Pharmacies",
-      description:
-        "Our e-commerce solutions for pharmacies enable you to offer products online securely and efficiently. We ensure your website is optimized for speed and provides a seamless shopping experience for your customers.",
-    },
-    {
-      title: "Startups",
-      description:
-        "Healthcare startups can benefit from our comprehensive web development services, including responsive design, SEO, and hosting and maintenance. We help you establish a strong online presence to attract investors and customers.",
-    },
-    {
-      title: "Telehealth",
-      description:
-        "We specialize in telehealth integration, developing secure, user-friendly platforms that enable virtual consultations. Our services ensure your telehealth solutions are reliable and easy to use for both providers and patients.",
-    },
-    {
-      title: "Urgent Care",
-      description:
-        "Our websites for urgent care centers are designed to provide quick access to essential information and services. We focus on speed optimization and responsive design to ensure your site performs well under high traffic conditions.",
-    },
-    {
-      title: "Rehab Centers",
-      description:
-        "We create informative and engaging websites for rehab centers, focusing on providing detailed information about your services. Our medical copywriting and SEO services ensure your site reaches those in need of your support.",
-    },
-    {
-      title: "Home Health",
-      description:
-        "Our tailored websites for home health providers are designed to highlight your services and facilitate easy contact. We offer ongoing support and maintenance to ensure your site remains up-to-date and effective.",
-    },
-    {
-      title: "Mental Health",
-      description:
-        "We build compassionate and informative websites for mental health professionals and organizations. Our content creation and social media management services help you connect with your audience and provide valuable resources.",
-    },
-    {
-      title: "Nursing Homes",
-      description:
-        "Our web solutions for nursing homes include creating user-friendly websites that provide comprehensive information about your services. We focus on responsive design and expert SEO to improve your online presence.",
-    },
-    {
-      title: "Medical Supplies",
-      description:
-        "We develop e-commerce websites for medical supply companies, ensuring a secure and efficient online shopping experience. Our speed optimization and analytics and reporting services help you maximize your sales and performance.",
-    },
-  ];
-
-  const benefits = [
-    {
-      bold: "Unique Design Tailored to Your Brand",
-      text: "A custom website is designed specifically for your brand, ensuring that it stands out from competitors. Your site will reflect your unique identity, making a strong impression on visitors.",
-    },
-    {
-      bold: "Enhanced User Experience",
-      text: "With a custom website, you have complete control over the user experience. From navigation to functionality, every element can be optimized to meet the needs of your target audience, leading to higher engagement and satisfaction.",
-    },
-    {
-      bold: "Scalability and Flexibility",
-      text: "Custom websites are built to grow with your business. Whether you need to add new features, expand your product offerings, or integrate with new technologies, a custom site provides the flexibility to scale as needed.",
-    },
-    {
-      bold: " Improved SEO Performance",
-      text: "Custom websites can be optimized for search engines right from the start. By implementing SEO best practices during the development process, your site will have a stronger foundation for achieving higher rankings and increased visibility.",
-    },
-    {
-      bold: "Better Security",
-      text: "Security is a top priority in custom web development. Custom websites are built with the latest security measures, reducing the risk of vulnerabilities and ensuring your data and customer information are protected.",
-    },
-    {
-      bold: "Integration with Business Tools",
-      text: "A custom website can be seamlessly integrated with the tools and software your business uses, such as CRM systems, e-commerce platforms, and marketing automation tools. This integration streamlines your operations and improves efficiency.",
-    },
-    {
-      bold: "Long-Term Cost Efficiency",
-      text: "While the initial investment may be higher, a custom website can save you money in the long run. It’s built to last, with fewer limitations and lower maintenance costs compared to pre-built templates that may require frequent updates or replacements.",
-    },
-    {
-      bold: "Competitive Advantage",
-      text: "A custom website gives you a competitive edge by offering unique features and functionality that set your business apart from others in your industry. It allows you to provide a superior online experience that can attract and retain customers.",
-    },
-  ];
   return (
     <main className="pt-16 md:px-6">
       <CustomHeader
-        title="Industries We Serve"
-        description="At Health Web Experts, we specialize in delivering customized web solutions across a wide range of healthcare industries. From hospitals and clinics to telehealth providers and pharmaceutical companies, our expertise ensures your online presence is professional, secure, and effective. Explore the specific industries we serve and learn how we can support your unique needs."
+        title="Healthcare Website Design for Various Industries"
+        description="We specialize in healthcare website design and development for various industries. From hospitals and clinics to telehealth and pharmaceuticals, we ensure your online presence is professional, fast, secure, and effective."
       />
 
       <div className="page-w custom-space grid grid-cols-2 gap-5 px-6 md:grid-cols-5 md:px-0">
@@ -192,66 +149,236 @@ export default function Page() {
         })}
       </div>
 
-      <div className="md:page-w relative grid gap-5 bg-[url('/bg-image-2.webp')] bg-left-bottom bg-no-repeat p-6 md:grid-cols-3">
-        <div className="absolute left-0 top-0 h-full w-full bg-black opacity-80"></div>
-        {industriesInfo.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className={`${index === 0 ? "md:row-span-2" : ""} relative z-10 flex flex-col justify-start gap-2 rounded bg-white p-4 shadow-md`}
-            >
-              <div className="flex items-center gap-1">
-                <h4 className="text-xl font-semibold">{item.title}</h4>
-              </div>
-              <p className="text-sm">{item.description}</p>
-              <ul className="mt-auto hidden list-inside list-disc text-sm md:block">
-                {item.list?.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      {" "}
-                      <strong>{item.bold} </strong> {item.text}
-                    </li>
-                  );
-                })}
+      <div className="page-w px-6 md:px-0">
+        <div className="custom-space">
+          {" "}
+          <Image
+            src={"/industries/healthcare-website-design-process.webp"}
+            alt="A team of developers and a healthcare professional collaborating on a modern healthcare website design."
+            width={800}
+            height={500}
+            className="mx-auto rounded-xl shadow"
+          />
+        </div>
+        <div className="m-auto max-w-[800px] md:text-center">
+          <h2 className="text-2xl font-bold">
+            How We Will Help Your Healthcare Business Stand Out
+          </h2>
+          <p>
+            When you partner with us to build your website, you get more than
+            just a website. We’ll create a modern, fast website while also
+            handling everything your practice needs to be easily found online by
+            your customers. After all, a website is a crucial part of your
+            business, where the ultimate goal is to attract more clients.
+          </p>
+        </div>
+
+        <div className="custom-space">
+          <h3 className="mb-5 text-xl font-semibold md:text-center">
+            Our Process: Simple, Effective, and Results-Driven
+          </h3>
+          <div className="grid gap-10 md:grid-cols-2">
+            <div className="relative space-y-3 border bg-white p-5 md:rounded-xl">
+              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
+                1
+              </p>
+              <h4 className="font-bold">Research & Strategy:</h4>
+              <ul className="relative z-10 list-disc space-y-2 pl-5">
+                <li>
+                  <b>Competitive Analysis:</b> We begin by thoroughly
+                  researching your competition to understand what they’re doing
+                  and how we can outperform them.
+                </li>
+                <li>
+                  <b>Keyword Strategy: </b>Next, we develop a powerful keyword
+                  strategy to ensure your business ranks highly on Google and
+                  other major search engines.
+                </li>
+                <li>
+                  <b>Copywriting:</b> Once we have a clear keyword plan, we
+                  start crafting the copy for each page of your website.
+                </li>
               </ul>
             </div>
-          );
-        })}
+
+            <div className="relative space-y-3 border bg-white p-5 md:rounded-xl">
+              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
+                2
+              </p>
+              <h4 className="font-bold">Design & Development:</h4>
+              <ul className="relative z-10 list-disc space-y-2 pl-5">
+                <li>
+                  <b>Unique Design:</b> Our skilled web designer will create a
+                  custom, visually appealing medical website tailored to your
+                  brand. We don’t use templates; your website will be
+                  one-of-a-kind.
+                </li>
+                <li>
+                  <b>User-Friendly Interface: </b>We ensure your website is
+                  clean, easy to navigate, and accessible, especially for older
+                  clients.
+                </li>
+                <li>
+                  <b>Development: </b> After you approve the design, we move on
+                  to development, where we build your site using custom code—not
+                  WordPress. We want to create something exceptional that we can
+                  be proud of.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative space-y-3 border bg-white p-5 md:rounded-xl">
+              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
+                3
+              </p>
+              <h4 className="font-bold">Technology Choices:</h4>
+              <ul className="relative z-10 list-disc space-y-2 pl-5">
+                <li>
+                  <b>Astro vs. Next.js:</b>
+                  Depending on your needs, we choose between Astro and Next.js:
+                  <ul className="list-disc pl-5">
+                    <li>
+                      <b>Astro: </b> Ideal for static websites with minimal user
+                      interaction.
+                    </li>
+                    <li>
+                      <b>Next.js:</b> Perfect for more complex websites with
+                      databases, portals, and login features.
+                    </li>
+                  </ul>
+                </li>
+                <li className="list-none">
+                  This decision is made during our initial consultation based on
+                  your specific requirements.
+                </li>
+              </ul>
+            </div>
+
+            <div className="relative space-y-3 border bg-white p-5 md:rounded-xl">
+              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
+                4
+              </p>
+              <h4 className="font-bold">Pixel-Perfect Development:</h4>
+              <p className="relative z-10">
+                We code your website exactly as it appears in the Figma
+                design—what you see in the design is what you get. The result is
+                a unique, modern, and extremely fast website.
+              </p>
+            </div>
+
+            <div className="relative min-h-[322px] space-y-3 border bg-white p-5 md:rounded-xl">
+              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
+                5
+              </p>
+              <h4 className="font-bold">Google Business Boost:</h4>
+              <p className="relative z-10">
+                But wait, our services don’t stop there! Every package includes
+                Google Business optimization services. We’ve partnered with a
+                team of specialists who excel in this area. They’ll ensure your
+                business is highly visible on the map, with dominant map
+                citations, and your profile will be fully optimized for maximum
+                reach.
+              </p>
+            </div>
+
+            <div className="relative min-h-[322px] space-y-3 border bg-white p-5 md:rounded-xl">
+              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
+                6
+              </p>
+              <h4 className="font-bold">Ongoing Support:</h4>
+              <p className="relative z-10">
+                And we&apos;re not done yet. We don&apos;t just want to work with you—we
+                want to build a lasting relationship. We&apos;re here to help you
+                grow and support your online presence. That&apos;s why we offer
+                hosting and maintenance services, providing you with ongoing
+                access to us for any changes or edits you may need.
+              </p>
+              <p className="relative z-10">
+                {" "}
+                This additional service is available for just $75 per month.{" "}
+                Learn more about our hosting and maintenance services
+                <Link href={"/pricing"} className="font-semibold text-sky-700">
+                  {" "}
+                  here.
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="custom-space page-w px-6 md:px-0">
-        <div className="custom-space grid gap-10 md:grid-cols-3">
-          <div className="md:col-span-2">
+      <div className="page-w px-6 md:px-0">
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div className="order-2 md:order-1">
             {" "}
-            <h2 className="text-xl font-semibold">
-              Advantages of a Custom-Built Website
-            </h2>
-            <p className="">
-              Investing in a custom-built website offers numerous benefits that
-              can significantly enhance your business&apos;s online presence and
-              overall success. Here&apos;s why a custom website is a valuable asset
-            </p>
-            <ul className="ml-5 mt-5 list-disc space-y-2">
-              {benefits.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <b>{item.bold}</b>
-                    <p className="text-sm">{item.text}</p>
-                  </li>
-                );
-              })}
+            <h2 className="mb-3 text-2xl font-bold">Why Page Speed Matters</h2>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <b>User Experience: </b>No one likes waiting 5 seconds for a
+                page to load. A fast website enhances the user experience.
+              </li>
+              <li>
+                <b>SEO Benefits:</b> Google favors fast websites, so yours will
+                rank higher than slower competitors.
+              </li>
+              <li>
+                <b>Higher Conversion Rates:</b> Studies show that every two
+                seconds a page takes to load increases the chance of visitors
+                leaving by 7%.
+              </li>
             </ul>
           </div>
 
-          <div className="hidden justify-center md:col-span-1 md:flex">
-            <Image
-              src={"/industries/Healthcare Business Growth Chart.webp"}
-              alt="A vertical graphic showing a rising chart symbolizing growth in the healthcare business, featuring healthcare-related icons like a stethoscope, medical cross, and heart symbol, with an upward trend representing success in the industry."
-              width={1000}
-              height={1000}
-              className="max-h-[800px] w-auto rounded-xl shadow-xl"
-            />
-          </div>
+          <Image
+            src={"/industries/website-page-speed-importance.webp"}
+            alt="A team of developers and a healthcare professional collaborating on a modern healthcare website design."
+            width={800}
+            height={500}
+            className="order-1 mx-auto rounded-xl shadow md:order-2"
+          />
+        </div>
+        <div className="custom-space">
+          <p className="rounded-l-md border-l-2 border-green-500 p-4">
+            Our own website averages a <b>98.5 out of 100</b> on PageSpeed
+            Insights, and yours will be just as fast. Don&apos;t believe us?{" "}
+            <Link
+              target="_blank"
+              href={
+                "https://pagespeed.web.dev/analysis/https-www-healthwebexperts-com/00ro931nb6?form_factor=mobile"
+              }
+              className="font-semibold text-sky-700"
+            >
+              {" "}
+              Check it out for yourself!
+            </Link>
+          </p>
+        </div>
+      </div>
+
+      <div className="custom-space m-auto max-w-[800px] px-6 md:px-0">
+        <div className="m-auto md:text-center">
+          <h2 className="text-2xl font-bold">
+            Additional Features for Your Website
+          </h2>
+          <p>
+            We understand that every business is unique, which is why we offer a
+            range of additional features tailored to your specific needs. Below
+            is a list of some of the most common features requested by our
+            clients. If you don&apos;t see what you&apos;re looking for, just let us know,
+            and we&apos;ll ensure you get exactly what you need.
+          </p>
+        </div>
+
+        <div className="mt-10">
+          <ul className="list-image-[url(/icons/check.png)] space-y-5 pl-5 md:pl-0">
+            {extraFeatures.map((item, index) => {
+              return (
+                <li key={index} className="">
+                  <b>{item.title}:</b> {item.description}{" "}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </main>

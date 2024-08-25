@@ -169,4 +169,8 @@
   .active path:nth-child(6) {
     transform: translateX(9px) translateY(1px) rotate(45deg);
   }
+
+  ul li::marker {
+    @apply bg-green-50;
+  }
 }
