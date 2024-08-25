@@ -56,12 +56,12 @@ export default function Page() {
       {" "}
       <CustomHeader
         title="About Us"
-        description="Welcome to Health Web Experts, where we specialize in crafting tailored web solutions for the healthcare industry. Our team of experts is dedicated to helping healthcare providers improve their online presence through innovative design, advanced technology, and personalized service. Learn more about our mission, values, and the talented professionals who make it all happen."
+        description="Welcome to our Healthcare Web Design & Development Agency. We specialize in creating innovative web solutions for the healthcare industry, enhancing online presence with advanced technology and personalized service. Discover our mission, values, and talented team."
       />
       <div className="page-w px-6">
         <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Team</h2>
-          <p className="m-auto max-w-[700px] text-center font-semibold">
+          <p className="m-auto max-w-[700px] text-center">
             Our team at Health Web Experts is a group of passionate
             professionals with a diverse range of expertise in web development,
             design, SEO, and digital marketing. We are committed to providing
@@ -122,7 +122,7 @@ export default function Page() {
           <h2 className="text-center text-3xl font-bold">
             Tech We Love and Use
           </h2>
-          <p className="m-auto max-w-[700px] text-center font-semibold">
+          <p className="m-auto max-w-[700px] text-center">
             At Health Web Experts, we utilize a variety of cutting-edge
             technologies and tools to deliver the best possible solutions for
             our clients. Here are some of the technologies we love and use:
@@ -236,17 +236,17 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="">
+        <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Mission</h2>
-          <p className="m-auto max-w-[700px] text-center font-semibold">
+          <p className="m-auto max-w-[700px] text-center">
             Our mission at Health Web Experts is to empower healthcare providers
             with exceptional digital solutions that enhance their online
             presence, improve patient engagement, and drive business growth. We
             are dedicated to:
           </p>
 
-          <div className="mt-5 grid gap-10 md:grid-cols-2">
-            <ul className="flex flex-col gap-1 rounded-xl p-2 text-justify md:border-l-4 md:pl-4">
+          <div className="m-auto max-w-[800px] px-6 md:px-0">
+            <ul className="mt-10 list-image-[url(/icons/check.png)] space-y-5 pl-5 md:pl-0">
               <li className="">
                 <b>Excellence:</b> Delivering high-quality web development and
                 design services that exceed our clients&apos; expectations. We
@@ -283,23 +283,20 @@ export default function Page() {
                 the standards of digital healthcare.
               </li>
             </ul>
-
-            <div className="relative">
-              <Image
-                src={"/about/mission.webp"}
-                alt=""
-                fill
-                objectPosition="bottom"
-                className="rounded-xl shadow-md"
-              />
-            </div>
           </div>
 
-          <div className="custom-space text-center">
-            <h3 className="text-center text-2xl font-bold">
+          <div className="custom-space mx-auto">
+            <Image
+              src={"/about/healthcare-community-collaboration.webp"}
+              alt="A diverse group of healthcare professionals from various fields collaborating in a supportive environment, with representations of different healthcare settings such as hospitals, clinics, and pharmacies, symbolizing digital transformation in healthcare."
+              width={800}
+              height={500}
+              className="m-auto mb-10 rounded-xl shadow"
+            />
+            <h3 className="text-2xl font-bold">
               Serving the Healthcare Community
             </h3>
-            <div className="mt-5 space-y-2 rounded-xl border-x-4 p-2 shadow">
+            <div className="mt-5 space-y-2 rounded-xl border-l-4 p-5">
               {" "}
               <p className="">
                 We are proud to serve a wide range of healthcare providers,

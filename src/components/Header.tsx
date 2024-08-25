@@ -56,7 +56,7 @@ export default function Header() {
           <li className="relative">
             <button
               onClick={() => setShowSubmenu(!showSubmenu)}
-              className="flex items-center justify-center gap-1"
+              className="flex items-center justify-center gap-1 transition-colors hover:text-sky-700"
             >
               More
               <svg
@@ -79,7 +79,7 @@ export default function Header() {
                 <li>
                   <Link
                     href={"/about"}
-                    className={`px-2 py-1 capitalize font-medium${
+                    className={`px-2 py-1 font-medium capitalize hover:text-sky-700 transition-colors${
                       pathname.includes("/about")
                         ? "rounded bg-sky-50 text-sky-700"
                         : ""
@@ -90,26 +90,26 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    href={"/blog"}
-                    className={`px-2 py-1 capitalize font-medium${
-                      pathname.includes("/blog")
-                        ? "rounded bg-sky-50 text-sky-700"
-                        : ""
-                    } `}
-                  >
-                    Blog
-                  </Link>{" "}
-                </li>
-                <li>
-                  <Link
                     href={"pricing"}
-                    className={`px-2 py-1 capitalize font-medium${
+                    className={`px-2 py-1 font-medium capitalize hover:text-sky-700 transition-colors${
                       pathname.includes("/pricing")
                         ? "rounded bg-sky-50 text-sky-700"
                         : ""
                     } `}
                   >
                     Pricing
+                  </Link>{" "}
+                </li>
+                <li>
+                  <Link
+                    href={"/blog"}
+                    className={`px-2 py-1 font-medium capitalize hover:text-sky-700 transition-colors${
+                      pathname.includes("/blog")
+                        ? "rounded bg-sky-50 text-sky-700"
+                        : ""
+                    } `}
+                  >
+                    Blog
                   </Link>{" "}
                 </li>
               </ul>
