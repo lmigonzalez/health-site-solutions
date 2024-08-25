@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Healthcare Industries We Serve | Custom Web Design Company",
   description:
-    "Health Web Experts provides tailored web solutions for hospitals, clinics, telehealth & more. Enhance your healthcare services with our professional web design.",
+    "Health Web Experts offers healthcare website design and development for hospitals, clinics, telehealth, and more. Enhance your services with our expertise.",
 };
 
 const extraFeatures = [
@@ -130,7 +130,7 @@ export default function Page() {
               key={index}
               className={`${index === 0 ? "md:row-span-2" : ""} `}
             >
-              <div className="flex h-full flex-col items-center justify-center gap-1 rounded border-x border-sky-500 bg-white px-1 py-2 text-center transition-all hover:shadow">
+              <div className="flex h-full flex-col items-center justify-center gap-1 rounded border-x border-green-500 bg-white px-1 py-2 text-center">
                 <Image
                   src={`/industries/${index + 1}.png`}
                   alt="logo"
@@ -287,11 +287,12 @@ export default function Page() {
               </p>
               <h4 className="font-bold">Ongoing Support:</h4>
               <p className="relative z-10">
-                And we&apos;re not done yet. We don&apos;t just want to work with you—we
-                want to build a lasting relationship. We&apos;re here to help you
-                grow and support your online presence. That&apos;s why we offer
-                hosting and maintenance services, providing you with ongoing
-                access to us for any changes or edits you may need.
+                And we&apos;re not done yet. We don&apos;t just want to work
+                with you—we want to build a lasting relationship. We&apos;re
+                here to help you grow and support your online presence.
+                That&apos;s why we offer hosting and maintenance services,
+                providing you with ongoing access to us for any changes or edits
+                you may need.
               </p>
               <p className="relative z-10">
                 {" "}
@@ -364,8 +365,8 @@ export default function Page() {
             We understand that every business is unique, which is why we offer a
             range of additional features tailored to your specific needs. Below
             is a list of some of the most common features requested by our
-            clients. If you don&apos;t see what you&apos;re looking for, just let us know,
-            and we&apos;ll ensure you get exactly what you need.
+            clients. If you don&apos;t see what you&apos;re looking for, just
+            let us know, and we&apos;ll ensure you get exactly what you need.
           </p>
         </div>
 
