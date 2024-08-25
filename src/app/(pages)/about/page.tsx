@@ -296,7 +296,7 @@ export default function Page() {
             <h3 className="text-2xl font-bold">
               Serving the Healthcare Community
             </h3>
-            <div className="mt-5 space-y-2 rounded-xl border-l-4 p-5">
+            <div className="mt-5 space-y-2 rounded-xl border-l-4 border-green-500 p-5">
               {" "}
               <p className="">
                 We are proud to serve a wide range of healthcare providers,
