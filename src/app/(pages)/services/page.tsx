@@ -21,7 +21,7 @@ export default function Page() {
         <ServiceGrid />
         <OurProcess />
 
-        <div className="custom-space grid items-center gap-10 md:grid-cols-2">
+        <div className="mb-16 mt-32 grid items-center gap-10 md:grid-cols-2">
           <div className="space-y-2 rounded-xl border-l-4 p-4">
             <h2 className="text-3xl font-bold">
               Website Design for Medical Practices

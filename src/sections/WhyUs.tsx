@@ -13,7 +13,7 @@ export default function WhyUs() {
           <div className="w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-700">
             <p>Why Us</p>
           </div>
-          <h2 className="text-3xl font-bold">Why Choose Us</h2>
+          <h2 className="text-3xl font-bold">Why Choose Us for Your Medical Website Needs?</h2>
           <h3 className="text-lg font-semibold">
             High-Speed, Custom Websites for Healthcare
           </h3>

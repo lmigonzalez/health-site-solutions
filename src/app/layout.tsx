@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: "Healthcare Web Design Company | Custom Website Development",
   description:
     "HealthWebExperts offers specialized web design & development for healthcare. We build secure, responsive websites for hospitals, clinics, and medical practices.",
+
+  alternates: {
+    canonical: "https://www.healthwebexperts.com/",
+  },
 };
 
 export default function RootLayout({
