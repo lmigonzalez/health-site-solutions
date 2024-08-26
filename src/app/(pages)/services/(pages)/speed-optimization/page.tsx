@@ -1,6 +1,6 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
-
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,26 +24,30 @@ export default function Page() {
           <b>Here’s why:</b>
         </p>
 
-        <ul className="list-image-[url(/icons/check.png)]">
-          <li>
+        <ul className="">
+          <li className="list-circle">
             <b>First Impressions Matter: </b>Your website is often the first
             interaction a patient has with your practice. If your site takes too
             long to load, it gives the impression that your services might be
             outdated or unreliable. Patients might think, “If their website is
             this slow, how efficient is their medical care?
           </li>
-          <li>
+          <li className="list-circle">
             <b>Better Patient Experience:</b> A fast website ensures that
-            patients can quickly find the information they need, whether it&apos;s
-            booking an appointment, finding your location, or reading about your
-            services. This leads to a more satisfying user experience.
+            patients can quickly find the information they need, whether
+            it&apos;s booking an appointment, finding your location, or reading
+            about your services. This leads to a more satisfying user
+            experience.
           </li>
-          <li>
+          <li className="list-circle">
             <b>Improved SEO:</b> Google prioritizes fast websites. A faster site
             means better rankings on search engines, making it easier for
-            potential patients to find you.
+            potential patients to find you.{" "}
+            <Link href={"/services/on-page-seo-optimization"}>
+              Learn more about On-Page SEO Optimization
+            </Link>
           </li>
-          <li>
+          <li className="list-circle">
             <b>Higher Conversion Rates:</b> Studies show that even a two-second
             delay can reduce conversions by up to 7%. For a healthcare provider,
             this could mean fewer appointment bookings or missed opportunities
@@ -57,7 +61,7 @@ export default function Page() {
           Speed is relative, but in the world of the internet, milliseconds
           matter. So, how fast should your healthcare website be?
         </p>
-        <ul className="list-image-[url(/icons/check.png)]">
+        <ul className="list-disc">
           <li>
             <b>Aim for Under 2 Seconds: </b>Ideally, your website should load in
             under 2 seconds. Anything longer, and you risk losing potential
@@ -78,10 +82,10 @@ export default function Page() {
       <div className="page-w-8">
         <h2>How to Improve Website Performance</h2>
         <p>
-          Improving your website&apos;s speed doesn&apos;t have to be a daunting task.
-          Here are some practical tips to help you get started:
+          Improving your website&apos;s speed doesn&apos;t have to be a daunting
+          task. Here are some practical tips to help you get started:
         </p>
-        <ul className="list-image-[url(/icons/check.png)]">
+        <ul className="list-decimal">
           <li>
             <b>Optimize Images:</b> Large, uncompressed images are one of the
             biggest culprits of slow websites. Make sure your images are
@@ -90,9 +94,9 @@ export default function Page() {
           </li>
           <li>
             <b>Enable Browser Caching:</b> Caching allows your website to store
-            files on a user&apos;s device, so they don&apos;t have to download everything
-            again on their next visit. This speeds up the loading process
-            significantly.
+            files on a user&apos;s device, so they don&apos;t have to download
+            everything again on their next visit. This speeds up the loading
+            process significantly.
           </li>
           <li>
             <b>Minimize HTTP Requests:</b> Each element on your page—images,

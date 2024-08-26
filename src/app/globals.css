@@ -58,7 +58,7 @@
   }
 
   .list-circle::before {
-    content: url("/icons/circle.png");
+    content: url("/icons/grid.png");
     display: block;
     position: absolute;
     left: -30px;
@@ -73,6 +73,10 @@
 
   .page-w-8 ul > li > ul {
     @apply md:pl-10;
+  }
+
+  .page-w-8 a {
+    @apply font-bold text-sky-700 transition-colors hover:text-sky-900;
   }
 
   .article {

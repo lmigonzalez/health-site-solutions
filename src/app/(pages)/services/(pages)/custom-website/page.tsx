@@ -1,7 +1,7 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
 import { Metadata } from "next";
-
+import Link from "next/link";
 export const metadata: Metadata = {
   title: "Custom Healthcare Websites | Health Web Experts",
   description:
@@ -21,7 +21,7 @@ export default function Page() {
           Custom code is all about building your website from the ground up,
           tailored specifically to your needs. Unlike pre-built templates or
           page builders, custom code gives you full control over every aspect of
-          your website. Here’s what that means:
+          your website. <b>Here’s what that means:</b>
         </p>
         <ul className="list-image-[url(/icons/check.png)]">
           <li>
@@ -33,7 +33,10 @@ export default function Page() {
             <b>Optimized Performance:</b> Hand-coded websites are leaner and
             faster because they don’t rely on bloated code from templates or
             plugins. This results in quicker load times and a smoother user
-            experience.
+            experience.{" "}
+            <Link href={"/services/speed-optimization"}>
+              Learn more about website optimization.
+            </Link>
           </li>
           <li>
             <b>Enhanced Security:</b> Custom code reduces vulnerabilities by
@@ -54,29 +57,32 @@ export default function Page() {
           the overall efficiency and effectiveness of your practice. Here’s how
           a custom-built website can benefit your medical practice:
         </p>
-        <ul className="list-image-[url(/icons/check.png)]">
-          <li>
+        <ul className="">
+          <li className="list-circle">
             <b>Improved Patient Experience:</b> A custom website is designed
             with your patients in mind. From easy navigation to fast load times,
             every detail is crafted to provide a positive user experience.
           </li>
-          <li>
+          <li className="list-circle">
             <b>Brand Consistency:</b> Your website is a reflection of your
             practice. Custom code allows for a consistent brand experience,
             which helps build trust with your patients.
           </li>
-          <li>
+          <li className="list-circle">
             <b>Better SEO Performance:</b> Custom websites are built with search
             engines in mind. We ensure that your site’s structure, speed, and
             content are optimized to rank higher in search results, helping more
-            patients find you.
+            patients find you.{" "}
+            <Link href={"/services/on-page-seo-optimization"}>
+              Learn morea about SEO
+            </Link>
           </li>
-          <li>
+          <li className="list-circle">
             <b>Unique Functionality:</b> Whether it’s an online booking system,
             patient portals, or custom forms, a hand-coded website allows you to
             offer unique features that cater to your specific needs.
           </li>
-          <li>
+          <li className="list-circle">
             <b>Compliance and Accessibility:</b> Healthcare websites need to
             comply with regulations such as HIPAA and accessibility standards
             like WCAG. Custom coding allows us to ensure your site meets all
@@ -93,39 +99,48 @@ export default function Page() {
           to ensure optimal performance and user experience. Here’s a glimpse
           into the tech stack we rely on:
         </p>
-        <ul className="list-image-[url(/icons/check.png)]">
-          <li>
-            <b>Next.js and React:</b> For complex websites that require a lot of
-            user interaction, such as login systems, patient portals, or payment
-            integrations, we use Next.js and React. These frameworks allow us to
-            build fast, responsive, and dynamic websites that offer a smooth
-            user experience across all devices.
+        <ul className="">
+          <li className="list-circle">
+            <b>Next.js and React:</b> For <b>complex websites</b> that require a
+            lot of user interaction, such as <b>login systems</b>,{" "}
+            <b>patient portals</b>, or <b>payment integrations</b>, we use{" "}
+            <Link target="_blank" href={"https://nextjs.org/"}>
+              {" "}
+              Next.js{" "}
+            </Link>
+            and{" "}
+            <Link target="_blank" href={"https://react.dev/"}>
+              {" "}
+              React{" "}
+            </Link>{" "}
+            . These frameworks allow us to build fast, responsive, and dynamic
+            websites that offer a smooth user experience across all devices.
           </li>
-          <li>
-            <b>Astro:</b> For simpler, static websites that don’t require
-            extensive interactivity, we turn to Astro. Astro is perfect for
-            creating fast, efficient, and easy-to-maintain websites, ensuring
-            that even the most straightforward healthcare sites perform
-            excellently.
+          <li className="list-circle">
+            <b>Astro:</b> For simpler, <b>static websites</b> that don’t require
+            extensive interactivity, we turn to{" "}
+            <Link target="_blank" href={"https://astro.build/"}>
+              Astro
+            </Link>
+            . Astro is perfect for creating fast, efficient, and
+            easy-to-maintain websites, ensuring that even the most
+            straightforward healthcare sites perform excellently.
           </li>
-          <li>
-            <b>Tailwind CSS:</b> We use Tailwind CSS across all our projects to
-            create modern, clean, and responsive designs that are easily
-            customizable to match your brand’s identity.
+          <li className="list-circle">
+            <b>Tailwind CSS:</b> We use{" "}
+            <Link target="_blank" href={"https://tailwindcss.com/"}>
+              Tailwind CSS
+            </Link>{" "}
+            across all our projects to create modern, clean, and responsive
+            designs that are easily customizable to match your brand’s identity.
           </li>
-          <li>
+          <li className="list-circle">
             <b>Node.js and Express:</b> For server-side development, especially
             on more complex projects, we use Node.js and Express to ensure your
             website is scalable, secure, and capable of handling heavy traffic
             without a hitch.
           </li>
-          <li>
-            <b>GraphQL:</b> To efficiently manage data queries, we implement
-            GraphQL. This ensures your website loads quickly and delivers the
-            right content to users without unnecessary delays, enhancing the
-            overall experience.
-          </li>
-          <li>
+          <li className="list-circle">
             <b>Custom APIs:</b> We develop custom APIs to integrate with various
             services, allowing your website to offer advanced functionalities
             like appointment scheduling, patient portals, and more, tailored
@@ -141,7 +156,7 @@ export default function Page() {
           Here’s why we prefer custom code over WordPress or any other page
           builder:
         </p>
-        <ul className="list-image-[url(/icons/check.png)]">
+        <ul className="list-decimal">
           <li>
             <b>Performance Issues:</b> WordPress sites can be slow due to the
             heavy use of plugins and themes that aren’t optimized for speed.
@@ -178,89 +193,92 @@ export default function Page() {
           choice between WordPress and custom code can be crucial. Here’s a
           comparison to help you decide:
         </p>
-        <table className="mt-10 min-w-full border border-gray-200 bg-white">
-          <thead>
-            <tr className="bg-gray-800">
-              <th className="border-b-2 border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white">
-                Aspect
-              </th>
-              <th className="border-b-2 border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white">
-                WordPress
-              </th>
-              <th className="border-b-2 border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white">
-                Custom Code
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-gray-200">
-              <td className="px-4 py-3 text-sm font-medium text-gray-700">
-                <b>Flexibility:</b>
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Offers flexibility through themes and plugins, but you’re often
-                limited to what’s available. Customization beyond this can be
-                challenging and require additional plugins.
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Offers complete flexibility. Every aspect of the site can be
-                tailored to your needs without any limitations.
-              </td>
-            </tr>
-            <tr className="border-b border-gray-200">
-              <td className="px-4 py-3 text-sm font-medium text-gray-700">
-                <b>Performance:</b>
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Performance can suffer due to the reliance on plugins and
-                themes, leading to slower load times.
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Built for speed, with optimized code that ensures quick load
-                times and a smooth user experience.
-              </td>
-            </tr>
-            <tr className="border-b border-gray-200">
-              <td className="px-4 py-3 text-sm font-medium text-gray-700">
-                <b>Security:</b>
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Regularly targeted by hackers due to its popularity. Security
-                often depends on third-party plugins and frequent updates.
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                More secure by design, with fewer vulnerabilities and no
-                reliance on third-party plugins.
-              </td>
-            </tr>
-            <tr className="border-b border-gray-200">
-              <td className="px-4 py-3 text-sm font-medium text-gray-700">
-                <b>Scalability:</b>
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Can become cumbersome as your site grows, especially if you’re
-                relying on multiple plugins.
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Easily scalable, with the ability to add new features and
-                functionalities as your practice grows.
-              </td>
-            </tr>
-            <tr>
-              <td className="px-4 py-3 text-sm font-medium text-gray-700">
-                <b>Maintenance:</b>
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Requires regular updates and maintenance, especially with
-                plugins and themes.
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-600">
-                Easier to maintain with cleaner code and fewer dependencies,
-                reducing the need for constant updates.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="overflow-x-auto">
+          {" "}
+          <table className="divide-dark_gray mt-10 min-w-full divide-y border border-gray-200 bg-white">
+            <thead>
+              <tr className="bg-gray-800">
+                <th className="border-b-2 border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white">
+                  Aspect
+                </th>
+                <th className="border-b-2 border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white">
+                  WordPress
+                </th>
+                <th className="border-b-2 border-gray-300 px-4 py-2 text-left text-sm font-semibold text-white">
+                  Custom Code
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-200">
+                <td className="px-4 py-3 text-sm font-medium text-gray-700">
+                  <b>Flexibility:</b>
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Offers flexibility through themes and plugins, but you’re
+                  often limited to what’s available. Customization beyond this
+                  can be challenging and require additional plugins.
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Offers complete flexibility. Every aspect of the site can be
+                  tailored to your needs without any limitations.
+                </td>
+              </tr>
+              <tr className="border-b border-gray-200">
+                <td className="px-4 py-3 text-sm font-medium text-gray-700">
+                  <b>Performance:</b>
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Performance can suffer due to the reliance on plugins and
+                  themes, leading to slower load times.
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Built for speed, with optimized code that ensures quick load
+                  times and a smooth user experience.
+                </td>
+              </tr>
+              <tr className="border-b border-gray-200">
+                <td className="px-4 py-3 text-sm font-medium text-gray-700">
+                  <b>Security:</b>
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Regularly targeted by hackers due to its popularity. Security
+                  often depends on third-party plugins and frequent updates.
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  More secure by design, with fewer vulnerabilities and no
+                  reliance on third-party plugins.
+                </td>
+              </tr>
+              <tr className="border-b border-gray-200">
+                <td className="px-4 py-3 text-sm font-medium text-gray-700">
+                  <b>Scalability:</b>
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Can become cumbersome as your site grows, especially if you’re
+                  relying on multiple plugins.
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Easily scalable, with the ability to add new features and
+                  functionalities as your practice grows.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-sm font-medium text-gray-700">
+                  <b>Maintenance:</b>
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Requires regular updates and maintenance, especially with
+                  plugins and themes.
+                </td>
+                <td className="px-4 py-3 text-sm text-gray-600">
+                  Easier to maintain with cleaner code and fewer dependencies,
+                  reducing the need for constant updates.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </main>
   );

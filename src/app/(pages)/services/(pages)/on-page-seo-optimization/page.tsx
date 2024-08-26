@@ -16,13 +16,13 @@ export default function Page() {
         description="In the competitive healthcare industry, just having a website isn't sufficient—it needs to be easily found by patients searching for your services. At Health Web Experts, we focus on on-page SEO optimization to ensure your site ranks high in search results, driving more traffic and attracting more patients."
       />
       <div className="page-w-8">
-        <h2>What is On-Page SEO for Healthcare Websites?</h2>
+        <h2>What is On-Page SEO?</h2>
         <p>
           On-page SEO refers to the practice of optimizing individual web pages
           to rank higher and earn more relevant traffic from search engines. For
           healthcare websites, this means ensuring that your site’s content,
           structure, and coding are all aligned with the best practices for
-          search engine optimization. Here’s what it involves:
+          search engine optimization. <b>Here’s our approach to on-page SEO:</b>
         </p>
         <ul className="list-image-[url(/icons/check.png)]">
           <li>
@@ -53,28 +53,28 @@ export default function Page() {
         </ul>
       </div>
       <div className="page-w-8">
-        <h2>Why On-Page SEO is Important for Medical Practices</h2>
+        <h2>Why On-Page SEO is Important</h2>
         <p>On-page SEO is crucial for medical practices for several reasons:</p>
-        <ul className="list-image-[url(/icons/check.png)]">
-          <li>
+        <ul className="">
+          <li className="list-circle">
             <b>Increased Visibility:</b> A well-optimized page is more likely to
             appear at the top of search engine results, making it easier for
             potential patients to find your practice.
           </li>
-          <li>
+          <li className="list-circle">
             <b>Enhanced Credibility:</b> High rankings in search results are
             often associated with credibility and trustworthiness. When your
             practice appears at the top, it signals to patients that you are a
             leading provider in your field.
           </li>
-          <li>
+          <li className="list-circle">
             <b>Better User Experience:</b> On-page SEO isn’t just about search
             engines—it’s about creating a better experience for your users. By
             ensuring your site is easy to navigate, quick to load, and filled
             with relevant information, you’re more likely to convert visitors
             into patients.
           </li>
-          <li>
+          <li className="list-circle">
             <b>Higher Conversion Rates:</b> When patients find exactly what
             they’re looking for on your site, they’re more likely to take
             action, whether that’s booking an appointment, calling your office,
@@ -83,12 +83,12 @@ export default function Page() {
         </ul>
       </div>
       <div className="page-w-8">
-        <h2>Steps We Take to Optimize On-Page SEO for Doctors</h2>
+        <h2>Our On-Page SEO Strategy for Doctor Websites</h2>
         <p>
           At Health Web Experts, we follow a comprehensive process to ensure
           your website is fully optimized for on-page SEO. Here’s how we do it:
         </p>
-        <ul className="list-image-[url(/icons/check.png)]">
+        <ul className="list-decimal">
           <li>
             <b>Keyword Research:</b> We start by conducting thorough keyword
             research to identify the terms and phrases your potential patients
@@ -127,7 +127,7 @@ export default function Page() {
           especially for healthcare providers who serve specific geographic
           areas. Here’s how we enhance your local SEO:
         </p>
-        <ul className="list-image-[url(/icons/check.png)]">
+        <ul className="list-decimal">
           <li>
             <b>Google My Business Optimization:</b> We optimize your Google My
             Business profile to ensure your practice appears in local search

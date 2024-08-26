@@ -356,10 +356,10 @@ export default function Page() {
         </div>
 
         <div className="mt-10">
-          <ul className="list-image-[url(/icons/check.png)] space-y-5 pl-5 md:pl-0">
+          <ul className="space-y-5 pl-5 md:pl-0">
             {extraFeatures.map((item, index) => {
               return (
-                <li key={index} className="">
+                <li key={index} className="list-circle">
                   <b>{item.title}:</b> {item.description}{" "}
                 </li>
               );

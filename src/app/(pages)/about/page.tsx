@@ -61,7 +61,7 @@ export default function Page() {
       <div className="page-w px-6">
         <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Team</h2>
-          <p className="m-auto max-w-[700px] text-center">
+          <p className="m-auto max-w-[800px] text-center">
             Our team is a group of passionate professionals with a diverse range
             of expertise in web development, design, SEO, and digital marketing.
             We are committed to providing exceptional service and delivering
@@ -125,7 +125,7 @@ export default function Page() {
           <h2 className="text-center text-3xl font-bold">
             Tech We Love and Use
           </h2>
-          <p className="m-auto max-w-[700px] text-center">
+          <p className="m-auto max-w-[800px] text-center">
             At Health Web Experts, we utilize a variety of cutting-edge
             technologies and tools to deliver the best possible solutions for
             our clients. Here are some of the technologies we love and use:
@@ -145,7 +145,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="custom-space">
+        <div className="page-w-8">
           <h2 className="text-center text-3xl font-bold">
             Why We Choose the Healthcare Industry
           </h2>
@@ -191,7 +191,9 @@ export default function Page() {
               and drive business growth.
             </p>
             <div className="">
-              <b>By focusing exclusively on healthcare, we are able to:</b>
+              <b className="text-lg">
+                By focusing exclusively on healthcare, we are able to:
+              </b>
             </div>
 
             <ul className="list-inside list-disc space-y-2">
@@ -241,10 +243,9 @@ export default function Page() {
         <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Mission</h2>
           <p className="m-auto max-w-[700px] text-center">
-            Our mission is to empower healthcare providers
-            with exceptional digital solutions that enhance their online
-            presence, improve patient engagement, and drive business growth. We
-            are dedicated to:
+            Our mission is to empower healthcare providers with exceptional
+            digital solutions that enhance their online presence, improve
+            patient engagement, and drive business growth. We are dedicated to:
           </p>
 
           <div className="m-auto max-w-[800px] px-6 md:px-0">
