@@ -173,137 +173,122 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="custom-space">
+        <div className="page-w-8">
           <h3 className="mb-5 text-xl font-semibold md:text-center">
             Our Process: Simple, Effective, and Results-Driven
           </h3>
-          <div className="grid gap-10 md:grid-cols-2">
-            <div className="relative space-y-3 border bg-white p-5 md:rounded-xl">
-              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
-                1
-              </p>
-              <h4 className="font-bold">Research & Strategy:</h4>
-              <ul className="relative z-10 list-disc space-y-2 pl-5">
-                <li>
-                  <b>Competitive Analysis:</b> We begin by thoroughly
-                  researching your competition to understand what they’re doing
-                  and how we can outperform them.
-                </li>
-                <li>
-                  <b>Keyword Strategy: </b>Next, we develop a powerful keyword
-                  strategy to ensure your business ranks highly on Google and
-                  other major search engines.
-                </li>
-                <li>
-                  <b>Copywriting:</b> Once we have a clear keyword plan, we
-                  start crafting the copy for each page of your website.
-                </li>
-              </ul>
-            </div>
-
-            <div className="relative space-y-3 border bg-white p-5 md:rounded-xl">
-              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
-                2
-              </p>
-              <h4 className="font-bold">Design & Development:</h4>
-              <ul className="relative z-10 list-disc space-y-2 pl-5">
-                <li>
-                  <b>Unique Design:</b> Our skilled web designer will create a
-                  custom, visually appealing medical website tailored to your
-                  brand. We don’t use templates; your website will be
-                  one-of-a-kind.
-                </li>
-                <li>
-                  <b>User-Friendly Interface: </b>We ensure your website is
-                  clean, easy to navigate, and accessible, especially for older
-                  clients.
-                </li>
-                <li>
-                  <b>Development: </b> After you approve the design, we move on
-                  to development, where we build your site using custom code—not
-                  WordPress. We want to create something exceptional that we can
-                  be proud of.
-                </li>
-              </ul>
-            </div>
-
-            <div className="relative space-y-3 border bg-white p-5 md:rounded-xl">
-              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
-                3
-              </p>
-              <h4 className="font-bold">Technology Choices:</h4>
-              <ul className="relative z-10 list-disc space-y-2 pl-5">
-                <li>
-                  <b>Astro vs. Next.js:</b>
-                  Depending on your needs, we choose between Astro and Next.js:
-                  <ul className="list-disc pl-5">
-                    <li>
-                      <b>Astro: </b> Ideal for static websites with minimal user
-                      interaction.
-                    </li>
-                    <li>
-                      <b>Next.js:</b> Perfect for more complex websites with
-                      databases, portals, and login features.
-                    </li>
-                  </ul>
-                </li>
-                <li className="list-none">
-                  This decision is made during our initial consultation based on
-                  your specific requirements.
-                </li>
-              </ul>
-            </div>
-
-            <div className="relative space-y-3 border bg-white p-5 md:rounded-xl">
-              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
-                4
-              </p>
-              <h4 className="font-bold">Pixel-Perfect Development:</h4>
-              <p className="relative z-10">
-                We code your website exactly as it appears in the Figma
-                design—what you see in the design is what you get. The result is
-                a unique, modern, and extremely fast website.
-              </p>
-            </div>
-
-            <div className="relative min-h-[322px] space-y-3 border bg-white p-5 md:rounded-xl">
-              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
-                5
-              </p>
-              <h4 className="font-bold">Google Business Boost:</h4>
-              <p className="relative z-10">
-                But wait, our services don’t stop there! Every package includes
-                Google Business optimization services. We’ve partnered with a
-                team of specialists who excel in this area. They’ll ensure your
-                business is highly visible on the map, with dominant map
-                citations, and your profile will be fully optimized for maximum
-                reach.
-              </p>
-            </div>
-
-            <div className="relative min-h-[322px] space-y-3 border bg-white p-5 md:rounded-xl">
-              <p className="-z-1 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-[200px] font-black text-sky-100 md:text-[300px]">
-                6
-              </p>
-              <h4 className="font-bold">Ongoing Support:</h4>
-              <p className="relative z-10">
-                And we&apos;re not done yet. We don&apos;t just want to work
-                with you—we want to build a lasting relationship. We&apos;re
-                here to help you grow and support your online presence.
-                That&apos;s why we offer hosting and maintenance services,
-                providing you with ongoing access to us for any changes or edits
-                you may need.
-              </p>
-              <p className="relative z-10">
-                {" "}
-                This additional service is available for just $75 per month.{" "}
-                Learn more about our hosting and maintenance services
-                <Link href={"/pricing"} className="font-semibold text-sky-700">
-                  {" "}
-                  here.
-                </Link>
-              </p>
-            </div>
+          <div className="">
+            <ul className="space-y-5">
+              <li className="">
+                <h4 className="list-circle font-bold">Research & Strategy:</h4>
+                <ul className="list-disc pl-5">
+                  <li>
+                    <b>Competitive Analysis:</b> We begin by thoroughly
+                    researching your competition to understand what they’re
+                    doing and how we can outperform them.
+                  </li>
+                  <li>
+                    <b>Keyword Strategy: </b>Next, we develop a powerful keyword
+                    strategy to ensure your business ranks highly on Google and
+                    other major search engines.
+                  </li>
+                  <li>
+                    <b>Copywriting:</b> Once we have a clear keyword plan, we
+                    start crafting the copy for each page of your website.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4 className="list-circle font-bold">Design & Development:</h4>
+                <ul className="list-disc pl-5">
+                  <li>
+                    <b>Unique Design:</b> Our skilled web designer will create a
+                    custom, visually appealing medical website tailored to your
+                    brand. We don’t use templates; your website will be
+                    one-of-a-kind.
+                  </li>
+                  <li>
+                    <b>User-Friendly Interface: </b>We ensure your website is
+                    clean, easy to navigate, and accessible, especially for
+                    older clients.
+                  </li>
+                  <li>
+                    <b>Development: </b> After you approve the design, we move
+                    on to development, where we build your site using custom
+                    code—not WordPress. We want to create something exceptional
+                    that we can be proud of.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4 className="list-circle font-bold">Technology Choices:</h4>
+                <ul className="list-disc pl-5">
+                  <li>
+                    <b>Astro vs. Next.js: </b>
+                    Depending on your needs, we choose between Astro and
+                    Next.js:
+                    <ul className="list-disc">
+                      <li>
+                        <b>Astro: </b> Ideal for static websites with minimal
+                        user interaction.
+                      </li>
+                      <li>
+                        <b>Next.js:</b> Perfect for more complex websites with
+                        databases, portals, and login features.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="list-none">
+                    This decision is made during our initial consultation based
+                    on your specific requirements.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h4 className="list-circle font-bold">
+                  Pixel-Perfect Development:
+                </h4>
+                <p className="">
+                  We code your website exactly as it appears in the Figma
+                  design—what you see in the design is what you get. The result
+                  is a unique, modern, and extremely fast website.
+                </p>
+              </li>
+              <li className="">
+                <h4 className="list-circle font-bold">
+                  Google Business Boost:
+                </h4>
+                <p className="">
+                  But wait, our services don’t stop there! Every package
+                  includes Google Business optimization services. We’ve
+                  partnered with a team of specialists who excel in this area.
+                  They’ll ensure your business is highly visible on the map,
+                  with dominant map citations, and your profile will be fully
+                  optimized for maximum reach.
+                </p>
+              </li>
+              <li className="">
+                <h4 className="list-circle font-bold">Ongoing Support:</h4>
+                <p className="">
+                  And we&apos;re not done yet. We don&apos;t just want to work
+                  with you—we want to build a lasting relationship. We&apos;re
+                  here to help you grow and support your online presence.
+                  That&apos;s why we offer hosting and maintenance services,
+                  providing you with ongoing access to us for any changes or
+                  edits you may need.
+                </p>
+                <p className="text-start">
+                  This additional service is available for just $75 per month.{" "}
+                  Learn more about our hosting and maintenance services
+                  <Link
+                    href={"/pricing"}
+                    className="font-semibold text-sky-700"
+                  >
+                    here.
+                  </Link>
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

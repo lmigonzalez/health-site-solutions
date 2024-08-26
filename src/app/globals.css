@@ -6,6 +6,9 @@
   p {
     @apply md:text-lg;
   }
+  ul {
+    @apply marker:text-blue-700;
+  }
 }
 
 @layer components {
@@ -48,11 +51,28 @@
   .page-w-8 h2 {
     @apply text-center text-2xl font-bold;
   }
-  .page-w-8 p {
-    @apply text-center;
+
+  /* circle image */
+  .list-circle {
+    @apply relative mb-3 mt-8;
   }
-  .page-w-8 ul {
-    @apply mt-10 space-y-5 pl-5 md:pl-0;
+
+  .list-circle::before {
+    content: url("/icons/circle.png");
+    display: block;
+    position: absolute;
+    left: -30px;
+  }
+
+  .page-w-8 > ul {
+    @apply mt-10 pl-5 md:pl-0;
+  }
+  .page-w-8 ul > li {
+    @apply my-5;
+  }
+
+  .page-w-8 ul > li > ul {
+    @apply md:pl-10;
   }
 
   .article {
@@ -126,7 +146,6 @@
   .article table p {
     @apply my-1;
   }
-
 
   /* ICON */
   .container {
