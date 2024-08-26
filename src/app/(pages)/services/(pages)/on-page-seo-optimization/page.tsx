@@ -1,5 +1,12 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "On-Page SEO Optimization for Medical Practice | Health Web Experts",
+  description:
+    "Boost your medical practice's visibility with tailored on-page SEO optimization designed to attract more patients and improve online presence.",
+};
 export default function Page() {
   return (
     <main className="pt-16 md:px-6">

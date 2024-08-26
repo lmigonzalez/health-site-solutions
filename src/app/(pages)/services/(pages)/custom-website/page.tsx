@@ -1,11 +1,18 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Custom Healthcare Websites | Health Web Experts",
+  description:
+    "Create unique and secure custom healthcare websites with our hand-coded solutions, tailored to meet your specific needs and improve patient engagement.",
+};
 export default function Page() {
   return (
     <main className="pt-16 md:px-6">
       {" "}
       <CustomHeader
-        title="Custom Hand-Coded Solutions"
+        title="Custom Healthcare Websites"
         description="In the fast-paced healthcare industry, your website must be as unique and dependable as your practice. At Health Web Experts, we deliver custom hand-coded solutions that ensure top-tier performance, security, and customization for your healthcare site."
       />
       <div className="page-w-8">

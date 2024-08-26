@@ -1,5 +1,13 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Healthcare Website Speed Optimization Services | SEO Experts",
+  description:
+    "Boost your website's performance with expert speed optimization, ensuring fast load times & a seamless user experience for better business outcomes. Contact us.",
+};
 export default function Page() {
   return (
     <main className="pt-16 md:px-6">

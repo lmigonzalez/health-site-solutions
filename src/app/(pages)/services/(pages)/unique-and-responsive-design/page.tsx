@@ -1,6 +1,12 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Healthcare Website Design | Health Web Experts",
+  description:
+    "Transform your practice with unique and responsive healthcare website design, ensuring a seamless experience for patients across all devices.",
+};
 export default function Page() {
   return (
     <main className="pt-16 md:px-6">
@@ -54,8 +60,8 @@ export default function Page() {
           <li>
             <b>User-Centered Design:</b> We prioritize the needs of your
             patients by designing an intuitive navigation structure. This
-            ensures that information is easy to find, whether it&apos;s booking an
-            appointment, reading about services, or contacting your office.
+            ensures that information is easy to find, whether it&apos;s booking
+            an appointment, reading about services, or contacting your office.
           </li>
           <li>
             <b>Professional Branding: </b>Your website should reflect the
