@@ -62,11 +62,14 @@ export default function Page() {
         <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Team</h2>
           <p className="m-auto max-w-[700px] text-center">
-            Our team at Health Web Experts is a group of passionate
-            professionals with a diverse range of expertise in web development,
-            design, SEO, and digital marketing. We are committed to providing
-            exceptional service and delivering high-quality results for our
-            clients. Meet some of our key team members:
+            Our team is a group of passionate professionals with a diverse range
+            of expertise in web development, design, SEO, and digital marketing.
+            We are committed to providing exceptional service and delivering
+            high-quality results for our clients.{" "}
+          </p>
+          <p className="text-center font-bold">
+            {" "}
+            Meet some of our key team members:
           </p>
           <ul className="my-10 grid gap-10 md:grid-cols-3">
             <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-l-2">
@@ -149,9 +152,8 @@ export default function Page() {
           <div className="mt-5 space-y-3">
             <p>
               The healthcare industry is a vital and dynamic field that requires
-              a specialized approach to web development and design. At Health
-              Web Experts, we chose to focus on healthcare for several
-              compelling reasons:
+              a specialized approach to web development and design. We chose to
+              focus on healthcare for several compelling reasons:
             </p>
             <p>
               Throughout the years, we have worked with a wide variety of
@@ -221,11 +223,11 @@ export default function Page() {
               </li>
             </ul>
             <p>
-              At Health Web Experts, we are passionate about making a positive
-              impact on healthcare providers and their patients. Our dedication
-              to the healthcare industry drives us to deliver the highest
-              quality services and support, ensuring our clients have the tools
-              they need to thrive in the digital age.
+              We are passionate about making a positive impact on healthcare
+              providers and their patients. Our dedication to the healthcare
+              industry drives us to deliver the highest quality services and
+              support, ensuring our clients have the tools they need to thrive
+              in the digital age.
             </p>
             <p>
               Thank you for considering Health Web Experts as your partner in
@@ -239,7 +241,7 @@ export default function Page() {
         <div className="custom-space">
           <h2 className="text-center text-3xl font-bold">Our Mission</h2>
           <p className="m-auto max-w-[700px] text-center">
-            Our mission at Health Web Experts is to empower healthcare providers
+            Our mission is to empower healthcare providers
             with exceptional digital solutions that enhance their online
             presence, improve patient engagement, and drive business growth. We
             are dedicated to:

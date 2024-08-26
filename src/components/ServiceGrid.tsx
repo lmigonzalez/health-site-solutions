@@ -220,12 +220,13 @@ export default function ServiceGrid() {
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
               Our advanced on-page SEO strategies are meticulously crafted to
-              boost your <b>healthcare website&apos;s</b> visibility and performance
-              in search engines. We align your website design with user search
-              intent by conducting in-depth keyword research and precise
-              optimization. This approach not only elevates your search engine
-              rankings but also drives targeted organic traffic, ensuring that
-              your website stands out in a competitive healthcare landscape.
+              boost your <b>healthcare website&apos;s</b> visibility and
+              performance in search engines. We align your website design with
+              user search intent by conducting in-depth keyword research and
+              precise optimization. This approach not only elevates your search
+              engine rankings but also drives targeted organic traffic, ensuring
+              that your website stands out in a competitive healthcare
+              landscape.
             </p>
           </div>
 
@@ -266,20 +267,18 @@ export default function ServiceGrid() {
           experience. These services are designed to add value to your website,
           making it a powerful tool for your practice.
         </p>
-        <div className="mt-10 grid w-full gap-5 md:px-0">
-          {services.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="rounded-xl border-l-4 border-l-green-500 pl-4"
-              >
-                <div className="flex flex-col items-start justify-start text-start">
-                  <h3 className="font-semibold">{item.title}</h3>
-                  <p className="text-base font-normal">{item.description}</p>
-                </div>
-              </div>
-            );
-          })}
+        <div className="custom-space m-auto max-w-[800px] px-6 md:px-0">
+          <ul className="list-image-[url(/icons/check.png)] space-y-5 pl-5 md:pl-0">
+            {services.map((item, index) => {
+              return (
+                <li key={index}>
+                  <h3 className="inline-block font-semibold">{item.title}: </h3>
+                  {" "}
+                  {item.description}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </div>

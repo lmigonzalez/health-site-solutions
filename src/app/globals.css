@@ -42,6 +42,19 @@
     @apply list-inside list-decimal space-y-1;
   }
 
+  .page-w-8 {
+    @apply m-auto max-w-[800px] px-6 py-16 md:px-0;
+  }
+  .page-w-8 h2 {
+    @apply text-center text-2xl font-bold;
+  }
+  .page-w-8 p {
+    @apply text-center;
+  }
+  .page-w-8 ul {
+    @apply mt-10 space-y-5 pl-5 md:pl-0;
+  }
+
   .article {
     @apply m-auto mt-16 max-w-[800px] border bg-white p-10 leading-loose shadow;
   }
@@ -113,6 +126,7 @@
   .article table p {
     @apply my-1;
   }
+
 
   /* ICON */
   .container {
