@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MobileMenu from "./MobileMenu";
+import { FaRegDotCircle } from "react-icons/fa";
+
 export default function Header() {
   const [showSubmenu, setShowSubmenu] = useState(false);
   const menuItems = ["services", "industries", "work"];
@@ -14,8 +16,16 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header className="w-full bg-white px-6 shadow md:py-3">
-      <nav className="flex w-full items-center justify-between">
+    <header className="w-full bg-white shadow">
+      <div className="flex justify-end bg-sky-700 px-6 py-2">
+        <Link
+          className="flex items-center gap-2 text-white"
+          href={"tel:7867167146"}
+        >
+          <FaRegDotCircle size={15} className="" /> +1 (786) 716-7146
+        </Link>
+      </div>
+      <nav className="flex w-full items-center justify-between px-6 md:py-2">
         <div className="">
           <Link href={"/"}>
             <Image
