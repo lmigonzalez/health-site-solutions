@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaRegDotCircle } from "react-icons/fa";
 export default function MobileMenu() {
   const [openMenu, setOpenMenu] = useState(false);
   const menuItems = [
@@ -16,16 +15,19 @@ export default function MobileMenu() {
   const pathname = usePathname();
 
   useEffect(() => {
+    // Close menu when pathname changes
     setOpenMenu(false);
   }, [pathname]);
 
-  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    e.currentTarget.classList.toggle("active");
-    setOpenMenu(!openMenu);
+  const handleClick = () => {
+    setOpenMenu((prev) => !prev);
   };
   return (
     <div className="relative block md:hidden">
-      <div className="container relative z-50 p-0" onClick={handleClick}>
+      <div
+        className={`container relative z-50 p-0 ${openMenu ? "active" : ""}`}
+        onClick={handleClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="60"
