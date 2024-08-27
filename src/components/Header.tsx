@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-white shadow">
-      <div className="flex justify-end bg-sky-700 px-6 py-2">
+      <div className="hidden justify-end bg-sky-700 px-6 py-2 md:flex">
         <Link
           className="flex items-center gap-2 text-white"
           href={"tel:7867167146"}

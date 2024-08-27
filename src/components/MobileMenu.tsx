@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaRegDotCircle } from "react-icons/fa";
 export default function MobileMenu() {
   const [openMenu, setOpenMenu] = useState(false);
   const menuItems = [
@@ -74,7 +75,7 @@ export default function MobileMenu() {
         className={`${!openMenu ? "-left-full" : "left-0"} fixed top-0 z-40 flex h-full w-1/3 bg-black bg-opacity-40 backdrop-blur-sm transition-all duration-300`}
       ></div>
       <menu
-        className={`${!openMenu ? "-right-full" : "right-0"} fixed top-0 z-40 flex h-full w-2/3 flex-col items-center justify-start gap-10 bg-white pt-36 text-lg transition-all duration-300`}
+        className={`${!openMenu ? "-right-full" : "right-0"} fixed top-0 z-40 flex h-full w-2/3 flex-col items-center justify-start gap-5 bg-white pt-36 text-lg transition-all duration-300`}
       >
         <li>
           <Link
@@ -102,6 +103,15 @@ export default function MobileMenu() {
             </li>
           );
         })}
+        <li>
+          {" "}
+          <Link
+            className="flex items-center gap-2 font-bold text-sky-700"
+            href={"tel:7867167146"}
+          >
+            +1 (786) 716-7146
+          </Link>
+        </li>
       </menu>
     </div>
   );
