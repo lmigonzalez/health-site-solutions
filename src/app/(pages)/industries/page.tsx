@@ -249,9 +249,10 @@ export default function Page() {
                   Pixel-Perfect Development:
                 </h4>
                 <p className="">
-                  We code your website exactly as it appears in the Figma
-                  design—what you see in the design is what you get. The result
-                  is a unique, modern, and extremely fast website.
+                  We code your website exactly as it appears in the Figma{" "}
+                  <Link href={"/services/healthcare-website-redesign"}>design</Link>
+                  —what you see in the design is what you get. The result is a
+                  unique, modern, and extremely fast website.
                 </p>
               </li>
               <li className="">

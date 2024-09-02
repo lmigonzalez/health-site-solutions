@@ -3,10 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  a {
+    @apply font-bold text-sky-700 transition-colors hover:text-sky-900;
+  }
   p {
     @apply md:text-lg;
   }
-  ul {
+  ul,
+  ol {
     @apply marker:text-blue-700;
   }
 }
@@ -209,5 +213,55 @@
 
   ul li::marker {
     @apply bg-green-50;
+  }
+
+  .services {
+    @apply m-auto max-w-[800px] px-6 py-16 md:px-0;
+  }
+  .services h1 {
+    @apply mb-5 text-start text-2xl font-bold;
+  }
+  .services h2 {
+    @apply mb-3 mt-12 text-start text-xl font-semibold;
+  }
+  .services h3 {
+    @apply mb-2 mt-10 text-start text-lg font-semibold;
+  }
+  .services h4 {
+    @apply mb-2 mt-8 text-start font-bold;
+  }
+  .services ul li,
+  .services ol li {
+    @apply relative mb-3 mt-8;
+  }
+  .services ol {
+    @apply list-decimal;
+  }
+
+  .services ul li::before {
+    content: url("/icons/grid.png");
+    display: block;
+    position: absolute;
+    left: -30px;
+  }
+  .services > ul {
+    @apply mt-10 pl-5 md:pl-0;
+  }
+  .services ul > li {
+    @apply my-5;
+  }
+
+  .services ul > li > ul {
+    @apply md:pl-10;
+  }
+
+  .services a {
+    @apply font-bold text-sky-700 transition-colors hover:text-sky-900;
+  }
+  .services img {
+    @apply my-10 rounded-lg border shadow-md;
+  }
+  .services p {
+    @apply my-4;
   }
 }

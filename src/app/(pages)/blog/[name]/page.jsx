@@ -50,7 +50,6 @@ async function getArticle(slug) {
       content_type: "healthSiteSolutions",
     });
 
-    // console.log(res.items[0].fields);
     return res.items[0].fields;
   } catch (error) {
     return null;

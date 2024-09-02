@@ -117,12 +117,15 @@ export default function ServiceGrid() {
           </h3>
           <div className="mt-5 space-y-2 md:text-lg">
             <p>
-              Our designers craft unique and tailored{" "}
-              <b>web design for medical practices</b> using Figma, ensuring that
-              your site perfectly reflects your brand and stands out in a
-              crowded market. Every design is fully responsive, meaning it
-              adapts seamlessly to any device, ensuring an optimal user
-              experience across desktops, tablets, and mobile phones.
+              Our designers craft unique and tailored web design for{" "}
+              <Link href={"/services/medical-practice-website-design"}>
+                medical practices
+              </Link>{" "}
+              using Figma, ensuring that your site perfectly reflects your brand
+              and stands out in a crowded market. Every design is fully
+              responsive, meaning it adapts seamlessly to any device, ensuring
+              an optimal user experience across desktops, tablets, and mobile
+              phones.
             </p>
           </div>
 
@@ -263,7 +266,10 @@ export default function ServiceGrid() {
         </h2>
         <p className="m-auto max-w-[800px] text-center">
           In addition to our core web design services, we offer a range of
-          additional features that enhance your <b>medical web design</b>{" "}
+          additional features that enhance your{" "}
+          <Link href={"/services/healthcare-website-redesign"}>
+            medical web design
+          </Link>{" "}
           experience. These services are designed to add value to your website,
           making it a powerful tool for your practice.
         </p>
@@ -272,8 +278,7 @@ export default function ServiceGrid() {
             {services.map((item, index) => {
               return (
                 <li key={index}>
-                  <h3 className="inline-block font-semibold">{item.title}: </h3>
-                  {" "}
+                  <h3 className="inline-block font-semibold">{item.title}: </h3>{" "}
                   {item.description}
                 </li>
               );

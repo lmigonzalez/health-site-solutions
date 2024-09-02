@@ -7,24 +7,28 @@ const data = [
     description:
       "Experience lightning-fast website speeds that keep your healthcare practice ahead of the competition.",
     img: "fast",
+    url: "/services/speed-optimization",
   },
   {
     title: "Unique & Responsive Design",
     description:
       "Stand out with custom designs that look great on any device, ensuring a seamless experience for your patients.",
     img: "design",
+    url: "/services/unique-and-responsive-design",
   },
   {
     title: "Custom Hand-Coded Solutions",
     description:
       "Receive bespoke web solutions crafted from scratch to perfectly fit your healthcare needs.",
     img: "code",
+    url: "/services/custom-website",
   },
   {
     title: "Expert On-Page SEO",
     description:
       "Boost your online visibility with expertly optimized pages that attract and engage your target audience.",
     img: "seo",
+    url: "/services/on-page-seo-optimization",
   },
 ];
 
@@ -36,12 +40,12 @@ export default function ServicesOverview() {
           <p>Services</p>
         </div>
         <h2 className="text-3xl font-bold">What We Offer</h2>
-        <h3 className="md:text-lg font-semibold">
+        <h3 className="font-semibold md:text-lg">
           Clear, Complete, and Effective Solutions for Your Business
         </h3>
       </div>
 
-      <div className="page-w grid gap-5  md:grid-cols-4">
+      <div className="page-w grid gap-5 md:grid-cols-4">
         {data.map((item, index) => {
           return (
             <div key={index} className="rounded border-x-2 bg-white p-4 shadow">
@@ -54,9 +58,12 @@ export default function ServicesOverview() {
                     height={50}
                   />
                 </div>
-                <h3 className="text-center text-base font-bold">
-                  {item.title}
-                </h3>
+                <Link href={item.url}>
+                  <h3 className="text-center text-base font-bold">
+                    {item.title}
+                  </h3>
+                </Link>
+
                 <p className="text-center">{item.description}</p>
               </div>
             </div>
