@@ -160,8 +160,8 @@ export default function Page() {
             className="mx-auto rounded-xl shadow"
           />
         </div>
-        <div className="m-auto max-w-[800px] md:text-center">
-          <h2 className="text-2xl font-bold">
+        <div className="m-auto max-w-[800px]">
+          <h2 className="mb-5 text-2xl font-bold">
             How We Will Help Your Healthcare Business Stand Out
           </h2>
           <p>
@@ -174,7 +174,7 @@ export default function Page() {
         </div>
 
         <div className="page-w-8">
-          <h3 className="mb-5 text-xl font-semibold md:text-center">
+          <h3 className="mb-5 text-xl font-semibold">
             Our Process: Simple, Effective, and Results-Driven
           </h3>
           <div className="">
@@ -339,8 +339,8 @@ export default function Page() {
       </div>
 
       <div className="custom-space m-auto max-w-[800px] px-6 md:px-0">
-        <div className="m-auto md:text-center">
-          <h2 className="text-2xl font-bold">
+        <div className="m-auto">
+          <h2 className="mb-5 text-2xl font-bold">
             Additional Features for Your Website
           </h2>
           <p>

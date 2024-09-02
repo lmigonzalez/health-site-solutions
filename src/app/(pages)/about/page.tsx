@@ -60,19 +60,20 @@ export default function Page() {
       />
       <div className="page-w px-6">
         <div className="custom-space">
-          <h2 className="text-center text-3xl font-bold">Our Team</h2>
-          <p className="m-auto max-w-[800px] text-center">
-            Our team is a group of passionate professionals with a diverse range
-            of expertise in web development, design, SEO, and digital marketing.
-            We are committed to providing exceptional service and delivering
-            high-quality results for our clients.{" "}
-          </p>
-          <p className="text-center font-bold">
+          <div className="mb-10">
             {" "}
-            Meet some of our key team members:
-          </p>
+            <h2 className="mb-5 text-3xl font-bold">Our Team</h2>
+            <p className="">
+              Our team is a group of passionate professionals with a diverse
+              range of expertise in web development, design, SEO, and digital
+              marketing. We are committed to providing exceptional service and
+              delivering high-quality results for our clients.{" "}
+            </p>
+          </div>
+
+          <p className="font-bold"> Meet some of our key team members:</p>
           <ul className="my-10 grid gap-10 md:grid-cols-3">
-            <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-l-2">
+            <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 shadow md:border-l-2">
               <Image
                 src={"/about/Luis-w.png"}
                 alt=""
@@ -89,7 +90,7 @@ export default function Page() {
                 appealing websites using Next.js.
               </p>
             </li>
-            <li className="flex flex-col items-center justify-center gap-2 rounded p-6 text-center shadow">
+            <li className="flex flex-col items-center justify-center gap-2 rounded p-6 shadow">
               <Image src={"/about/Jose.png"} alt="" width={100} height={100} />
               <p className="rounded bg-green-100 px-4 py-1 text-sm font-semibold text-green-500">
                 Lead Developer
@@ -101,7 +102,7 @@ export default function Page() {
                 Next.js.
               </p>
             </li>
-            <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 text-center shadow md:border-r-2">
+            <li className="flex flex-col items-center justify-center gap-2 rounded border-green-500 p-6 shadow md:border-r-2">
               <Image
                 src={"/about/Claudia-w.png"}
                 alt=""
@@ -121,17 +122,15 @@ export default function Page() {
           </ul>
         </div>
 
-        <div className="page-w custom-space">
-          <h2 className="text-center text-3xl font-bold">
-            Tech We Love and Use
-          </h2>
-          <p className="m-auto max-w-[800px] text-center">
+        <div className="custom-space mx-auto max-w-[800px]">
+          {" "}
+          <h3 className="mb-5 text-2xl font-bold">Tech We Love and Use</h3>
+          <p className="">
             At Health Web Experts, we utilize a variety of cutting-edge
             technologies and tools to deliver the best possible solutions for
             our clients. Here are some of the technologies we love and use:
           </p>
-
-          <div className="page-w m-auto mt-5 flex max-w-fit flex-wrap items-center justify-center gap-3">
+          <div className="m-auto mt-5 flex max-w-fit flex-wrap justify-center gap-1">
             {skills.map((item, index) => {
               return (
                 <div key={index} className="flex items-center justify-center">
@@ -145,8 +144,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="page-w-8">
-          <h2 className="text-center text-3xl font-bold">
+        <div className="page-w-8 px-0">
+          <h2 className="text-3xl font-bold">
             Why We Choose the Healthcare Industry
           </h2>
           <div className="mt-5 space-y-3">
@@ -240,15 +239,15 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="custom-space">
-          <h2 className="text-center text-3xl font-bold">Our Mission</h2>
-          <p className="m-auto max-w-[700px] text-center">
+        <div className="custom-space m-auto max-w-[800px] md:px-0">
+          <h2 className="mb-5 text-3xl font-bold">Our Mission</h2>
+          <p className="">
             Our mission is to empower healthcare providers with exceptional
             digital solutions that enhance their online presence, improve
             patient engagement, and drive business growth. We are dedicated to:
           </p>
 
-          <div className="m-auto max-w-[800px] px-6 md:px-0">
+          <div className=" ">
             <ul className="mt-10 list-image-[url(/icons/check.png)] space-y-5 pl-5 md:pl-0">
               <li className="">
                 <b>Excellence:</b> Delivering high-quality web development and

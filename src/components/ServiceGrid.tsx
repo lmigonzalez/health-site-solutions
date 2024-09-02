@@ -260,11 +260,9 @@ export default function ServiceGrid() {
 
       <CustomSeparator />
 
-      <div className="custom-space">
-        <h2 className="text-center text-3xl font-semibold">
-          Additional Services
-        </h2>
-        <p className="m-auto max-w-[800px] text-center">
+      <div className="custom-space m-auto max-w-[800px]">
+        <h2 className="mb-5 text-2xl font-semibold">Additional Services</h2>
+        <p className="">
           In addition to our core web design services, we offer a range of
           additional features that enhance your{" "}
           <Link href={"/services/healthcare-website-redesign"}>
@@ -273,7 +271,7 @@ export default function ServiceGrid() {
           experience. These services are designed to add value to your website,
           making it a powerful tool for your practice.
         </p>
-        <div className="custom-space m-auto max-w-[800px] px-6 md:px-0">
+        <div className="custom-space m-auto max-w-[800px] md:px-0">
           <ul className="list-image-[url(/icons/check.png)] space-y-5 pl-5 md:pl-0">
             {services.map((item, index) => {
               return (
