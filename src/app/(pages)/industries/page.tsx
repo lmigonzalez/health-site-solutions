@@ -250,7 +250,9 @@ export default function Page() {
                 </h4>
                 <p className="">
                   We code your website exactly as it appears in the Figma{" "}
-                  <Link href={"/services/healthcare-website-redesign"}>design</Link>
+                  <Link href={"/services/healthcare-website-redesign"}>
+                    design
+                  </Link>
                   —what you see in the design is what you get. The result is a
                   unique, modern, and extremely fast website.
                 </p>
@@ -280,13 +282,8 @@ export default function Page() {
                 </p>
                 <p className="text-start">
                   This additional service is available for just $75 per month.{" "}
-                  Learn more about our hosting and maintenance services
-                  <Link
-                    href={"/pricing"}
-                    className="font-semibold text-sky-700"
-                  >
-                    here.
-                  </Link>
+                  Learn more about our hosting and maintenance services{" "}
+                  <Link href={"/pricing"}>here.</Link>
                 </p>
               </li>
             </ul>
@@ -333,7 +330,6 @@ export default function Page() {
               href={
                 "https://pagespeed.web.dev/analysis/https-www-healthwebexperts-com/00ro931nb6?form_factor=mobile"
               }
-              className="font-semibold text-sky-700"
             >
               {" "}
               Check it out for yourself!

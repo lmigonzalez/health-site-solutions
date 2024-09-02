@@ -37,22 +37,52 @@ export default function Footer() {
               <b className="font-semibold">Company</b>
             </li>
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link
+                href={"/"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link href={"/about"}>About Us</Link>
+              <Link
+                href={"/about"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                About Us
+              </Link>
             </li>
             <li>
-              <Link href={"/blog"}>Blog</Link>
+              <Link
+                href={"/blog"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                Blog
+              </Link>
             </li>
             <li>
-              <Link href={"/contact"}>Contact Us</Link>
+              <Link
+                href={"/contact"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                Contact Us
+              </Link>
             </li>
             <li>
-              <Link href={"/privacy-policy"}>Privacy Policy</Link>
+              <Link
+                href={"/privacy-policy"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                Privacy Policy
+              </Link>
             </li>
             <li>
-              <Link href={"/terms-of-service"}>Terms of Service</Link>
+              <Link
+                href={"/terms-of-service"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                Terms of Service
+              </Link>
             </li>
           </menu>
 
@@ -61,13 +91,28 @@ export default function Footer() {
               <b className="font-semibold">Services</b>
             </li>
             <li>
-              <Link href={"/services"}>Services</Link>
+              <Link
+                href={"/services"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                Services
+              </Link>
             </li>
             <li>
-              <Link href={"/industries"}>Industries</Link>
+              <Link
+                href={"/industries"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                Industries
+              </Link>
             </li>
             <li>
-              <Link href={"/pricing"}>Pricing</Link>
+              <Link
+                href={"/pricing"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                Pricing
+              </Link>
             </li>
           </menu>
 
@@ -88,6 +133,7 @@ export default function Footer() {
                   href={"https://www.instagram.com/healthwebexperts/"}
                   target="_blank"
                   aria-label="Visit Our Instagram Page"
+                  className="font-normal text-white hover:text-sky-200"
                 >
                   <FaInstagramSquare size={25} />
                 </Link>
@@ -97,20 +143,26 @@ export default function Footer() {
                   href={"/https://www.linkedin.com/company/health-web-experts/"}
                   target="_blank"
                   aria-label="Visit Our Linkedin Page"
+                  className="font-normal text-white hover:text-sky-200"
                 >
                   <FaLinkedin size={25} />
                 </Link>
               </li>
             </menu>
-            <div className="text-sm font-semibold text-sky-100">
-              <Link href={"/"}>info@healthwebexperts.com</Link>
+            <div>
+              <Link
+                href={"/"}
+                className="font-normal text-white hover:text-sky-200"
+              >
+                info@healthwebexperts.com
+              </Link>
             </div>
           </div>
         </div>
         <hr className="my-10 opacity-50" />
         <div className="page-w">
           <small className="">
-            @2024 Health Web Experts - All rights reserved
+            ©2024 Health Web Experts - All rights reserved
           </small>
         </div>
       </footer>
