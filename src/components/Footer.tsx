@@ -151,7 +151,7 @@ export default function Footer() {
             </menu>
             <div>
               <Link
-                href={"/"}
+                href={"mailto:info@healthwebexperts.com"}
                 className="font-normal text-white hover:text-sky-200"
               >
                 info@healthwebexperts.com
