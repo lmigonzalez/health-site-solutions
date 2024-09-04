@@ -253,13 +253,13 @@
 
   .services ul > li > ul {
     @apply md:pl-10;
-  }
+  } 
 
   .services a {
     @apply font-bold text-sky-700 transition-colors hover:text-sky-900;
   }
   .services img {
-    @apply my-10 rounded-lg border shadow-md;
+    @apply my-10;
   }
   .services p {
     @apply my-4;

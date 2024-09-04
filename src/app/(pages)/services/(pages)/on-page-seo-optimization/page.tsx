@@ -1,5 +1,6 @@
 import React from "react";
 import CustomHeader from "@/components/CustomHeader";
+import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -54,7 +55,13 @@ export default function Page() {
       </div>
       <div className="page-w-8">
         <h2>Why On-Page SEO is Important</h2>
-        <p>On-page SEO is crucial for medical practices for several reasons:</p>
+        <p>
+          On-page SEO is crucial for{" "}
+          <Link href={"/services/seo-services-for-medical-websites"}>
+            medical practices
+          </Link>{" "}
+          for several reasons:
+        </p>
         <ul className="">
           <li className="list-circle">
             <b>Increased Visibility:</b> A well-optimized page is more likely to

@@ -13,7 +13,9 @@ export default function WhyUs() {
           <div className="w-fit rounded-full bg-green-100 px-6 py-1 text-sm font-bold text-green-700">
             <p>Why Us</p>
           </div>
-          <h2 className="text-3xl font-bold">Why Choose Us for Your Medical Website Needs?</h2>
+          <h2 className="text-3xl font-bold">
+            Why Choose Us for Your Medical Website Needs?
+          </h2>
           <h3 className="text-lg font-semibold">
             High-Speed, Custom Websites for Healthcare
           </h3>
@@ -21,17 +23,23 @@ export default function WhyUs() {
             With years of web development experience, we create high-speed,
             custom-coded websites that rank well on search engines. Our sites
             are secure, scalable, and optimized for both performance and user
-            experience. We specialize in advanced SEO and responsive design for
-            healthcare professionals, ensuring a professional online presence
-            that helps you stand out. Trust us to deliver a website that exceeds
-            your expectations and supports your success in the healthcare
-            industry.
+            experience. We specialize in{" "}
+            <Link
+              className="text-sky-300 hover:text-sky-300"
+              href={"/services/seo-services-for-medical-websites"}
+            >
+              advanced SEO
+            </Link>{" "}
+            and responsive design for healthcare professionals, ensuring a
+            professional online presence that helps you stand out. Trust us to
+            deliver a website that exceeds your expectations and supports your
+            success in the healthcare industry.
           </p>
 
           <div className="mt-5 flex justify-start pt-2">
             <Link
               href={"/about"}
-              className="flex w-fit items-center gap-2 text-center font-bold text-white transition-all hover:text-sky-900 md:text-lg"
+              className="flex w-fit items-center gap-2 text-center text-sky-300 hover:text-sky-300 md:text-lg"
             >
               Discover more about us
               <svg
