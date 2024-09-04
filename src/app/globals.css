@@ -253,7 +253,7 @@
 
   .services ul > li > ul {
     @apply md:pl-10;
-  } 
+  }
 
   .services a {
     @apply font-bold text-sky-700 transition-colors hover:text-sky-900;
@@ -263,5 +263,21 @@
   }
   .services p {
     @apply my-4;
+  }
+
+  .services .custom-border {
+    @apply border-l-4 border-green-700 p-2 pl-4;
+  }
+  .services .custom-border p {
+    @apply m-0;
+  }
+  .services .custom-grid ul {
+    @apply grid gap-5 md:grid-cols-2;
+  }
+  .services .custom-grid li {
+    @apply m-0 flex flex-col gap-1 bg-white p-5 shadow-sm;
+  }
+  .services .custom-grid ul li::before {
+    content: none;
   }
 }
